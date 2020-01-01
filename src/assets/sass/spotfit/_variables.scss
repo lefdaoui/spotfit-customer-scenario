@@ -1,0 +1,55 @@
+// colors
+$primary: #8b6fc6;
+$primary-2: #e83e8c;
+$primary-dark: #21283d;
+$primary-light: #8c8fa9;
+$primary-light-1: #cad2d9;
+$primary-light-2: #f5f7f8;
+
+$yellow: #f5cb7b;
+$green: #35cbba;
+
+
+  // class
+  $silver: #c2d7e2;
+  $gold: #fba840;
+  $platinum: #636c90;
+
+// text size
+$font-size-base:              13px !default;
+$font-size-lg:                ($font-size-base * 1.25) !default;
+$font-size-xl:                ($font-size-base * 2.25) !default;
+$font-size-sm:                ($font-size-base * .875) !default;
+$font-color: $primary-light;
+
+
+@mixin prefix($name, $value) {
+  @each $vendor in ('-webkit-', '-moz-', '-ms-', '-o-', '') {
+    #{$vendor}#{$name}: #{$value};
+  }
+}
+
+.left-curved {
+  border-radius: 50px 0 0 50px;
+}
+
+.right-curved {
+  border-radius: 0 50px 50px 0;
+}
+
+
+$body-bg-color: #f7f7fa;
+
+%texture {
+  background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");
+  background-size: cover;
+}
+
+@mixin box-shadow {
+  @include prefix('box-shadow', 0px 2px 2px 0px lighten(black, 90%));
+}
+
+$icon-lg: 22px;
+$icon-md: 17px;
+$icon-sm: 14px;
+$icon-xs: 8px;

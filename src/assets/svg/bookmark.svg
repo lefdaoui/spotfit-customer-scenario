@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.51 16.89">
+  <defs>
+    <clipPath id="bookmark" transform="translate(1.56 1.56)">
+      <path class="someClass"
+            d="M3.83,10.69a1.76,1.76,0,0,1,1.72,0l2.58-.3v1.18a.31.31,0,0,0-.31-.31H1.57a.31.31,0,0,0-.32.31V10.39l2.58.3ZM0,12.76V1.57A1.57,1.57,0,0,1,1.57,0H7.82A1.56,1.56,0,0,1,9.38,1.57V12.76a.93.93,0,0,1-1.48.83l-3-1.83a.51.51,0,0,0-.42,0l-3,1.83A.93.93,0,0,1,0,12.76Z"/>
+    </clipPath>
+  </defs>
+  <title>bookmark</title>
+  <g id="l2" data-name="Layer 2">
+    <g id="set">
+      <g clip-path="url(#bookmark)">
+        <rect width="12.51" height="16.89"/>
+      </g>
+    </g>
+  </g>
+</svg>

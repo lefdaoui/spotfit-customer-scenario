@@ -1,0 +1,293 @@
+@import "./src/assets/sass/spotfit/variables";
+
+
+// other
+$selected-tab: #97c4e3;
+$icon-text-space: 5px;
+$button-width: 280px;
+
+
+
+
+.slick-dots {
+  bottom: 36px!important;
+  li {
+    margin: 0;
+    button:before {
+      color: white;
+    }
+    &.slick-active button:before {
+      opacity: .75;
+      color: white;
+      transform: scale(1.5);
+    }
+  }
+}
+
+.gym-details {
+
+  .wrapper {
+    position: relative;
+
+
+    .toolbar {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 10;
+
+      display: flex;
+      justify-content: space-between;
+
+      // putting content in the middle
+      padding: 30px 1.5rem;
+
+      // always centered and adapted for mobile sizes
+      max-width: 360px;
+      margin: 0 auto;
+
+      .action {
+        position: relative;
+        background-color: #ffffff78;
+        border-radius: 50px;
+        padding: 1.3rem;
+
+        .icon {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          fill: white;
+          color: white;
+          width: 1.3rem;
+        }
+
+      }
+    }
+
+    // banner
+    .banner {
+      img {
+        width: 100%;
+        object-fit: cover;
+        max-height: 260px;
+      }
+    }
+
+    // activities
+    .activities {
+      position: absolute;
+      background-color: $primary-dark;
+      color: $primary-light;
+      font-size: 11px;
+      border-radius: 23px 0 0 0;
+      padding: 18px 25px;
+      right: 0;
+      bottom: -2rem;
+
+      & > div:not(:last-child) {
+        margin-right: 33px;
+      }
+
+      svg {
+        height: 28px;
+        margin-right: 10px;
+
+        .cls-1 {
+          fill: $primary-light;
+        }
+
+      }
+    }
+  }
+
+
+  // class
+  .class {
+    position: fixed;
+    right: 0;
+    top: 284px;
+    padding: 7px 11px;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-radius: 50px 0 0 50px;
+    background-color: $primary-light;
+
+    @extend %texture;
+
+    svg {
+      margin-right: $icon-text-space;
+      fill: white;
+      width: 9px;
+    }
+
+    span {
+      font-size: 11px;
+    }
+  }
+
+
+  // body content
+  main {
+    max-width: 330px;
+
+    // Gym name
+    h3 {
+      color: $primary-dark;
+      font-size: 23px;
+      padding: 1rem 0 3px 0;
+      font-weight: 600;
+    }
+
+    // Review
+
+    .review {
+      display: flex;
+      align-items: flex-start;
+
+      .rating {
+        margin-right: $icon-text-space;
+        .star {
+          fill: $primary-light-1;
+          width: 16px;
+          height: 16px;
+          &.colored {
+            fill: $yellow;
+          }
+        }
+      }
+
+      span {
+        color: $primary-light-1;
+        font-size: 13px;
+      }
+    }
+
+    // geolocation
+
+    .geolocation {
+      font-size: 13px;
+      color: $primary-light-1;
+      i {
+        fill: $primary-light-1;
+        height: 16px;
+        margin-right: $icon-text-space;
+      }
+    }
+
+    // pricing
+
+
+
+    .pricing {
+      .digit {
+        color: $green;
+        font-weight: 600;
+        font-size: 19px;
+        margin-right: 11px;
+      }
+
+      .subscription {
+        font-weight: 500;
+        font-size: 15px;
+        color: $primary-light-1;
+      }
+    }
+
+    // subscription options
+
+    .subscription-options {
+      margin-top: 11px;
+      display: flex;
+      div {
+        background-color: $primary-light-2;
+        border-radius: 50px;
+        color: $font-color;
+        padding: 0.35rem 0.25rem;
+        font-size: 8px;
+        margin-right: $icon-text-space;
+        cursor: pointer;
+
+        b {
+          font-weight: 700;
+        }
+      }
+    }
+
+    // more
+    .more {
+      font-size: $font-size-base;
+      max-width: 18rem;
+      .nav-tabs {
+        justify-content: space-between;
+        .nav-item {
+          margin-bottom: 0;
+        }
+        .nav-link.active {
+          color: $selected-tab;
+          border-color: transparent;
+          background-color: transparent;
+        }
+      }
+
+      .tab-content {
+        padding-top: 1rem;
+
+        color: $font-color;
+        max-width: 18rem;
+        line-height: 1.8;
+      }
+
+      .nav-link {
+        padding: 1rem 0 1rem 0;
+      }
+
+      a {
+        color: $primary-dark;
+        font-size: $font-size-base;
+        font-weight: 600;
+      }
+
+      .facilities {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        .block {
+          flex: 0 0 33.3333332%;
+          padding-bottom: 1rem;
+          align-items: center;
+          display: flex;
+          svg {
+            margin-right: 10px;
+            height: 21px;
+            flex: 0 0 20%;
+            * {
+              fill: $primary-dark;
+            }
+          }
+          span {
+            line-height: 1;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+
+    // action button
+    .action-button {
+      border-radius: 50px!important;
+      width: $button-width;
+      font-weight: 600;
+
+      &.fixed-bc {
+        position: fixed;
+        bottom: 1rem;
+        left: calc((100% - #{$button-width}) / 2);
+      }
+    }
+
+  }
+}
+

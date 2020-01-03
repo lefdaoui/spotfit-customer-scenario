@@ -9,12 +9,20 @@ import { GymDetialsComponent } from './gym-detials/gym-detials.component';
 import { GymsListComponent } from './gyms-list/gyms-list.component';
 import { SubsciptionStatusComponent } from './subsciption-status/subsciption-status.component';
 
+import { CongratulationComponent } from './congratulation/congratulation.component';
+import { SessionsComponent } from './sessions/sessions.component';
+import { SessionHComponent } from './session-h/session-h.component';
+import { SessionsPrecComponent } from './sessions-prec/sessions-prec.component';
 @NgModule({
   declarations: [
     AppComponent,
     GymDetialsComponent,
     GymsListComponent,
     SubsciptionStatusComponent,
+     CongratulationComponent,
+    SessionsComponent,
+    SessionHComponent,
+    SessionsPrecComponent,
   ],
   imports: [
     BrowserModule,

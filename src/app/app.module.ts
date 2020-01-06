@@ -8,6 +8,7 @@ import {TabsModule} from 'ngx-bootstrap';
 import { GymDetialsComponent } from './gym-detials/gym-detials.component';
 import { GymsListComponent } from './gyms-list/gyms-list.component';
 import { SubsciptionStatusComponent } from './subsciption-status/subsciption-status.component';
+import { PartnerHomeComponent } from './partner-home/partner-home.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { SubsciptionStatusComponent } from './subsciption-status/subsciption-sta
     GymDetialsComponent,
     GymsListComponent,
     SubsciptionStatusComponent,
+    PartnerHomeComponent
   ],
   imports: [
     BrowserModule,

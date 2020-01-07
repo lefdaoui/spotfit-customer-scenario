@@ -1,0 +1,16 @@
+<div class="list">
+
+  <!--header-->
+  <app-top-bar></app-top-bar>
+
+  <!--body-->
+  <main class="body">
+    <div class="mb-3" *ngFor="let gym of gyms">
+      <app-gym-card [gym]="gym"></app-gym-card>
+    </div>
+  </main>
+
+  <!--footer-->
+  <app-footer></app-footer>
+</div>
+

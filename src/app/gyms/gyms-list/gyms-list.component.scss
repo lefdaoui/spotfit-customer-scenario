@@ -1,0 +1,26 @@
+@import "./src/assets/sass/spotfit/variables";
+
+
+span {
+  font-size: $font-size-sm;
+}
+
+.list {
+  padding: 0 20px;
+  font-size: $font-size-base;
+  color: $font-color;
+  // put content in the middle
+  max-width: 400px;
+  margin: 0 auto;
+
+
+
+
+  main.body {
+    max-height: 80vh;
+    overflow-y: scroll;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 43px;
+  }
+}

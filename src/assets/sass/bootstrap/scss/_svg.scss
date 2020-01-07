@@ -1,0 +1,49 @@
+
+.svg {
+  $lg: 22px;
+  $md: 17px;
+  $sm: 14px;
+  $xs: 8px;
+
+  fill: $primary-light;
+
+  &.dark {
+    fill: $primary-dark;
+  }
+
+  &.light {
+    fill: white;
+  }
+
+  &.danger {
+    fill: $danger;
+  }
+
+  &.warning {
+    fill: $warning;
+  }
+
+  &.success {
+    fill: $success;
+  }
+
+  &.info {
+    fill: $info;
+  }
+
+  &.wlg { width: $lg!important; }
+
+  &.wmd { width: $md!important; }
+
+  &.wsm { width: $sm!important; }
+
+  &.wxs { width: $xs!important; }
+
+  &.hlg { height: $lg!important; }
+
+  &.hmd { height: $md!important; }
+
+  &.hsm { height: $sm!important; }
+
+  &.hxs { height: $xs!important; }
+}

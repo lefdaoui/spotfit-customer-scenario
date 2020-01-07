@@ -1,0 +1,30 @@
+@import "./src/assets/sass/spotfit/variables";
+// Rating
+.rating {
+
+  &.sm {
+    .star {
+      width: 11px;
+    }
+  }
+
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+
+  .star {
+    fill: $primary-light-1;
+    width: 16px;
+    height: 16px;
+
+    &.colored {
+      fill: $yellow;
+    }
+  }
+}
+
+span {
+  color: $primary-light-1;
+  font-size: 13px;
+}
+

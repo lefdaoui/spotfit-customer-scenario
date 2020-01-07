@@ -1,0 +1,28 @@
+@import "./src/assets/sass/spotfit/variables";
+
+$iphone-x: 375px;
+.checkout {
+
+
+  .subscriptions {
+    table {
+      th, td {
+        padding-left: 0;
+      }
+
+      thead {
+        tr th {
+          font-weight: 400;
+        }
+      }
+
+      tbody {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+
+
+

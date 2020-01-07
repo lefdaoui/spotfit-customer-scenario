@@ -1,0 +1,150 @@
+<svg class="footer-bg" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 82.33">
+  <defs>
+  </defs>
+  <g>
+    <path d="M324.48,0H244.64c-20.48.4-23.53,14.26-31.86,26.63-6.48,9.61-17.65,18.11-31.68,18-14.75.84-26.42-8.53-32.89-18.21C140,14.08,140.6.72,117.6,0H35.52C15.9,0,0,16.57,0,37V82.33H360V37C360,16.57,344.1,0,324.48,0Z"/>
+  </g>
+</svg>
+
+<div class="qrcode">
+  <div class="symbol">
+    <img src="assets/img/qrcode.png" alt="qrcode">
+  </div>
+</div>
+<div class="wrapper">
+  <div class="options">
+    <div (click)="onSearch(content)">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.78 20.41">
+        <defs>
+          <style>.aa05f501-4079-4306-8666-3e37e2ccb973 {
+            fill: none;
+            stroke: #231f20;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-width: 2px;
+          }</style>
+        </defs>
+        <title>search</title>
+        <g id="ae52b58f-899f-4426-b4e3-e0a817285edb" data-name="Layer 2">
+          <g id="baed589e-10e5-4f88-a841-1ff2327bdbd0" data-name="set">
+            <circle class="aa05f501-4079-4306-8666-3e37e2ccb973" cx="9" cy="9" r="8"/>
+            <line class="aa05f501-4079-4306-8666-3e37e2ccb973" x1="19.78" y1="19.41" x2="15.14" y2="14.77"/>
+          </g>
+        </g>
+      </svg>
+      <span>Search</span>
+    </div>
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.8 18.8">
+        <defs>
+          <style>.e9fdc0ee-d021-42f0-a58d-997c0204ebc3, .f6cfe972-3fb2-43bd-9ee6-88818d86bb11 {
+            fill: none;
+            stroke: #231f20;
+            stroke-linecap: round;
+            stroke-width: 1.8px;
+          }
+
+          .e9fdc0ee-d021-42f0-a58d-997c0204ebc3 {
+            stroke-miterlimit: 10;
+          }
+
+          .f6cfe972-3fb2-43bd-9ee6-88818d86bb11 {
+            stroke-linejoin: round;
+          }</style>
+        </defs>
+        <title>ticket</title>
+        <g id="a69d4b71-7ffd-4276-b454-2e0858194ac7" data-name="Layer 2">
+          <g id="b9298c9c-c659-4e3b-8aa5-e9a71c796d2e" data-name="set">
+            <path class="e9fdc0ee-d021-42f0-a58d-997c0204ebc3" d="M.9,12.9a3,3,0,0,0,0-6"/>
+            <path class="e9fdc0ee-d021-42f0-a58d-997c0204ebc3" d="M23.9,12.9a3,3,0,0,1,0-6"/>
+            <path class="e9fdc0ee-d021-42f0-a58d-997c0204ebc3" d="M.9,6.9v-5a1,1,0,0,1,1-1h21a1,1,0,0,1,1,1v5"/>
+            <path class="e9fdc0ee-d021-42f0-a58d-997c0204ebc3" d="M23.9,12.9v4a1,1,0,0,1-1,1H1.9a1,1,0,0,1-1-1v-4"/>
+            <line class="f6cfe972-3fb2-43bd-9ee6-88818d86bb11" x1="16.9" y1="0.9" x2="16.9" y2="17.9"/>
+          </g>
+        </g>
+      </svg>
+      <span>Ticket</span>
+    </div>
+  </div>
+</div>
+
+<ng-template #content let-modal>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <label for="gym" class="sr-only">Salle ou activité?</label>
+        <input type="text" class="form-control" id="gym" placeholder="Salle ou activité">
+        <svg viewBox="0 0 24 15" xmlns="http://www.w3.org/2000/svg">
+          <defs >
+            <style >.aa0a6f2d-ae11-435e-b069-18b16bd116aa {
+              stroke-linecap: round;
+              stroke-linejoin: round;
+            }</style>
+          </defs>
+          <g data-name="Layer 2" id="e39ed439-79ee-4882-96c2-07f3d8205f23">
+            <g data-name="set" id="ada9dff8-7e80-4110-b389-48258bf5a353">
+              <rect class="aa0a6f2d-ae11-435e-b069-18b16bd116aa" height="14" rx="1"
+                    transform="translate(38 15) rotate(180)" width="3" x="17.5" y="0.5"></rect>
+              <rect class="aa0a6f2d-ae11-435e-b069-18b16bd116aa" height="8" rx="0.98"
+                    transform="translate(44 15) rotate(180)" width="3" x="20.5" y="3.5"></rect>
+              <rect class="aa0a6f2d-ae11-435e-b069-18b16bd116aa" height="14" rx="1" width="3"
+                    x="3.5" y="0.5"></rect>
+              <rect class="aa0a6f2d-ae11-435e-b069-18b16bd116aa" height="8" rx="0.98" width="3"
+                    x="0.5" y="3.5"></rect>
+              <rect class="aa0a6f2d-ae11-435e-b069-18b16bd116aa" height="3" width="11" x="6.5"
+                    y="5.5"></rect>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div class="form-group">
+        <label for="city" class="sr-only">City</label>
+        <input type="text" class="form-control" id="city" placeholder="Ville">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 27">
+          <defs>
+            <style>
+
+            .a24f55a5-fb9b-4c1e-99dd-095d8b8aa0a9 {
+              clip-path: url(#ndlevienibronaket);
+            }
+
+            .a710c34b-92a2-401f-b699-711771adca5d {
+              clip-path: url(#shumpatencacourpe);
+            }</style>
+            <clipPath id="ndlevienibronaket">
+              <rect  data-name="SVGID"
+                    class="ea2a18e0-e06a-444f-9cae-d4111e9fb7c1" width="24" height="24"/>
+            </clipPath>
+            <clipPath id="shumpatencacourpe" transform="translate(-1 1.5)">
+              <path  data-name="SVGID"
+                    class="a24f55a5-fb9b-4c1e-99dd-095d8b8aa0a9"
+                    d="M12,1c4.58,0,8.69,3.77,8.49,8.05-.21,4.63-6.15,14-8.49,14S3.72,13.68,3.51,9.05C3.31,4.77,7.42,1,12,1ZM10.88,14.38c.73-.83,3.33-.64,4.12-1.88,1.86-2.92,1.41-1.58,1.5-3.55.14-3.07-.5-3.32-4-3.32s-4.89-.08-4.75,3c.09,2-1.11-.55.75,2.37a10.41,10.41,0,0,0,1.75,2c.34.39,1.23.56,1.47.75L9.25,13.5l1.56-.34M12,15a5.5,5.5,0,1,1,5.5-5.5A5.5,5.5,0,0,1,12,15Zm0-2A3.5,3.5,0,1,0,8.5,9.5,3.5,3.5,0,0,0,12,13Z"/>
+            </clipPath>
+          </defs>
+          <title>marker</title>
+          <g id="ba881631-f898-4591-a461-fe5b1f81d106" data-name="Layer 2">
+            <g id="b7767b8a-e873-4a4a-8653-cd2b5586d170" data-name="set">
+              <g class="a710c34b-92a2-401f-b699-711771adca5d">
+                <rect width="22" height="27"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label for="orderby" class="sr-only">Order by</label>
+            <input type="text" class="form-control" id="orderby" placeholder="Trier par">
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label for="distance" class="sr-only">Distance</label>
+            <input type="text" class="form-control" id="distance" placeholder="Distance">
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</ng-template>

@@ -1,5 +1,5 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
-
+import {Location} from '@angular/common';
 @Component({
   selector: 'app-gym-detials',
   templateUrl: './gym-detials.component.html',
@@ -14,9 +14,14 @@ export class GymDetialsComponent implements OnInit {
     'https://source.unsplash.com/user/erondu/1600x899',
   ];
 
-  constructor() { }
+  constructor(
+    private location: Location
+  ) { }
 
   ngOnInit() {
   }
 
+  back() {
+    this.location.back();
+  }
 }

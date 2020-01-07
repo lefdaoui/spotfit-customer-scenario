@@ -1,28 +1,48 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {RouterModule} from '@angular/router';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {SharedModule} from '../shared/shared.module';
-import {TabsModule} from 'ngx-bootstrap';
-import { GymDetialsComponent } from './gym-detials/gym-detials.component';
-import { GymsListComponent } from './gyms-list/gyms-list.component';
-import { SubsciptionStatusComponent } from './subsciption-status/subsciption-status.component';
+import {SharedModule} from './shared/shared.module';
+
+import {AppComponent} from './app.component';
+import {SubsciptionStatusComponent} from './subsciption-status/subsciption-status.component';
+import {GymsModule} from './gyms/gyms.module';
+import { TypoComponent } from './typo/typo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GymDetialsComponent,
-    GymsListComponent,
     SubsciptionStatusComponent,
+    TypoComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     SharedModule,
-    TabsModule.forRoot(),
+    RouterModule.forRoot([
+      {
+        path: 'typo',
+        component: TypoComponent,
+      },
+      {
+        path: 'subscription-status',
+        component: SubsciptionStatusComponent,
+      },
+      {
+        path: 'gyms',
+        loadChildren: () => import('./gyms/gyms.module').then(m => m.GymsModule),
+      },
+      {
+        path: '',
+        loadChildren: () => import('./payment/payment.module').then(m => m.PaymentModule),
+      },
+    ]),
+    SharedModule,
+    GymsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {
+}

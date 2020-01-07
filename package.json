@@ -11,6 +11,7 @@
   },
   "private": true,
   "dependencies": {
+    "@agm/core": "^1.1.0",
     "@angular/animations": "~8.2.14",
     "@angular/common": "~8.2.14",
     "@angular/compiler": "~8.2.14",
@@ -19,6 +20,9 @@
     "@angular/platform-browser": "~8.2.14",
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
+    "@ng-bootstrap/ng-bootstrap": "^5.1.4",
+    "@ng-select/ng-select": "^3.7.1",
+    "@types/googlemaps": "^3.39.0",
     "bootstrap": "4.1.1",
     "jquery": "^3.4.1",
     "ngx-bootstrap": "^5.2.0",

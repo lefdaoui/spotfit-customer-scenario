@@ -1,16 +1,7 @@
-<div class="list">
-
-  <!--header-->
-  <app-top-bar></app-top-bar>
-
+<div class="gyms-list">
   <!--body-->
-  <main class="body">
-    <div class="mb-3" *ngFor="let gym of gyms">
-      <app-gym-card [gym]="gym"></app-gym-card>
-    </div>
-  </main>
-
-  <!--footer-->
-  <app-footer></app-footer>
+  <div class="mb-3" *ngFor="let gym of gyms">
+    <app-gym-card [gym]="gym" (onCardClicked)="oncardClicked($event)"></app-gym-card>
+  </div>
 </div>
 

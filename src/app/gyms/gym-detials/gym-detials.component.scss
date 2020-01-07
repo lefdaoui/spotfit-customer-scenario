@@ -1,4 +1,4 @@
-@import "./src/assets/sass/spotfit/variables";
+@import "../../../assets/sass/spotfit/variables";
 
 
 // other
@@ -65,6 +65,8 @@ $button-width: 280px;
 
       }
     }
+
+
 
     // banner
     .banner {
@@ -141,39 +143,19 @@ $button-width: 280px;
       font-weight: 600;
     }
 
-    // Review
-
-    .review {
-      display: flex;
-      align-items: flex-start;
-
-      .rating {
-        margin-right: $icon-text-space;
-        .star {
-          fill: $primary-light-1;
-          width: 16px;
-          height: 16px;
-          &.colored {
-            fill: $yellow;
-          }
-        }
-      }
-
-      span {
-        color: $primary-light-1;
-        font-size: 13px;
-      }
-    }
-
     // geolocation
 
     .geolocation {
       font-size: 13px;
       color: $primary-light-1;
-      i {
-        fill: $primary-light-1;
+      svg {
         height: 16px;
         margin-right: $icon-text-space;
+
+        & * {
+          stroke: $primary-light-1;
+          fill: $primary-light-1;
+        }
       }
     }
 

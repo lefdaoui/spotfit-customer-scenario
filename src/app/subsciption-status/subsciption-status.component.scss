@@ -4,17 +4,31 @@
 $dark-bg: #42348d;
 $light-color: white;
 
+@mixin status-style ($status, $primary, $secondary) {
+  .#{$status} {
+    background-image: -moz-linear-gradient(0deg, transparent 6%, $primary 55%, $secondary 100%);
+    background-image: -webkit-linear-gradient(0deg, transparent 6%, $primary 55%, $secondary 100%);
+    background-image: -ms-linear-gradient(0deg, transparent 6%, $primary 55%, $secondary 100%);
+    background-image: linear-gradient(0deg, transparent 6%, $primary 55%, $secondary 100%);
+
+    .avatar {
+      border-color: $primary !important;
+    }
+
+    .status > div:first-child {
+      svg * {
+        fill: $primary;
+        stroke: $primary;
+      }
+    }
+  }
+}
+
+
 @mixin align-center {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@mixin in-middle {
-  .in-middle {
-    max-width: 360px;
-    margin: 0 auto;
-  }
 }
 
 @mixin subscription-status-color($status: 'inactive') {
@@ -26,8 +40,6 @@ $light-color: white;
 .subscription-status {
   background: $dark-bg;
   min-height: 100vh;
-  @include in-middle;
-
   svg {
     width: $icon-sm;
     height: $icon-sm;
@@ -67,10 +79,6 @@ $light-color: white;
     color: $light-color;
     padding: 60px 0 0 0;
 
-    background-image: -moz-linear-gradient(0deg, #3b2d89 6%, #c34aa8 55%, #f47975 100%);
-    background-image: -webkit-linear-gradient(0deg, #3b2d89 6%, #c34aa8 55%, #f47975 100%);
-    background-image: -ms-linear-gradient(0deg, #3b2d89 6%, #c34aa8 55%, #f47975 100%);
-    background-image: linear-gradient(0deg, #3b2d89 6%, #c34aa8 55%, #f47975 100%);
 
     @include align-center();
     flex-flow: column;
@@ -119,13 +127,6 @@ $light-color: white;
 
         .icon {
           margin-right: 5px;
-
-          &.inactive {
-              & * {
-                fill: $primary-2;
-                stroke: $primary-2;
-            }
-          }
         }
 
         .sub-status {
@@ -179,4 +180,9 @@ $light-color: white;
     }
   }
 }
+
+@include status-style("inactive", #c34aa8, #f47975);
+@include status-style("canceled", rgb(81, 81, 81), rgb(136, 136, 136) );
+@include status-style("expired", rgb(134,71,194), rgb(200,96,227));
+@include status-style("active", #36C9B8, #4BD696);
 

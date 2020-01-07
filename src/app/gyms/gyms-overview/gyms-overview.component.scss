@@ -1,0 +1,26 @@
+@import "../../../assets/sass/spotfit/variables";
+
+$max-width: 400px;
+
+.map-overview {
+  &.full {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .om {
+
+  }
+
+  .ol {
+    // put content in the middle
+    max-width: $max-width;
+    margin: 0 auto;
+
+    max-height: 80vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    padding: 0 16px 3.5rem;
+    margin-top: 90px;
+  }
+}

@@ -1,0 +1,19 @@
+<div class="map-overview {{activeTab === 'map' ? 'full' : ''}}">
+  <!--header-->
+  <app-top-bar (onTabChanged)="onTabChanged($event)" [activeTab]="activeTab"></app-top-bar>
+
+  <!--content-->
+  <div [hidden]="activeTab !== 'map'">
+    <div class="om">
+      <app-gyms-map></app-gyms-map>
+    </div>
+  </div>
+  <div [hidden]="activeTab !== 'list'">
+    <div class="ol">
+      <app-gyms-list></app-gyms-list>
+    </div>
+  </div>
+  <!--footer-->
+  <app-footer></app-footer>
+</div>
+

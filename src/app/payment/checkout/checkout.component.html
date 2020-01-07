@@ -1,0 +1,112 @@
+<div class="checkout">
+  <!--top bar the second style-->
+  <app-top-bar [design]="'toback'"></app-top-bar>
+  <div class="behaviour d-flex flex-column justify-content-between">
+    <div>
+      <!--page title-->
+      <h4 class="font-weight-bold mb-4">Checkout</h4>
+
+      <!--subscriptions-->
+      <div class="subscriptions mb-4">
+        <div class="mb-3 d-flex justify-content-between">
+          <h5 class="font-weight-bold">Your Pass</h5>
+          <span class="font-weight-bold">Add new +</span>
+        </div>
+        <div class="card shadow">
+          <div class="card-body pb-0">
+            <table class="table table-borderless table-hover">
+              <thead>
+              <tr>
+                <th scope="col">Type</th>
+                <th scope="col">Régime</th>
+                <th scope="col">Class</th>
+                <th scope="col"></th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>Month pass</td>
+                <td>Strict</td>
+                <td>Silver</td>
+                <td>
+              <span class="badge badge-pill badge-danger px-2">
+                <svg class="svg wxs danger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.74 18.74">
+                  <rect class="bc98a76a-bb9c-4f65-98d4-5d66f9b7743e" x="-2.88" y="8.37" width="24.5" height="2"
+                        transform="translate(-3.88 9.37) rotate(-45)"/>
+                  <rect class="bc98a76a-bb9c-4f65-98d4-5d66f9b7743e" x="8.37" y="-2.88" width="2" height="24.5"
+                        transform="translate(-3.88 9.37) rotate(-45)"/>
+                </svg>
+              </span>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <hr>
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <span class="font-weight-bold">Total</span>
+              <h5 class="text-success font-weight-bold">339,00 MAD</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--date of consumption-->
+      <div class="consumption-date mb-4">
+        <h5 class="font-weight-bold mb-3">Date of consumption</h5>
+        <div class="input-group flex-nowrap" (click)="d.toggle()">
+          <input ngbDatepicker #d="ngbDatepicker" type="text" class="form-control transparent-bg"
+                 placeholder="Date of consumption" aria-label="consumption-date"
+                 aria-describedby="addon-wrapping">
+          <div class="input-group-append">
+        <span class="input-group-text">
+          <svg class="svg wlg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27">
+            <defs>
+              <style>
+                .dd327988-b740-4af0-9580-2ae38cfb950a {
+                  clip-path: url(#fe5f64ef-6b47-4865-9d80-d4779ef67ce5);
+                }
+              </style>
+              <clipPath id="fe5f64ef-6b47-4865-9d80-d4779ef67ce5" transform="translate(2.5 2.5)">
+                <path class="cls-1"
+                      d="M16.5,2h3A2.5,2.5,0,0,1,22,4.5v15A2.5,2.5,0,0,1,19.5,22H2.5A2.5,2.5,0,0,1,0,19.5V4.5A2.5,2.5,0,0,1,2.5,2h3V1a1,1,0,0,1,2,0V2h7V1a1,1,0,0,1,2,0V2Zm3,18a.5.5,0,0,0,.5-.5V4.5a.51.51,0,0,0-.5-.5h-3V5a1,1,0,0,1-2,0V4h-7V5a1,1,0,0,1-2,0V4h-3a.5.5,0,0,0-.5.5v15M14.5,10h-1a1,1,0,0,1,0-2h2a1,1,0,0,1,1,1v8a1,1,0,0,1-2,0V10Zm-7,2.87v0a.34.34,0,0,1,0-.1,1,1,0,0,1,.21-.61,1,1,0,0,1,.35-.29l.23-.08a3.35,3.35,0,0,1,.53-.07,1,1,0,0,0,.68-.95A.84.84,0,0,0,8.6,10a.94.94,0,0,0-.78.38A1,1,0,0,1,6.18,9.24,2.93,2.93,0,0,1,8.6,8a2.83,2.83,0,0,1,2.9,2.75A3,3,0,0,1,11,12.47a3,3,0,0,1,1,2.28A3.32,3.32,0,0,1,8.62,18a3.4,3.4,0,0,1-3-1.75,1,1,0,0,1,1.76-.95,1.4,1.4,0,0,0,1.24.7A1.32,1.32,0,0,0,10,14.75a1.06,1.06,0,0,0-1.27-1A1,1,0,0,1,7.53,13a.59.59,0,0,1,0-.13Z"/>
+              </clipPath>
+            </defs>
+            <title>calendar</title>
+            <g class="dd327988-b740-4af0-9580-2ae38cfb950a">
+              <rect width="27" height="27"/>
+            </g>
+          </svg>
+        </span>
+          </div>
+        </div>
+      </div>
+
+      <!--payment methods-->
+      <div class="payment-methods">
+        <h5 class="font-weight-bold mb-3">Payment method</h5>
+        <div class="custom-control custom-radio">
+          <input type="radio" id="credit-card" class="custom-control-input" name="payment">
+          <label class="custom-control-label" for="credit-card">Paiement carte bancaire</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input type="radio" id="transfer" class="custom-control-input" name="payment">
+          <label class="custom-control-label" for="transfer">Paiement par virement bancaire</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input type="radio" id="spotfit" class="custom-control-input" name="payment">
+          <label class="custom-control-label" for="spotfit">Paiement recharge Spotfit</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input type="radio" id="cash" class="custom-control-input" name="payment">
+          <label class="custom-control-label" for="cash">Paiement en espèces</label>
+        </div>
+      </div>
+    </div>
+    <!--confirm payment-->
+    <div class="text-center my-4">
+      <button class="btn btn-primary rounded-pill btn-lg d-inline-block px-5">Confirm Payment</button>
+    </div>
+  </div>
+</div>

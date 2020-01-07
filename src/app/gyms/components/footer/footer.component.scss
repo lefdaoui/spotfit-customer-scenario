@@ -1,0 +1,114 @@
+@import "../../../../assets/sass/spotfit/variables";
+
+$max-width: 360px;
+
+
+
+@mixin align-horizontally {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.qrcode {
+  display: inline-block;
+  padding: 6px;
+  background-image: linear-gradient(to bottom, #baa6e4, transparent 100%);
+  border-radius: 50%;
+  @include align-horizontally();
+  bottom: 46px;
+
+  .symbol {
+    display: inline-block;
+    padding: 10px;
+    background-color: #886FC4;
+    border-radius: 50%;
+
+    img {
+      height: 35px;
+    }
+  }
+}
+
+.wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 80px;
+  border-radius: 2rem 2rem 0 0;
+  margin: 0 auto;
+  max-width: $max-width;
+
+  span {
+    font-size: $font-size-sm;
+    color: $font-color;
+  }
+
+  .options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(#{$max-width} * 0.8);
+    @include align-horizontally();
+    bottom: 10px;
+
+    & > div {
+      display: flex;
+      flex-flow: column;
+
+      svg {
+        height: $icon-lg;
+        fill: $primary;
+        margin-bottom: 5px;
+
+        & * {
+          stroke: $primary;
+        }
+      }
+    }
+  }
+}
+
+.footer-bg {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: 80px;
+  & * {
+    fill: white;
+  }
+}
+
+
+.modal-dialog {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: flex-end;
+  margin: auto;
+  max-width: 380px;
+
+  .modal-content {
+    border: none;
+    border-radius: 40px 40px 0 0;
+    padding: 15.9px;
+  }
+}
+
+.form-group {
+  position: relative;
+
+  svg {
+    width: 13px;
+    position: absolute;
+    right: 15px;
+    top: 14px;
+
+    & * {
+      stroke: $primary-light;
+      fill: $primary-light;
+    }
+  }
+}

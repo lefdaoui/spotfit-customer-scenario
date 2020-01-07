@@ -51,7 +51,7 @@ $colors: map-merge((
   "indigo":     $indigo,
   "purple":     $purple,
   "pink":       $pink,
-  "red":        $red,
+  "red":        #e88cba,
   "orange":     $orange,
   "yellow":     $yellow,
   "green":      $green,
@@ -64,12 +64,23 @@ $colors: map-merge((
 
 $primary:       $purple !default;
 $secondary:     $gray-600 !default;
-$success:       $green !default;
+$success:       #35cbba !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
+
+$primary-700: #9a81cd;
+$primary-600: #a893d4;
+$primary-500: #b7a5db;
+$primary-400: #c5b7e3;
+$primary-300: #d4c9ea;
+$primary-200: #e2dbf1;
+$primary-100: #f1edf8;
+
+$primary-dark: #21283d;
+$primary-light: #8c8fa9;
 
 $theme-colors: () !default;
 $theme-colors: map-merge((
@@ -141,8 +152,8 @@ $sizes: map-merge((
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white !default;
-$body-color:                $gray-900 !default;
+$body-bg:                   #f7f7fa !default;
+$body-color:                #747795 !default;
 
 // Links
 //
@@ -208,13 +219,18 @@ $line-height-sm:              1.5 !default;
 $border-width:                1px !default;
 $border-color:                $gray-300 !default;
 
-$border-radius:               .25rem !default;
+$border-radius:               .6rem !default;
 $border-radius-lg:            .3rem !default;
 $border-radius-sm:            .2rem !default;
 
-$box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
-$box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
-$box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
+$box-shadow:                     	0 1px 3px 0 rgba(0, 0, 0, 0.06), 0 1px 2px 0 rgba(0, 0, 0, 0.06) !default;
+$box-shadow-md:                   0 4px 6px -1px rgba(0, 0, 0, 0.06), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !default;
+$box-shadow-lg:                   0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !default;
+$box-shadow-xl:                   0 20px 25px -5px rgba(0, 0, 0, 0.04), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !default;
+$box-shadow-2xl:                  0 25px 50px -12px rgba(0, 0, 0, 0.25) !default;
+$box-shadow-inner:                inset 0 2px 4px 0 rgba(0, 0, 0, 0.06) !default;
+$box-shadow-outline:              0 0 0 3px rgba(66, 153, 225, 0.5) !default;
+$box-shadow-none:                 none  !default;
 
 $component-active-color:      $white !default;
 $component-active-bg:         theme-color("primary") !default;
@@ -236,13 +252,14 @@ $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberati
 $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
-$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-base:              .81rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg:                ($font-size-base * 1.25) !default;
 $font-size-sm:                ($font-size-base * .875) !default;
 
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
-$font-weight-bold:            700 !default;
+$font-weight-bold:            600 !default;
+$font-weight-bolder:          700 !default;
 
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
@@ -257,8 +274,8 @@ $h6-font-size:                $font-size-base !default;
 $headings-margin-bottom:      ($spacer / 2) !default;
 $headings-font-family:        inherit !default;
 $headings-font-weight:        500 !default;
-$headings-line-height:        1.2 !default;
-$headings-color:              inherit !default;
+$headings-line-height:        1 !default;
+$headings-color:              #51516f !default;
 
 $display1-size:               6rem !default;
 $display2-size:               5.5rem !default;
@@ -295,7 +312,7 @@ $list-inline-padding:         .5rem !default;
 
 $mark-bg:                     #fcf8e3 !default;
 
-$hr-margin-y:                 $spacer !default;
+$hr-margin-y:                 .5rem !default;
 
 
 // Tables
@@ -307,7 +324,7 @@ $table-cell-padding-sm:       .3rem !default;
 
 $table-bg:                    transparent !default;
 $table-accent-bg:             rgba($black, .05) !default;
-$table-hover-bg:              rgba($black, .075) !default;
+$table-hover-bg:              $body-bg !default;
 $table-active-bg:             $table-hover-bg !default;
 
 $table-border-width:          $border-width !default;
@@ -388,7 +405,8 @@ $btn-transition:              color .15s ease-in-out, background-color .15s ease
 
 // Forms
 
-$label-margin-bottom:                   .5rem !default;
+$label-margin-bottom:                   3px !default;
+$label-margin-left:                     14px !default;
 
 $input-padding-y:                       $input-btn-padding-y !default;
 $input-padding-x:                       $input-btn-padding-x !default;
@@ -448,7 +466,7 @@ $form-check-inline-input-margin-x:      .3125rem !default;
 $form-group-margin-bottom:              1rem !default;
 
 $input-group-addon-color:               $input-color !default;
-$input-group-addon-bg:                  $gray-200 !default;
+$input-group-addon-bg:                  $primary-100 !default;
 $input-group-addon-border-color:        $input-border-color !default;
 
 $custom-control-gutter:                 1.5rem !default;
@@ -753,8 +771,8 @@ $popover-arrow-outer-color:         fade-in($popover-border-color, .05) !default
 
 $badge-font-size:                   75% !default;
 $badge-font-weight:                 $font-weight-bold !default;
-$badge-padding-y:                   .25em !default;
-$badge-padding-x:                   .4em !default;
+$badge-padding-y:                   .35em !default;
+$badge-padding-x:                   .5em !default;
 $badge-border-radius:               $border-radius !default;
 
 $badge-pill-padding-x:              .6em !default;

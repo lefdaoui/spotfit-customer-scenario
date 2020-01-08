@@ -1,0 +1,138 @@
+// les variables
+$weight-600 : 600; 
+$weight-400 : 400; 
+$color : #5d57a0;
+// style
+.back-color{
+    background-color: #180b6b; 
+}
+.contenu{
+    max-width: 600px;  
+    font-family: "Open Sans";
+    margin: 0 auto; 
+}
+.backgroundimg1{
+    background-color: #170b6a;
+    min-height: 100vh;
+    .wrapper {
+        max-width: 400px; 
+        margin: 0 auto;
+    }
+}
+.div-img{
+    background-image:url(/assets/img/Sign_up3.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 35vh;
+    position:relative;
+}
+.div-img span{
+    letter-spacing: -0.6px;
+    color: #2e304d;
+    font-family: "Arial";
+    font-weight: 700;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 4vh;
+}
+.form-control:focus{
+    box-shadow: none;
+    color: $color;
+    font-weight:  $weight-400;
+    background-color: transparent;
+    border: none;
+    border-bottom : 2px solid #10025f;
+}
+input{
+    color:$color; 
+    font-weight:  $weight-400;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem; //17px
+    border-bottom : 2px solid #10025f;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+::placeholder { 
+    color: $color;  
+    font-weight: $weight-400;
+  }
+div span svg{
+    vertical-align: -webkit-baseline-middle;
+    height: 1.2rem;//20px
+    fill : $color;
+    stroke: $color;
+}
+.btn-sign-in{
+    border-radius: 2rem; //77px;
+    filter: drop-shadow(0px 4px 8px rgba(13,6,78,0.21));
+    background-color: #8b6fc6;
+    padding-top:8px;
+    padding-bottom:8px;
+    color: #e8e1f9;
+    font-weight: $weight-600;
+    font-size: 1.2rem; //vide
+}
+.form-group{
+    padding-left:10%;
+    padding-right:10%;
+}
+.email{
+    position:relative;
+}
+.span-email{
+    position: absolute;
+    top: 0px;
+    right: 7px;
+}
+.div-password{
+    position:relative;
+    margin-top:15px;
+}
+.span-password{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+.btn-reset-password{
+    margin-top:10px;
+}
+.clear-both{
+    clear:both;
+}
+.have-account{
+    margin-top:20px;
+    text-align:center;
+    color: $color;
+    font-weight: $weight-600;
+    font-size: 0.8rem; // 12px
+}
+.span-sign-up{
+    color:#a3cbe4;
+}
+.div-parent-or{
+    display: flex;
+    justify-content: space-between;
+}
+.div-border{
+     background-color: #10025f;
+     width:45%;
+     height: 2px;
+     margin-top: 12px;
+}
+.div-or{
+    color: $color;
+    font-weight: $weight-600;
+}
+.div-icon-nav{
+    display: flex;
+    justify-content:space-evenly;
+    padding: 5px 20%;
+}
+.div-icon-nav svg{
+    height:1.2rem; // 21px
+}
+.div-btn-sign-in{
+    margin-top: 20px;
+}

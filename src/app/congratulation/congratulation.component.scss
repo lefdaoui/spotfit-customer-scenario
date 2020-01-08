@@ -1,0 +1,81 @@
+
+
+// @import "normal" ;
+
+.congrat{
+     background-image:  linear-gradient(to top,#89a3ab,#a8b2d2,#947cf6,#7956d4);
+}
+.sec-gbl{
+    max-width: 447px;
+    margin: 0 auto;
+}
+.sld-tlt{
+    float: left;
+    padding-left: 2.5em;
+    padding-top: 2.9em;
+    z-index: 5;
+      position: relative;
+}
+.tlt-sld{    
+    letter-spacing: 0.2px;
+    color:#2e304d;
+    font-family: 'Open Sans', sans-serif;  
+    font-size: 32px;  
+    margin-block-end: 0 !important;
+    margin-block-start: 0 !important;  
+}
+.sld-prg{
+    margin: 0 27px;
+    float: left;
+    padding-left: 21px;
+    z-index: 5;
+    position: relative;
+}
+.prg-sld{    
+    color: #2e304d;;
+    font-family: 'Open Sans', sans-serif;    
+    font-weight: 600;    
+    font-size: 16px;    
+    text-align: justify;   
+}
+
+.sec-sld1{
+    
+    // background-image: url(../../../assets/slide/bg.png);
+    background-repeat: no-repeat;    
+    background-size: 100% 100%;  
+    height: 100vh;             
+}
+.img-sld{
+    width: 212px;
+    padding-top: 1.5em;
+    padding-left: 2em;
+}
+.sld-img{
+    // margin: 6em 0;
+    // transform: translate(-27%,17%);  
+    position: fixed;
+    bottom: 8.1%; 
+    z-index: 1;
+}
+
+.sld-btn{
+    margin: 22px 21px;
+    float: left;
+    padding-left: 21px;
+      z-index: 5;
+      position: relative;
+}
+.btn-congra{
+    background-color: #8b6fc6;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    height: 49px;
+    width: 129px;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 7px;
+    padding-left: 12px;
+    box-shadow: 0px 4px 8px rgba(13,6,78,0.21);
+}

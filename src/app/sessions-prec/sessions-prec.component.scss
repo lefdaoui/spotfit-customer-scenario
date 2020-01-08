@@ -1,0 +1,95 @@
+
+// #35a8c5,#1e708c,#188073
+
+.ses-hdr{display: flex;justify-content: space-between;
+        padding-top: 1.7em;
+}
+.ses-crcl{width: 49px; height: 49px;background-color: #a997d5;
+    clip-path: circle(49%); padding: 3px;  
+}
+.ses-ntfy{float: right;position: absolute;}
+.notif-ses{padding-left: 2.7em; z-index: 99;
+    position: relative;}
+.ntf-elm{background-color:rgb(53,203,186); width: 16px ;
+    height: 16px ;border:2.2px solid #f7f7fa; border-radius: 17px;position: relative;}   
+    
+.sec-ses{
+    background-color:  #f7f7fa;
+    padding: 1em;
+    font-family: 'Open Sans', sans-serif; 
+    max-width: 447px;
+    margin: 0  auto;
+}
+.tlt-ses{
+    margin-left: 11px;
+    font-size: 17px;
+}
+
+p{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    color: #797d9c ; 
+    font-size: 11px;    
+}
+h5{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-size: 11px;
+}
+.pas-blk{display: flex;
+        background-color: #fff;        
+        border-top-right-radius: 17px; 
+        border-bottom: 1px solid rgb(235,235,245); 
+        line-height: 1.7;  
+}
+.ent-pas{
+    background-color: #e8fbf9;
+    width: 197px;
+    padding: 12px;
+    border-top-left-radius: 17px;
+    clip-path: polygon(0 0, 69% 0, 83% 100%, 0% 100%);
+}
+.blk1,.blk2{padding: 13px 15px; width: 50%; color:  #8c8fa9;}
+
+.blk2{border-left-style: solid;border-width: 1px;
+  border-image:linear-gradient(to top,rgb(235,235,245),#fff) 1 100%;}
+.ses-icn{
+    background-color: #e8fbf9 ;border-radius: 11px;
+     width: max-content; padding: 9px;
+    margin-right:12px }
+.img-sec{width: 21px;}   
+.ses-sl-tl{ display: -webkit-box; -webkit-box-align: center;
+            color: #8c8fa9;
+}  
+.ses-alg{display: flex; justify-content: space-around;}
+.pas-tp{background-color: #fff;padding: 12px;
+    border-bottom-left-radius:17px ;border-bottom-right-radius: 17px;
+}
+.brd-ses{
+    background-color: #fafbfc;
+    border-radius: 12px;   
+    padding: 3.7px 0 ; 
+    color: #a3a7c1;
+    margin-left: 20px;
+}
+.ses-grps{padding-left:20px ; padding-bottom: 5px;}
+.ses-block{
+        filter: drop-shadow(0px 2px 1px rgba(71,71,100,0.13));
+        padding-bottom: 21px;
+    }
+
+.clr-ps{ color: #8c8fa9;}    
+/*================*/
+.ses-blck-glb{
+ padding: 0 2%;   
+}
+
+.ses-icn2{
+    background-color: rgb(251,242,230);
+}
+.ses-clr3{
+    background-color: #fbe8ec;
+}
+.ses-clr4{
+    background-color:  #e7e7e7;
+}

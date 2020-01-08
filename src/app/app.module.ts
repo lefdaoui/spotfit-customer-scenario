@@ -13,7 +13,11 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { RequestGymsComponent } from './request-gyms/request-gyms.component';
 import { TestComponent } from './test/test.component';
 import { ReferFriendComponent } from './refer-friend/refer-friend.component';
-
+import { CongratulationComponent } from './congratulation/congratulation.component';
+import { SessionsComponent } from './sessions/sessions.component';
+import { SessionHComponent } from './session-h/session-h.component';
+import { SessionsPrecComponent } from './sessions-prec/sessions-prec.component';
+import { PartnerHomeComponent } from './partner-home/partner-home.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +28,11 @@ import { ReferFriendComponent } from './refer-friend/refer-friend.component';
     SignUpComponent,
     RequestGymsComponent,
     TestComponent,
-    ReferFriendComponent
+    PartnerHomeComponent,
+    CongratulationComponent,
+    SessionsComponent,
+    SessionHComponent,
+    SessionsPrecComponent,
   ],
   imports: [
     BrowserModule,

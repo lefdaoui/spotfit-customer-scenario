@@ -10,12 +10,15 @@ import {ConfigService} from '../../../shared/services/config.service';
 })
 export class GymCardComponent implements OnInit {
   @Output() onCardClicked = new EventEmitter<number>();
+  @Output() onExit = new EventEmitter();
   @Input() gym: Gym;
   @Input() flat: boolean =  false;
 
   constructor(
     private configService: ConfigService
-  ) { }
+  ) {
+
+  }
 
   ngOnInit() {
 
@@ -37,4 +40,8 @@ export class GymCardComponent implements OnInit {
   // onClick(id: number) {
   //   this.onCardClicked.emit(id);
   // }
+
+  exit() {
+    this.onExit.emit();
+  }
 }

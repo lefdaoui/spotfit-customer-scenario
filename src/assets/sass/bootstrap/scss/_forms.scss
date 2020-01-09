@@ -7,13 +7,14 @@
 .form-control {
   display: block;
   width: 100%;
-  padding: 14px 18px !important;
+  padding: 11px 15px !important;
   font-size: 0.9rem;
   line-height: $input-line-height;
-  color: $input-color;
+  color: inherit;
   background-color: $input-bg;
   background-clip: padding-box;
   border: $input-border-width solid $input-border-color;
+  font-weight: 600;
 
   &.transparent-bg {
     background-color: transparent;
@@ -42,7 +43,7 @@
 
   // Placeholder
   &::placeholder {
-    color: $input-placeholder-color;
+    color: inherit;
     // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
     opacity: 1;
   }
@@ -185,6 +186,7 @@ select.form-control-lg {
 .form-text {
   display: block;
   margin-top: $form-text-margin-top;
+  margin-left: 5px;
 }
 
 

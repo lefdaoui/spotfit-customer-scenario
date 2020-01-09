@@ -35,3 +35,15 @@ $positions: static, relative, absolute, fixed, sticky;
     z-index: $zindex-sticky;
   }
 }
+
+.fixed-center {
+  @include in-middle();
+}
+
+.center-vertically {
+  @include center-vertically();
+}
+
+.center-horizontally {
+  @include center-horizontally();
+}

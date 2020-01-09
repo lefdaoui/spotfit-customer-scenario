@@ -1,5 +1,8 @@
 import {Gym} from '../models/gym';
 
+/*{ latitude: 33.61416799, longitude: -7.55374872}
+{ latitude: 33.61253798, longitude: -7.59840514}*/
+
 export let GYMS: Gym[] = [
   {
     id: 1,
@@ -17,28 +20,30 @@ export let GYMS: Gym[] = [
       {name: 'MonthPass', price: 299.99, duration: 30},
       {name: 'YearPass', price: 449.99, duration: 365},
     ],
+    address: { latitude: 33.6085969, longitude: -7.6244165 }
   },
   {
-    id: 1,
-    group: {name: 'Marina club'},
-    logo: 'https://i.pinimg.com/originals/e9/49/68/e949689b56e61973ca98a6105e0c3bc3.jpg',
-    name: 'Marina casablanca',
-    rate: 5.0,
+    id: 2,
+    group: {name: 'city club'},
+    logo: null,
+    name: 'city club casablanca',
+    rate: 4.7,
     qrcode: null,
     class: {id: 1, name: 'platinum'},
-    facilities: [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
+    facilities: [{}, {}, {}, {}, {}, {}, {}, {},],
     activities: [{}, {}, {}],
     planning: [],
     subscriptions: [
-      {name: 'DayPass', price: 31.99, duration: 1},
+      {name: 'DayPass', price: 19.99, duration: 1},
       {name: 'MonthPass', price: 299.99, duration: 30},
-      {name: 'YearPass', price: 500.00, duration: 365},
+      {name: 'YearPass', price: 449.99, duration: 365},
     ],
+    address: { latitude: 33.61416799, longitude: -7.55374872 }
   },
   {
-    id: 1,
+    id: 3,
     group: {name: 'Patcha club'},
-    logo: 'https://lh3.googleusercontent.com/rn3ea0D1JRBAnvgl8uwS_LwxXaRqz6xAiGwJW0Gv3g7ofdskhgsqoZhjV79ewwT--TO3',
+    logo: null,
     name: 'Patcha casablanca',
     rate: 3.7,
     qrcode: null,
@@ -51,9 +56,10 @@ export let GYMS: Gym[] = [
       {name: 'MonthPass', price: 149.99, duration: 30},
       {name: 'YearPass', price: 369.99, duration: 365},
     ],
+    address: { latitude: 33.60592533, longitude: -7.62283524},
   },
   {
-    id: 1,
+    id: 4,
     group: {name: 'city club'},
     logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Y6fWd2hvool8o7NowbH6e0x-j7QjJtv-F5mJGSj08DqvhNgUBg&s',
     name: 'city club casablanca',
@@ -68,5 +74,6 @@ export let GYMS: Gym[] = [
       {name: 'MonthPass', price: 299.99, duration: 30},
       {name: 'YearPass', price: 449.99, duration: 365},
     ],
+    address: { latitude: 33.59574833, longitude: -7.59766488},
   },
 ]

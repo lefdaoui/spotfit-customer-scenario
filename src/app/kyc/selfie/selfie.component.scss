@@ -1,0 +1,41 @@
+
+.space-holder {
+  width: 100%;
+  height: 200px;
+
+  .bg {
+    height: 90%;
+    width: 90%;
+    opacity: .03;
+  }
+
+  .camera {
+    width: 50px;
+  }
+}
+
+.man {
+  &, svg {
+    height: 260px;
+    display: none;
+  }
+}
+
+@media screen and (min-height: 773px){
+  .man {
+    &, svg {
+      display: block;
+    }
+  }
+}
+
+.choose {
+  height: 120px;
+  width: 50%;
+  border-style: dashed!important;
+
+  svg {
+    height: 42px !important;
+    opacity: .05;
+  }
+}

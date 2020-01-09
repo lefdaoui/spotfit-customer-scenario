@@ -1,0 +1,57 @@
+<div class="add-card-form">
+  <form (submit)="$event.preventDefault()">
+    <div class="form-group">
+      <label for="card-holder">Nom de porteur de la carte</label>
+      <input type="text" class="form-control" id="card-holder">
+    </div>
+    <div class="form-group">
+      <label for="card-number">Numéro de carte de peiment</label>
+      <input type="text" class="form-control" id="card-number">
+    </div>
+    <div class="d-flex">
+      <div class="form-group mr-2">
+        <!--todo: click on carets must trigger a section (calendar) to choose month/year-->
+        <label for="month">Date d'expiration</label>
+        <div class="input-group flex-nowrap">
+          <input type="text" class="form-control transparent-bg" id="month" placeholder="MM/YY">
+          <div class="input-group-append">
+            <span class="input-group-text">
+              <svg class="svg wxs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 292.362 292.362">
+                <g>
+                  <path d="M286.935,69.377c-3.614-3.617-7.898-5.424-12.848-5.424H18.274c-4.952,0-9.233,1.807-12.85,5.424
+                    C1.807,72.998,0,77.279,0,82.228c0,4.948,1.807,9.229,5.424,12.847l127.907,127.907c3.621,3.617,7.902,5.428,12.85,5.428
+                    s9.233-1.811,12.847-5.428L286.935,95.074c3.613-3.617,5.427-7.898,5.427-12.847C292.362,77.279,290.548,72.998,286.935,69.377z"/>
+                </g>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="cvv">CVV</label>
+        <input type="number" max="9999" class="form-control" id="cvv">
+      </div>
+    </div>
+
+    <!--set as default-->
+    <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="default">
+      <label class="custom-control-label" for="default">Set as a default payment method</label>
+    </div>
+
+
+    <div>
+
+    </div>
+
+    <div class="d-flex justify-content-end {{action === 'add' ? 'mt-2' : 'mt-4' }}" >
+      <button type="button" class="btn-inline mr-1 text-muted" (click)="onCanceled()">Annuler</button>
+      <div *ngIf="action === 'add'; else edit">
+        <button type="submit" class="btn-inline text-primary font-weight-bold" (click)="onCardAdded()">Ajouter</button>
+      </div>
+      <ng-template #edit>
+        <button type="submit" class="btn btn-primary font-weight-bold rounded-pill" (click)="onCardEdited()">Enregistrer</button>
+      </ng-template>
+    </div>
+  </form>
+</div>

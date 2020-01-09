@@ -9,17 +9,7 @@ $max-width: 360px;
 
 
 .topbar {
-  color: $font-color;
-  width: 360px;
-  .default {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-  }
-  .toback {
-
-  }
+  /*width: 360px;
   padding: 21.6px 0;
   @include align-horizontally();
   top: 0;
@@ -27,9 +17,19 @@ $max-width: 360px;
 
   margin: 0 auto;
   max-width: $max-width;
-  min-width: 290px;
+  min-width: 290px;*/
 
-  .toback {
+  position: relative;
+
+
+  .default {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .left-arrow {
     svg {
       width: 1.3rem;
 
@@ -41,14 +41,10 @@ $max-width: 360px;
   }
 
   .logo {
-    position: fixed;
+    position: absolute;
+    top: -10px;
     left: 50%;
     transform: translateX(-50%);
-    top: 11px;
-
-    svg {
-      width: 39.7px;
-    }
   }
 
   .menu {

@@ -1,4 +1,6 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Location} from '@angular/common';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-top-bar',
@@ -10,8 +12,12 @@ export class TopBarComponent implements OnInit {
   @Output() onTabChanged = new EventEmitter<string>();
   @Input() activeTab = 'list';
   @Input() design = null;
+  @Input() navigateBackUrl;
 
-  constructor() {
+  constructor(
+    private location: Location,
+    private router: Router
+  ) {
   }
 
   ngOnInit() {
@@ -22,5 +28,13 @@ export class TopBarComponent implements OnInit {
     this.activeTab = tab;
     // emit the event to parent components
     this.onTabChanged.emit(tab);
+  }
+
+  goBack() {
+   if(!this.navigateBackUrl) {
+     this.location.back();
+   }
+
+   this.router.navigateByUrl(this.navigateBackUrl);
   }
 }

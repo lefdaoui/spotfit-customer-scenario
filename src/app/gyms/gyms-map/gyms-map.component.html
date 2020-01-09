@@ -1,3 +1,7 @@
+<div id="selected-gym">
+  {{onGymSelected$ | async | json}}
+</div>
+
 <div class="gyms-map">
   <div class="center">
     <!--map-->
@@ -33,19 +37,12 @@
       </div>
 
       <!--map card-->
-      <angular-google-maps></angular-google-maps>
+      <app-angular-google-maps></app-angular-google-maps>
 
-      <div class="marker-viewer">
-<!--        <slick-slider [options]="{-->
-<!--            infinite: false,-->
-<!--            speed: 300,-->
-<!--            slidesToShow: 1,-->
-<!--            slidesToScroll: 1,-->
-<!--            arrows: false-->
-<!--          }">-->
-          <app-gym-card [gym]="gyms[0]" [flat]="true" (onCardClicked)="oncardClicked($event)"></app-gym-card>
-<!--        </slick-slider>-->
+      <div class="marker-viewer" *ngIf="onGymSelected$ | async as gym; else loading" [hidden]="!showInfoWindow">
+          <app-gym-card (onExit)="onHideInfoWindow()"  [gym]="onGymSelected$ | async" [flat]="true" (onCardClicked)="oncardClicked($event)"></app-gym-card>
       </div>
+      <ng-template #loading>Loading...</ng-template>
     </main>
   </div>
 </div>

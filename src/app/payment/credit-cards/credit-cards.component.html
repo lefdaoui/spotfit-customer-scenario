@@ -1,0 +1,87 @@
+<div class="credit-cards">
+
+  <!--top bar the second style-->
+  <app-top-bar [design]="'toback'"></app-top-bar>
+  <div class="behaviour middle d-flex flex-column justify-content-between">
+    <div>
+      <!--page title-->
+      <h4 class="font-weight-bold mb-4">Payment</h4>
+
+      <div class="mb-4">
+        <div *ngIf="newCard === false; else cardForm">
+          <!--credit cards-->
+          <div class="mb-3 d-flex justify-content-between">
+            <h5 class="font-weight-bold">You saved cards</h5>
+            <span class="font-weight-bold" (click)="this.newCard = !this.newCard;">Add new card +</span>
+          </div>
+
+          <!--cards-->
+          <div class="cards">
+            <slick-slider
+              [options]="{
+                  dots: true,
+                  infinite: false,
+                  speed: 300,
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  arrows: false
+                }">
+              <div class="mx-1" *ngFor="let i of [1, 2, 3]">
+                <app-credit-card-item (onClicked)="editCard($event, editCardForm)"></app-credit-card-item>
+              </div>
+            </slick-slider>
+
+
+          </div>
+        </div>
+
+        <ng-template #cardForm>
+          <!--credit card form-->
+          <div class="card shadow">
+            <div class="card-body">
+              <button class="close" (click)="this.newCard = !this.newCard;">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div>
+                <app-card-form (onAddCard)="onAttachCard()" (onCancel)="onCancelForm()"></app-card-form>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </div>
+      <!--cellected info (more)-->
+      <div class="mb-4">
+        <div class="mb-3 d-flex justify-content-between">
+          <h5 class="font-weight-bold">Date of Consumption</h5>
+          <h5 class="font-weight-bold text-black-50">08 Juin 2019</h5>
+        </div>
+      </div>
+      <div class="mb-4">
+        <div class="mb-3 d-flex justify-content-between">
+          <h5 class="font-weight-bold">End of Pass</h5>
+          <h5 class="font-weight-bold text-black-50">08 Juin 2019</h5>
+        </div>
+      </div>
+      <div class="mb-4">
+        <div class="mb-3 d-flex justify-content-between">
+          <h5 class="font-weight-bold">Total Payment</h5>
+          <h5 class="font-weight-bold text-success">399,99 MAD</h5>
+        </div>
+      </div>
+
+    </div>
+    <!--Pay now-->
+    <div class="text-center my-4">
+      <button class="btn btn-primary rounded-pill btn-lg d-inline-block px-5">Pay Now</button>
+    </div>
+  </div>
+</div>
+
+
+
+<!--Edit Card Form-->
+<ng-template #editCardForm let-modal>
+  <div class="modal-body">
+    <app-card-form [card]="{}" [action]="'edit'"></app-card-form>
+  </div>
+</ng-template>

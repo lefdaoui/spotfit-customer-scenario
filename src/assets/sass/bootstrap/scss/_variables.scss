@@ -293,7 +293,7 @@ $lead-font-weight:            300 !default;
 
 $small-font-size:             80% !default;
 
-$text-muted:                  $gray-600 !default;
+$text-muted:                  lighten($body-color, 30%) !default;
 
 $blockquote-small-color:      $gray-600 !default;
 $blockquote-font-size:        ($font-size-base * 1.25) !default;
@@ -405,8 +405,8 @@ $btn-transition:              color .15s ease-in-out, background-color .15s ease
 
 // Forms
 
-$label-margin-bottom:                   3px !default;
-$label-margin-left:                     14px !default;
+$label-margin-bottom:                   5px !default;
+$label-margin-left:                     $label-margin-bottom !default;
 
 $input-padding-y:                       $input-btn-padding-y !default;
 $input-padding-x:                       $input-btn-padding-x !default;
@@ -787,6 +787,7 @@ $badge-pill-border-radius:          10rem !default;
 $modal-inner-padding:               1rem !default;
 
 $modal-dialog-margin:               .5rem !default;
+//$modal-dialog-margin:               0rem !default;
 $modal-dialog-margin-y-sm-up:       1.75rem !default;
 
 $modal-title-line-height:           $line-height-base !default;
@@ -795,6 +796,7 @@ $modal-content-bg:                  $white !default;
 $modal-content-border-color:        rgba($black, .2) !default;
 $modal-content-border-width:        $border-width !default;
 $modal-content-border-radius:       $border-radius-lg !default;
+//$modal-content-border-radius:       2.5rem 2.5rem 0 0 !default;
 $modal-content-box-shadow-xs:       0 .25rem .5rem rgba($black, .5) !default;
 $modal-content-box-shadow-sm-up:    0 .5rem 1rem rgba($black, .5) !default;
 

@@ -1,20 +1,11 @@
-<div class="gym-card {{flat ? 'flat' : ''}}" (click)="onClick(gym.id)">
+<div *ngIf="gym" class="gym-card position-relative {{flat ? 'flat' : ''}}" (click)="onClick(gym.id)">
+  <!--exit button-->
+  <svg (click)="exit()" class="svg hxs exit shadow" viewBox="0 0 18.74 18.74" xmlns="http://www.w3.org/2000/svg"><defs ><style >.bc98a76a-bb9c-4f65-98d4-5d66f9b7743e{fill:#231f20;}</style></defs><title >exit</title><g  data-name="Layer 2" id="bd46cb1d-e542-4308-932e-bd45e2696b1f"><g  data-name="set" id="a076c2a8-af97-461a-b213-9ac50db2d888"><rect  class="bc98a76a-bb9c-4f65-98d4-5d66f9b7743e" height="2" transform="translate(-3.88 9.37) rotate(-45)" width="24.5" x="-2.88" y="8.37"></rect><rect  class="bc98a76a-bb9c-4f65-98d4-5d66f9b7743e" height="24.5" transform="translate(-3.88 9.37) rotate(-45)" width="2" x="8.37" y="-2.88"></rect></g></g></svg>
+
   <img class="feature-image" [src]="gym.logo || 'assets/img/room.png'" alt="">
   <div class="class {{gym.class.name}}">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.51 16.89">
-      <defs>
-        <style>
-          .nslentionryp {
-            clip-path: url(#bookmark);
-          }</style>
-        <clipPath id="bookmark" transform="translate(1.56 1.56)">
-          <path class="someClass"
-                d="M3.83,10.69a1.76,1.76,0,0,1,1.72,0l2.58-.3v1.18a.31.31,0,0,0-.31-.31H1.57a.31.31,0,0,0-.32.31V10.39l2.58.3ZM0,12.76V1.57A1.57,1.57,0,0,1,1.57,0H7.82A1.56,1.56,0,0,1,9.38,1.57V12.76a.93.93,0,0,1-1.48.83l-3-1.83a.51.51,0,0,0-.42,0l-3,1.83A.93.93,0,0,1,0,12.76Z"/>
-        </clipPath>
-      </defs>
-      <g class="nslentionryp">
-        <rect width="12.51" height="16.89"/>
-      </g>
+    <svg viewBox="-58 0 404 404.54135" xmlns="http://www.w3.org/2000/svg">
+      <path d="m277.527344 0h-267.257813c-5.523437 0-10 4.476562-10 10v374.527344c-.011719 7.503906 4.183594 14.378906 10.855469 17.804687 6.675781 3.429688 14.707031 2.832031 20.796875-1.550781l111.976563-80.265625 111.976562 80.269531c6.097656 4.367188 14.121094 4.960938 20.792969 1.535156 6.667969-3.425781 10.863281-10.292968 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm0 0"/>
     </svg>
     <span>{{gym.class.name | titlecase}}</span>
   </div>
@@ -35,7 +26,9 @@
 
       </div>
       <div class="km">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 27"><defs><style>.a24f55a5-fb9b-4c1e-99dd-095d8b8aa0a9,.ea2a18e0-e06a-444f-9cae-d4111e9fb7c1{fill:none;}  .a24f55a5-fb9b-4c1e-99dd-095d8b8aa0a9{clip-path:url(#add229d0-8256-49fa-94f7-e8e6365bd29f);}  .a710c34b-92a2-401f-b699-711771adca5d{clip-path:url(#bc275531-cc0c-4a8d-bed9-2b3a92557050);}</style><clipPath id="add229d0-8256-49fa-94f7-e8e6365bd29f"><rect id="b33103e1-1fc8-42ef-a049-f4b8e7a41d0a" data-name="SVGID" class="ea2a18e0-e06a-444f-9cae-d4111e9fb7c1" width="24" height="24"/></clipPath><clipPath id="bc275531-cc0c-4a8d-bed9-2b3a92557050" transform="translate(-1 1.5)"><path id="a3ffd8d0-754b-49b9-9c3e-787b1992fc82" data-name="SVGID" class="a24f55a5-fb9b-4c1e-99dd-095d8b8aa0a9" d="M12,1c4.58,0,8.69,3.77,8.49,8.05-.21,4.63-6.15,14-8.49,14S3.72,13.68,3.51,9.05C3.31,4.77,7.42,1,12,1ZM10.88,14.38c.73-.83,3.33-.64,4.12-1.88,1.86-2.92,1.41-1.58,1.5-3.55.14-3.07-.5-3.32-4-3.32s-4.89-.08-4.75,3c.09,2-1.11-.55.75,2.37a10.41,10.41,0,0,0,1.75,2c.34.39,1.23.56,1.47.75L9.25,13.5l1.56-.34M12,15a5.5,5.5,0,1,1,5.5-5.5A5.5,5.5,0,0,1,12,15Zm0-2A3.5,3.5,0,1,0,8.5,9.5,3.5,3.5,0,0,0,12,13Z"/></clipPath></defs><title>marker</title><g id="ba881631-f898-4591-a461-fe5b1f81d106" data-name="Layer 2"><g id="b7767b8a-e873-4a4a-8653-cd2b5586d170" data-name="set"><g class="a710c34b-92a2-401f-b699-711771adca5d"><rect width="22" height="27"/></g></g></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370.85 512"><title>marker</title>
+          <path d="M185.43,0C83.18,0,0,83.18,0,185.43c0,126.88,165.94,313.16,173,321a16.71,16.71,0,0,0,24.85,0c7.07-7.87,173-194.15,173-321C370.85,83.18,287.67,0,185.43,0Zm0,278.72a93.3,93.3,0,1,1,93.29-93.29A93.4,93.4,0,0,1,185.43,278.72Z"/>
+        </svg>
         <span>1.5 km</span>
       </div>
       <div class="activities">

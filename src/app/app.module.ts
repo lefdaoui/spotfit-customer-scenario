@@ -9,12 +9,14 @@ import {AppComponent} from './app.component';
 import {SubsciptionStatusComponent} from './subsciption-status/subsciption-status.component';
 import {GymsModule} from './gyms/gyms.module';
 import { TypoComponent } from './typo/typo.component';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SubsciptionStatusComponent,
     TypoComponent,
+    TestComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,8 +36,16 @@ import { TypoComponent } from './typo/typo.component';
         loadChildren: () => import('./gyms/gyms.module').then(m => m.GymsModule),
       },
       {
-        path: '',
+        path: 'payment',
         loadChildren: () => import('./payment/payment.module').then(m => m.PaymentModule),
+      },
+      {
+        path: 'kyc',
+        loadChildren: () => import('./kyc/kyc.module').then(m => m.KycModule),
+      },
+      {
+        path: 'test',
+        component: TestComponent
       },
     ]),
     SharedModule,

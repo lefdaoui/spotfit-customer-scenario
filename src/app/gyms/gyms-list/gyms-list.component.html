@@ -1,6 +1,6 @@
 <div class="gyms-list">
   <!--body-->
-  <div class="mb-3" *ngFor="let gym of gyms">
+  <div class="mb-3" *ngFor="let gym of gyms; let i = index">
     <app-gym-card [gym]="gym" (onCardClicked)="oncardClicked($event)"></app-gym-card>
   </div>
 </div>

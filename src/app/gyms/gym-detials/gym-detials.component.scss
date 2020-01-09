@@ -143,6 +143,12 @@ $button-width: 280px;
       font-weight: 600;
     }
 
+    // review
+
+    .review {
+      color: $primary-light-1;
+    }
+
     // geolocation
 
     .geolocation {
@@ -184,7 +190,7 @@ $button-width: 280px;
       margin-top: 11px;
       display: flex;
       div {
-        background-color: $primary-light-2;
+        background-color: darken($primary-light-2, 5%);
         border-radius: 50px;
         color: $font-color;
         padding: 0.35rem 0.25rem;

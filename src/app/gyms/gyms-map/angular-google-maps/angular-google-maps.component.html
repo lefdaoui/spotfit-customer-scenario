@@ -3,7 +3,10 @@
     <agm-map
             [latitude]="focusOn.latitude"
             [longitude]="focusOn.longitude"
-            [zoom]="focusOn.zoom">
+            [zoom]="focusOn.zoom"
+    [draggable]="true"
+    [zoomControl]="false"
+    [gestureHandling]="'greedy'">
 
         <agm-marker *ngFor="let marker of markers; let i = index"
                     [latitude]="marker.address.latitude"

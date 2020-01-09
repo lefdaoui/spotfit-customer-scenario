@@ -6,17 +6,15 @@ import {NgModule} from '@angular/core';
 import {SharedModule} from './shared/shared.module';
 
 import {AppComponent} from './app.component';
-import {SubsciptionStatusComponent} from './subsciption-status/subsciption-status.component';
 import {GymsModule} from './gyms/gyms.module';
-import { TypoComponent } from './typo/typo.component';
-import { TestComponent } from './test/test.component';
+import {TestComponent} from './test/test.component';
+import {IndexComponent} from './index/index.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SubsciptionStatusComponent,
-    TypoComponent,
     TestComponent,
+    IndexComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,12 +22,13 @@ import { TestComponent } from './test/test.component';
     SharedModule,
     RouterModule.forRoot([
       {
-        path: 'typo',
-        component: TypoComponent,
+        path: '',
+        pathMatch: 'full',
+        redirectTo: 'index'
       },
       {
-        path: 'subscription-status',
-        component: SubsciptionStatusComponent,
+        path: 'subscriptions',
+        loadChildren: () => import('./subscriptions/subscriptions.module').then(m => m.SubscriptionsModule),
       },
       {
         path: 'gyms',
@@ -46,6 +45,10 @@ import { TestComponent } from './test/test.component';
       {
         path: 'test',
         component: TestComponent
+      },
+      {
+        path: 'index',
+        component: IndexComponent
       },
     ]),
     SharedModule,

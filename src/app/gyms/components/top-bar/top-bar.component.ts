@@ -37,4 +37,8 @@ export class TopBarComponent implements OnInit {
 
    this.router.navigateByUrl(this.navigateBackUrl);
   }
+
+  navigateTo(path: string) {
+    this.router.navigateByUrl(path);
+  }
 }

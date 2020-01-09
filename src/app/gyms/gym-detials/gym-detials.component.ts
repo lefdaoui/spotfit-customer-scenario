@@ -4,14 +4,15 @@ import {Location} from '@angular/common';
   selector: 'app-gym-detials',
   templateUrl: './gym-detials.component.html',
   styleUrls: ['./gym-detials.component.scss'],
+  // todo: generalize tabs style and remove this line below
   encapsulation: ViewEncapsulation.None,
 })
 export class GymDetialsComponent implements OnInit {
 
   images = [
-    'https://source.unsplash.com/user/erondu/1600x900',
-    'https://source.unsplash.com/user/erondu/1600x901',
-    'https://source.unsplash.com/user/erondu/1600x899',
+    'assets/img/t3.jfif',
+    'assets/img/t2.jfif',
+    'assets/img/t1.jfif',
   ];
 
   constructor(

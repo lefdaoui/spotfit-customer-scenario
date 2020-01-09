@@ -5,6 +5,7 @@ import {ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';
   selector: 'app-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss'],
+  // todo: remove this line later and fix bugs
   encapsulation: ViewEncapsulation.None
 })
 export class FooterComponent implements OnInit {

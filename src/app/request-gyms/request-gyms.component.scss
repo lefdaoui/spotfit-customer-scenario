@@ -1,0 +1,144 @@
+// les variables
+$weight-600 : 600; 
+// style
+.back-color{
+    background-color: #fff; 
+}
+.contenu{
+    max-width: 768px;  
+    font-family: "Open Sans";
+    margin: 0 auto; 
+}
+.backgroundimg1{
+    background-color: #fff;
+    min-height: 100vh;
+    .wrapper {
+        max-width: 500px; 
+        margin: 0 auto;
+    }
+}
+.div-img{
+    background-image:url(/assets/img/request_gym2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 42vh;
+    position:relative;
+
+    .title{
+        letter-spacing: -0.6px;
+        color: #51516f;
+        font-weight: $weight-600 ;
+        position: absolute;
+        top: 22%;
+        left: 7%;
+        font-size: 3vh;
+        color: #51516f;
+    }
+
+    .menu{
+        position: absolute;
+        top: 11%;
+        left: 7%;
+        width: 4vh;
+    }
+    .menu svg{
+        fill: #8670b9;
+    }
+    .logo{
+        position: absolute;
+        top: 6%;
+        left: 46%;
+        width: 7vh;
+    }
+}
+.form-group{
+    padding-left:7%;
+    padding-right:7%;
+    margin-bottom:0px;
+}
+.svg-name-gyms{
+    position: absolute;
+    right: 0%;
+    background-color: #f7f7fa;
+    width: 4.5vh;
+    height: 8.8vh;
+    border-top-right-radius: 2vh;
+    border-bottom-right-radius: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 0.2vh solid #eeedf3;
+    svg{
+        width: 2.5vh;
+    }
+}
+.div-parent{
+    position:relative;
+    margin-top:1vh;
+    .title-of{
+        color: #a8a9bd;
+        font-weight: $weight-600;
+        font-size: 2vh;
+        padding-left:7%;
+    }
+    .title-of2{
+        padding-left:12%;
+    }
+    .input-svg{
+        display:flex;
+    }
+    input,.label-file{
+        border-radius: 2vh;
+        border: 0.2vh solid #eeedf3;
+        padding: 2.5vh;
+        padding-right: 5vh;
+        color: #747795;
+        font-weight: 600;
+        font-size: 2.5vh;
+    }
+    .input-file {
+        display: none;
+    }
+    label{
+        margin:0px;
+    }
+}
+.div-parent2{
+    display: flex;
+    justify-content: space-between;
+    .div-parent{
+        width:45%;
+    }
+
+}
+.form-control:focus {
+    box-shadow: none;
+}
+.div-btn-request{
+    padding-left:10%;
+    padding-right:10%;
+    margin-top:1.2vh;
+}
+.div-btn-request button {
+    color: #fff;
+    border-radius: 4vh;
+    filter: drop-shadow(0px 4px 8px rgba(13, 6, 78, 0.21));
+    background-color: #8b6fc6;
+    cursor: pointer;
+    font-size: 3vh;
+    padding: 1.5vh;
+}
+.line-border{
+    background-color: #c9c9d2;
+    width: 50%;
+    text-align: center;
+    height: 0.5vh;
+    margin: 2vh auto 0px;
+    border-radius: 2vh;
+}
+@media screen and (min-width: 1024px) {
+    .form-group{
+        padding-left:0%;
+        padding-right:0%;
+    }
+  }

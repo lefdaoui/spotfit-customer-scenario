@@ -1,0 +1,113 @@
+// les variables
+$weight-600 : 600; 
+// style
+.back-color{
+    background-color: #fff; 
+}
+.contenu{
+    max-width: 768px;  
+    font-family: "Open Sans";
+    margin: 0 auto; 
+}
+.backgroundimg1{
+    background-color: #fff;
+    min-height: 100vh;
+    .wrapper {
+        max-width: 500px; 
+        margin: 0 auto;
+    }
+}
+.div-img{
+    background-image:url(/assets/img/REFER.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 50vh;
+    position:relative;
+
+    .title,.phrase{
+        letter-spacing: -0.6px;
+        color: #51516f;
+        font-weight: $weight-600 ;
+        position: absolute;
+    }
+    .title{
+        top: 22%;
+        left: 7%;
+        font-size: 3vh;
+    }
+    .phrase{
+        left:0%;
+        top: 77%;
+        text-align:center;
+        width:100%;
+        padding: 0% 2%;
+        font-size: 2.75vh;
+    }
+    .menu{
+        position: absolute;
+        top: 11%;
+        left: 4%;
+        width: 4vh;
+    }
+    .menu svg{
+        fill: #8670b9;
+    }
+    .logo{
+        position: absolute;
+        top: 6%;
+        left: 46%;
+        width: 7vh;
+    }
+}
+.form-group{
+    padding-left:7%;
+    padding-right:7%;
+}
+.referral-code{
+    text-align:center;
+    margin-top: 3vh;
+    .text-code{
+        color: #64647e;
+        font-size: 2.3vh;
+        font-weight: 400 ;
+    }
+    .code{
+        color: #4fd1c2;
+        border: 0.3vh dashed #4fd1c2;
+        display: inline-block;
+        margin-top: 3vh;
+        font-weight: 600;
+        padding: 1vh 3vh;
+        font-size: 3.5vh;
+        border-radius: 1.8vh;
+    }
+}
+.div_refer_friend{
+    margin: 2vh auto;
+    width: 80%;
+    text-align: center;
+
+    .text_refer_friend{
+        color: #b3b5c7;
+        font-weight: 400;
+        font-size: 2vh;
+    }
+}
+
+.div-btn-share{
+  margin-top:3vh;
+}
+.div-btn-share button {
+    color: #fff;
+    border-radius: 3rem;
+    filter: drop-shadow(0px 4px 8px rgba(13,6,78,0.21));
+    background-color: #8b6fc6;
+    padding:1.6vh;
+    font-size: 3vh;
+}
+.line-border{
+    background-color: #c8c9d6;
+    width: 50%;
+    height: 0.5vh;
+    margin: 5vh auto 0.5vh;
+}

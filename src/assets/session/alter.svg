@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 27" width="42" height="27">
+	<defs>
+		<image width="24" height="18" id="img1" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAxOCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjE4Ij4KCTxkZWZzPgoJCTxjbGlwUGF0aCBjbGlwUGF0aFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgaWQ9ImNwMSI+CgkJCTxwYXRoIGQ9Ik0wIDBMMjQgMEwyNCAxOEwwIDE4WiIgLz4KCQk8L2NsaXBQYXRoPgoJPC9kZWZzPgoJPHN0eWxlPgoJCXRzcGFuIHsgd2hpdGUtc3BhY2U6cHJlIH0KCQkuc2hwMCB7IGZpbGw6IG5vbmU7c3Ryb2tlOiAjMTYzNTY3O3N0cm9rZS1saW5lY2FwOnJvdW5kIH0gCgkJLnNocDEgeyBmaWxsOiBub25lO3N0cm9rZTogIzE2MzU2NztzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQgfSAKCTwvc3R5bGU+Cgk8ZyBpZD0iUGFnZSAxIiBjbGlwLXBhdGg9InVybCgjY3AxKSI+CgkJPHBhdGggaWQ9IlBhdGggMSIgY2xhc3M9InNocDAiIGQ9Ik0wLjUgMTIuNUMyLjE2IDEyLjUgMy41IDExLjE2IDMuNSA5LjVDMy41IDcuODQgMi4xNiA2LjUgMC41IDYuNU0yMy41IDEyLjVDMjEuODQgMTIuNSAyMC41IDExLjE2IDIwLjUgOS41QzIwLjUgNy44NCAyMS44NCA2LjUgMjMuNSA2LjVNMC41IDYuNUwwLjUgMS41QzAuNSAwLjk1IDAuOTUgMC41IDEuNSAwLjVMMjIuNSAwLjVDMjMuMDUgMC41IDIzLjUgMC45NSAyMy41IDEuNUwyMy41IDYuNU0yMy41IDEyLjVMMjMuNSAxNi41QzIzLjUgMTcuMDUgMjMuMDUgMTcuNSAyMi41IDE3LjVMMS41IDE3LjVDMC45NSAxNy41IDAuNSAxNy4wNSAwLjUgMTYuNUwwLjUgMTIuNSIgLz4KCQk8cGF0aCBpZD0iUGF0aCAyIiBjbGFzcz0ic2hwMSIgZD0iTTE2LjUgMC41TDE2LjUgMTcuNU0xNS41IDAuNUwxNS41IDE3LjVNMTQuNSAwLjVMMTQuNSAxNy41TTEzLjUgMC41TDEzLjUgMTcuNU0xMi41IDAuNUwxMi41IDE3LjVNMTEuNSAwLjVMMTEuNSAxNy41TTE3LjUgMC41TDE3LjUgMTcuNU0xOC41IDAuNUwxOC41IDE3LjVNMTkuNSAwLjVMMTkuNSAxNy41TTIwLjUgMC41TDIwLjUgMTcuNU0yMS41IDAuNUwyMS41IDYuNU0yMi41IDAuNUwyMi41IDYuNU0yMi41IDEyLjVMMjIuNSAxNy41TTIxLjUgMTIuNUwyMS41IDE3LjVNMy41IDAuNUwzLjUgMTcuNU00LjUgMC41TDQuNSAxNy41TTUuNSAwLjVMNS41IDE3LjVNNi41IDAuNUw2LjUgMTcuNU03LjUgMC41TDcuNSAxNy41TTguNSAwLjVMOC41IDE3LjVNOS41IDAuNUw5LjUgMTcuNU0xMC41IDAuNUwxMC41IDE3LjVNMS41IDAuNUwxLjUgNi41TTIuNSAwLjVMMi41IDYuNU0xLjUgNi41TDMuNSA2LjVNMi41IDEyLjVMMy41IDEyLjVNMjAuNSAxMi41TDIxLjUgMTIuNU0yMC41IDYuNUwyMS41IDYuNU0yLjUgMTIuNUwyLjUgMTcuNU0xLjUgMTIuNUwxLjUgMTcuNSIgLz4KCTwvZz4KPC9zdmc+"/>
+		<image width="20" height="24" id="img2" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyNCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjI0Ij4KCTxkZWZzPgoJCTxjbGlwUGF0aCBjbGlwUGF0aFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgaWQ9ImNwMSI+CgkJCTxwYXRoIGQ9Ik0wIDBMMjAgMEwyMCAyNEwwIDI0WiIgLz4KCQk8L2NsaXBQYXRoPgoJPC9kZWZzPgoJPHN0eWxlPgoJCXRzcGFuIHsgd2hpdGUtc3BhY2U6cHJlIH0KCQkuc2hwMCB7IGZpbGw6IG5vbmU7c3Ryb2tlOiAjMTYzNTY3O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZCB9IAoJPC9zdHlsZT4KCTxnIGlkPSJQYWdlIDEiIGNsaXAtcGF0aD0idXJsKCNjcDEpIj4KCQk8cGF0aCBpZD0iUGF0aCAxIiBjbGFzcz0ic2hwMCIgZD0iTTAuNSAyLjVMMC41IDAuNUwxOS41IDAuNUwxOS41IDIuNU0xOS41IDIxLjVMMTkuNSAyMy41TDAuNSAyMy41TDAuNSAyMS41TTE3IDIxLjVDMTcgMTkuNjQgMTYuNzggMTguMDIgMTUuNCAxNi42MkMxNC4wMiAxNS4yMyAxMC44IDE0LjkxIDExLjU0IDEyLjI5QzExLjgyIDExLjMzIDEyLjYyIDExLjA4IDEzLjQxIDEwLjY4QzE0LjY1IDEwLjA1IDE1LjcgOS4wNyAxNi40MSA3Ljg5QzE3LjQ0IDYuMiAxNy41IDQuNCAxNy41IDIuNU0yLjUgMi41QzIuNSA0LjQgMi41NiA2LjIgMy41OSA3Ljg5QzQuMzEgOS4wNyA1LjM1IDEwLjA1IDYuNTkgMTAuNjhDNy41OSAxMS4xOSA4LjQ1IDExLjUzIDguNTMgMTIuODJDOC41OSAxMy42NiA4LjMxIDE0LjQyIDcuNTUgMTQuODRDNi41IDE1LjQzIDUuNDcgMTUuNzQgNC42IDE2LjYyQzMuMjIgMTguMDIgMyAxOS42NCAzIDIxLjUiIC8+Cgk8L2c+Cjwvc3ZnPg=="/>
+		<image width="24" height="15" id="img3" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAxNSIgd2lkdGg9IjI0IiBoZWlnaHQ9IjE1Ij4KCTxkZWZzPgoJCTxjbGlwUGF0aCBjbGlwUGF0aFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgaWQ9ImNwMSI+CgkJCTxwYXRoIGQ9Ik0wIDBMMjQgMEwyNCAxNUwwIDE1WiIgLz4KCQk8L2NsaXBQYXRoPgoJPC9kZWZzPgoJPHN0eWxlPgoJCXRzcGFuIHsgd2hpdGUtc3BhY2U6cHJlIH0KCQkuc2hwMCB7IGZpbGw6ICM1ZTVlNWU7c3Ryb2tlOiAjMTYzNTY3O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZCB9IAoJPC9zdHlsZT4KCTxnIGlkPSJQYWdlIDEiIGNsaXAtcGF0aD0idXJsKCNjcDEpIj4KCQk8cGF0aCBpZD0iUGF0aCAxIiBjbGFzcz0ic2hwMCIgZD0iTTE4LjUgMC41TDE5LjUgMC41QzIwLjA1IDAuNSAyMC41IDAuOTUgMjAuNSAxLjVMMjAuNSAxMy41QzIwLjUgMTQuMDUgMjAuMDUgMTQuNSAxOS41IDE0LjVMMTguNSAxNC41QzE3Ljk1IDE0LjUgMTcuNSAxNC4wNSAxNy41IDEzLjVMMTcuNSAxLjVDMTcuNSAwLjk1IDE3Ljk1IDAuNSAxOC41IDAuNVoiIC8+CgkJPHBhdGggaWQ9IlBhdGggMiIgY2xhc3M9InNocDAiIGQ9Ik0yMS40OCAzLjVMMjIuNTIgMy41QzIzLjA2IDMuNSAyMy41IDMuOTQgMjMuNSA0LjQ4TDIzLjUgMTAuNTJDMjMuNSAxMS4wNiAyMy4wNiAxMS41IDIyLjUyIDExLjVMMjEuNDggMTEuNUMyMC45NCAxMS41IDIwLjUgMTEuMDYgMjAuNSAxMC41MkwyMC41IDQuNDhDMjAuNSAzLjk0IDIwLjk0IDMuNSAyMS40OCAzLjVaIiAvPgoJCTxwYXRoIGlkPSJQYXRoIDMiIGNsYXNzPSJzaHAwIiBkPSJNNS41IDE0LjVMNC41IDE0LjVDMy45NSAxNC41IDMuNSAxNC4wNSAzLjUgMTMuNUwzLjUgMS41QzMuNSAwLjk1IDMuOTUgMC41IDQuNSAwLjVMNS41IDAuNUM2LjA1IDAuNSA2LjUgMC45NSA2LjUgMS41TDYuNSAxMy41QzYuNSAxNC4wNSA2LjA1IDE0LjUgNS41IDE0LjVaIiAvPgoJCTxwYXRoIGlkPSJQYXRoIDQiIGNsYXNzPSJzaHAwIiBkPSJNMi41MiAxMS41TDEuNDggMTEuNUMwLjk0IDExLjUgMC41IDExLjA2IDAuNSAxMC41MkwwLjUgNC40OEMwLjUgMy45NCAwLjk0IDMuNSAxLjQ4IDMuNUwyLjUyIDMuNUMzLjA2IDMuNSAzLjUgMy45NCAzLjUgNC40OEwzLjUgMTAuNTJDMy41IDExLjA2IDMuMDYgMTEuNSAyLjUyIDExLjVaIiAvPgoJCTxwYXRoIGlkPSJQYXRoIDUiIGNsYXNzPSJzaHAwIiBkPSJNMTcuNSA4LjVMNi41IDguNUw2LjUgNS41TDE3LjUgNS41TDE3LjUgOC41WiIgLz4KCTwvZz4KPC9zdmc+"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff } 
+		.shp1 { fill: #fbe8ec } 
+		.shp2 { opacity: 0.329;fill: #f2f3f6 } 
+		.txt3 { font-size: 30px;line-height: 25px;fill: #a3a7c1;font-family: "Open Sans";font-weight: 400 } 
+		.txt4 { font-size: 30px;line-height: 25px;fill: #8c8fa9;font-family: "Open Sans";font-weight: 600 } 
+		.txt5 { font-size: 36px;line-height: 25px;fill: #8c8fa9;font-family: "Open Sans";font-weight: 600 } 
+		.shp6 { fill: #8c8fa9 } 
+		.shp7 { opacity: 0.11;fill: #8670b9 } 
+		.txt8 { font-size: 36px;line-height: 24px;fill: #8c8fa9;font-family: "Open Sans";font-weight: 600 } 
+		.txt9 { font-size: 30px;line-height: 24px;fill: #a4a6bc;font-family: "Open Sans";font-weight: 400 } 
+		.txt10 { font-size: 36px;line-height: 21px;fill: #8c8fa9;font-family: "Open Sans";font-weight: 600 } 
+		.txt11 { font-size: 30px;line-height: 24px;fill: #a3a7c1;font-family: "Open Sans";font-weight: 400 } 
+		.shp12 { fill: #f0f0f8 } 
+		.txt13 { font-size: 33px;line-height: 19px;fill: #797d9c;font-family: "Open Sans";font-weight: 400 } 
+		.shp14 { fill: #e0e0e9 } 
+		.shp15 { fill: #e8fbf9 } 
+		.txt16 { font-size: 54px;line-height: 25px;fill: #51516f;font-family: "Open Sans";font-weight: 600 } 
+	</style>
+	<g id="Content">
+		<g id="Session3">
+			<path id="Rounded Rectangle 1 copie" class="shp0" d="M-22.49 870.5L312.62 870.5L313.12 964.5L625.24 964.5C649.27 964.5 668.75 983.98 668.75 1008L669.75 1563.99C669.75 1588.01 650.27 1607.49 626.24 1607.49L-22.49 1607.49C-46.52 1607.49 -66 1588.01 -66 1563.99L-66 914C-66 889.98 -46.52 870.5 -22.49 870.5Z" />
+			<path id="Rounded Rectangle 1 copie 2" class="shp1" d="M-66 966.5L-66 914C-66 889.98 -46.52 870.5 -22.49 870.5L359.64 870.5C389.67 870.5 419.66 955.98 462.67 966L446.17 966.5" />
+			<g id="Text">
+				<path id="Rounded Rectangle 16 copie" class="shp1" d="M8.52 1352L36.53 1352C52.55 1352 65.54 1364.98 65.54 1381L65.54 1407C65.54 1423.02 52.55 1436 36.53 1436L8.52 1436C-7.5 1436 -20.49 1423.02 -20.49 1407L-20.49 1381C-20.49 1364.98 -7.5 1352 8.52 1352Z" />
+				<use id="Pass icon copie 2" href="#img1" transform="matrix(1.333,0,0,1.333,7,1381)"/>
+				<path id="Rounded Rectangle 20" class="shp2" d="M86.55 1522L615.22 1522C630.69 1522 643.23 1534.54 643.23 1550C643.23 1565.46 630.69 1578 615.22 1578L86.55 1578C71.08 1578 58.54 1565.46 58.54 1550C58.54 1534.54 71.08 1522 86.55 1522Z" />
+				<text id="Type                Régime              Classe" style="transform: matrix(1,0,0,1,89.551,1481)" >
+					<tspan x="0" y="0" class="txt3">Type                Régime              Classe</tspan>
+				</text>
+				<text id="Month               Strict                    Silver" style="transform: matrix(1,0,0,1,89.551,1560)" >
+					<tspan x="0" y="0" class="txt4">Month               Strict                    Silver</tspan>
+				</text>
+				<text id="Pass type  " style="transform: matrix(1,0,0,1,90.551,1406)" >
+					<tspan x="0" y="0" class="txt5">Pass type</tspan>
+				</text>
+				<use id="Remaining time" href="#img2" transform="matrix(1.3,0,0,1.333,9,1216)"/>
+				<path id="Remaining time" class="shp6" d="M11.3 1243.41C11.3 1243.41 12.87 1240.28 15.07 1237.46C16.41 1235.75 18.91 1236.01 19.49 1233.44C19.52 1233.27 19.21 1232.26 17.86 1231.47C14.41 1229.45 8.37 1224.71 11.3 1219.91C11.5 1219.57 21.28 1219 21.37 1219C21.46 1219 31.52 1219.29 31.52 1219.8C31.54 1225.89 29.64 1229 25.65 1230.68C23.72 1231.48 23.88 1233.17 23.84 1233.35C23.22 1236.15 26.13 1235.72 27.74 1237.99C27.76 1238.02 29.62 1238.96 29.64 1238.99C31.24 1241.3 31.45 1243.41 31.45 1243.41L31.45 1245L11.3 1245L11.3 1243.41Z" />
+				<path id="Rounded Rectangle 16 copie 4" class="shp7" d="M7.52 1191L35.53 1191C51.55 1191 64.54 1203.98 64.54 1220L64.54 1246C64.54 1262.02 51.55 1275 35.53 1275L7.52 1275C-8.5 1275 -21.49 1262.02 -21.49 1246L-21.49 1220C-21.49 1203.98 -8.5 1191 7.52 1191Z" />
+				<path id="Rounded Rectangle 16 copie 5" class="shp7" d="M7.52 1024L35.53 1024C51.55 1024 64.54 1036.98 64.54 1053L64.54 1079C64.54 1095.02 51.55 1108 35.53 1108L7.52 1108C-8.5 1108 -21.49 1095.02 -21.49 1079L-21.49 1053C-21.49 1036.98 -8.5 1024 7.52 1024Z" />
+				<use id="Salle Icon" href="#img3" transform="matrix(1.667,0,0,1.667,2,1053)"/>
+				<text id="Duration  From 19/04/2019 to 19/05/2019" style="transform: matrix(1,0,0,1,90.551,1222)" >
+					<tspan x="0" y="0" class="txt8">Duration</tspan>
+					<tspan x="0" y="70.561" class="txt9">From 19/04/2019 to 19/05/2019</tspan>
+				</text>
+				<text id="Access gym  City club, Zarktouni,Casablanca" style="transform: matrix(1,0,0,1,93.552,1054)" >
+					<tspan x="0" y="0" class="txt10">Access gym</tspan>
+					<tspan x="0" y="70.561" class="txt11">City club, Zarktouni,Casablanca</tspan>
+				</text>
+			</g>
+			<path id="Forme 3" class="shp12" d="M-64.5 1155L-64.5 1153L669.75 1153L669.75 1155L-64.5 1155Z" />
+			<path id="Forme 3 copie 2" class="shp12" d="M-64.5 1316L-64.5 1314L669.75 1314L669.75 1316L-64.5 1316Z" />
+			<text id="Inactive Pass : Month pass   " style="transform: matrix(1,0,0,1,-22.486,935)" >
+				<tspan x="0" y="0" class="txt13">Inactive Pass : Month pass  </tspan>
+			</text>
+			<path id="Ellipse 1 copie 2" class="shp14" d="M622.77 1058.87C622.77 1061 621.08 1062.74 619 1062.74C616.92 1062.74 615.23 1061 615.23 1058.87C615.23 1056.73 616.92 1055 619 1055C621.08 1055 622.77 1056.73 622.77 1058.87Z" />
+			<path id="Ellipse 1 copie 5" class="shp14" d="M622.77 1076.87C622.77 1079 621.08 1080.74 619 1080.74C616.92 1080.74 615.23 1079 615.23 1076.87C615.23 1074.73 616.92 1073 619 1073C621.08 1073 622.77 1074.73 622.77 1076.87Z" />
+			<path id="Ellipse 1 copie 5" class="shp14" d="M622.77 1094.87C622.77 1097 621.08 1098.74 619 1098.74C616.92 1098.74 615.23 1097 615.23 1094.87C615.23 1092.73 616.92 1091 619 1091C621.08 1091 622.77 1092.73 622.77 1094.87Z" />
+		</g>
+		<g id="Sessin1">
+			<g id="Text">
+				<path id="Rounded Rectangle 16 copie" class="shp15" d="M8 300L36 300C52.02 300 65 312.98 65 329L65 355C65 371.02 52.02 384 36 384L8 384C-8.02 384 -21 371.02 -21 355L-21 329C-21 312.98 -8.02 300 8 300Z" />
+				<use id="Pass icon copie 2" href="#img1" transform="matrix(1.333,0,0,1.333,6,329)"/>
+				<path id="Rounded Rectangle 20" class="shp2" d="M86 470L614.5 470C629.96 470 642.5 482.54 642.5 498C642.5 513.46 629.96 526 614.5 526L86 526C70.53 526 58 513.46 58 498C58 482.54 70.53 470 86 470Z" />
+				<text id="Type                Régime              Classe" style="transform: matrix(1,0,0,1,89,429)" >
+					<tspan x="0" y="0" class="txt3">Type                Régime              Classe</tspan>
+				</text>
+				<text id="Pass type  " style="transform: matrix(1,0,0,1,90,354)" >
+					<tspan x="0" y="0" class="txt5">Pass type</tspan>
+				</text>
+				<use id="Remaining time" href="#img2" transform="matrix(1.3,0,0,1.333,8,164)"/>
+				<path id="Remaining time" class="shp6" d="M10.77 191.41C10.77 191.41 12.35 188.28 14.54 185.46C15.88 183.75 18.38 184.01 18.96 181.44C19 181.27 18.68 180.26 17.33 179.47C13.88 177.45 7.84 172.71 10.77 167.91C10.98 167.57 20.75 167 20.84 167C20.93 167 30.99 167.29 30.99 167.8C31.01 173.89 29.11 177 25.12 178.68C23.19 179.48 23.35 181.17 23.31 181.35C22.69 184.15 25.61 183.72 27.21 185.99C27.23 186.02 29.08 186.96 29.11 186.99C30.71 189.3 30.91 191.41 30.91 191.41L30.91 193L10.77 193L10.77 191.41Z" />
+				<use id="Salle Icon" href="#img3" transform="matrix(1.667,0,0,1.667,1,1)"/>
+			</g>
+			<path id="Ellipse 1 copie 4" class="shp14" d="M622.77 30.87C622.77 33 621.08 34.74 619 34.74C616.92 34.74 615.23 33 615.23 30.87C615.23 28.73 616.92 27 619 27C621.08 27 622.77 28.73 622.77 30.87Z" />
+		</g>
+		<text id="Session actuelle" style="transform: matrix(1,0,0,1,-58,-256)" >
+			<tspan x="0" y="0" class="txt16" dx="0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1" >Session actuelle</tspan>
+		</text>
+	</g>
+</svg>

@@ -11,6 +11,17 @@
     height: 16px ;border:2.2px solid #f7f7fa; border-radius: 17px;position: relative;}  
 .bck-icn{padding: 1em 0; width: 1.7em;}
 .prfl-img{width: 48px; border-radius: 27px;}
+.session-ctn{
+position: fixed;
+    top: 60px;
+    overflow-y: auto;
+    height: 86vh;    
+    width: 95%;
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.session-ctn::-webkit-scrollbar {display: none;}
 .sec-ses{
     background-color:  #f7f7fa;
     padding: 1em;
@@ -31,6 +42,7 @@ h5{
     margin-block-start: 0em;
     margin-block-end: 0em;
     font-size: 11px;
+    font-weight: 600;
 }
 .pas-blk{
         background-color: #fff;        
@@ -38,20 +50,23 @@ h5{
 }
 .ent-pas{
     background-color: #e8fbf9;
-    width: 192px;
+    width: 211px;
     padding: 12px;
     border-top-left-radius: 17px;
     clip-path: polygon(0 0, 69% 0, 83% 100%, 0% 100%);
 }
 .blk1{padding: 11px;  color:  #8c8fa9;display: flex;
-    border-bottom: 1px solid rgb(235,235,245); 
+    border-bottom: 1px solid rgb(235,235,245); align-items: center;
 }
 
 
 .ses-icn{
-    background-color: #e8fbf9 ;border-radius: 11px;
-     width: max-content; padding: 9px;
-    margin-right:12px ;max-width: 20px;  max-height: 19px;}
+    background-color: #e8fbf9 ;border-radius: 9px;
+    width: max-content; padding: 9px;
+    margin-right:12px ;max-width: 20px;  max-height: 19px;
+    padding: 17px; display: flex; justify-content: center;
+    align-items: center;
+}
 .img-sec{width: 17px;}   
 .ses-sl-tl{ display: -webkit-box; -webkit-box-align: center;color: #8c8fa9;}  
 .ses-alg{display: flex; justify-content: space-around;padding-left: 20px;}
@@ -84,12 +99,13 @@ h5{
 }
 .icon{
     background-color: #e0e0e9;
+    padding: 17px;
     // #8670b9
 }
 .blck-ses{
     width: 251px;
 }
-.thr-icn{height: 19px;
+.thr-icn{height: 29px;
     padding: 7px 0;
     margin-left: 12px;}
 .l-h{
@@ -102,6 +118,10 @@ h5{
 }
 h4{
     margin-block-start: 0;  margin-block-end: 0;
+}
+.ses-titr{
+    font-size: 17px;
+    font-weight: 600;
 }
 .ses-s-hdr{
     padding: 21px 3px;

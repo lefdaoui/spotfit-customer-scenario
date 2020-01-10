@@ -14,9 +14,13 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { RequestGymsComponent } from './request-gyms/request-gyms.component';
 import { ReferFriendComponent } from './refer-friend/refer-friend.component';
 import { CongratulationComponent } from './congratulation/congratulation.component';
-import { SessionsComponent } from './sessions/sessions.component';
-import { SessionHComponent } from './session-h/session-h.component';
-import { SessionsPrecComponent } from './sessions-prec/sessions-prec.component';
+
+import { CheckInComponent } from './check-in/check-in.component';
+import { FavoriteGymComponent } from './favorite-gym/favorite-gym.component';
+import { SessionsModule } from './Sessions/sessions.module';
+// import { SessionsComponent } from './Sessions/sessions-actuelles/sessions.component';
+// import { SessionHComponent } from './Sessions/sessions-home/session-h.component';
+// import { SessionsPrecComponent } from './Sessions/sessions-precedentes/sessions-prec.component';
 
 @NgModule({
   declarations: [
@@ -26,10 +30,9 @@ import { SessionsPrecComponent } from './sessions-prec/sessions-prec.component';
     SignInComponent,
     SignUpComponent,
     RequestGymsComponent,
-    CongratulationComponent,
-    SessionsComponent,
-    SessionHComponent,
-    SessionsPrecComponent,
+    CheckInComponent,
+    FavoriteGymComponent,
+    CongratulationComponent,    
     ReferFriendComponent,
   ],
   imports: [
@@ -82,24 +85,25 @@ import { SessionsPrecComponent } from './sessions-prec/sessions-prec.component';
       },
       // Azzedine Ghattas
       {
-        path: 'session-h',
-        component: SessionHComponent,
-      },
-      {
         path: 'sessions',
-        component: SessionsComponent,
-      },
-      {
-        path: 'sessions-prec',
-        component: SessionsPrecComponent,
+        loadChildren: () => import('./Sessions/sessions.module').then(m => m.SessionsModule),
       },
       {
         path: 'congratulation',
         component: CongratulationComponent,
       },
+      {
+        path: 'check-in',
+        component: CheckInComponent,
+      },
+      {
+        path: 'favorite-gym',
+        component: FavoriteGymComponent,
+      },
     ]),
     SharedModule,
     GymsModule,
+    SessionsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

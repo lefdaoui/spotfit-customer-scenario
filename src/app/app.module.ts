@@ -14,10 +14,11 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { RequestGymsComponent } from './request-gyms/request-gyms.component';
 import { ReferFriendComponent } from './refer-friend/refer-friend.component';
 import { CongratulationComponent } from './congratulation/congratulation.component';
-import { SessionsComponent } from './sessions/sessions.component';
-import { SessionHComponent } from './session-h/session-h.component';
-import { SessionsPrecComponent } from './sessions-prec/sessions-prec.component';
 import { TestComponent } from './test/test.component';
+
+import { CheckInComponent } from './check-in/check-in.component';
+import { FavoriteGymComponent } from './favorite-gym/favorite-gym.component';
+import { SessionsModule } from './Sessions/sessions.module';
 
 @NgModule({
   declarations: [
@@ -27,10 +28,9 @@ import { TestComponent } from './test/test.component';
     SignInComponent,
     SignUpComponent,
     RequestGymsComponent,
-    CongratulationComponent,
-    SessionsComponent,
-    SessionHComponent,
-    SessionsPrecComponent,
+    CheckInComponent,
+    FavoriteGymComponent,
+    CongratulationComponent,    
     ReferFriendComponent,
     TestComponent,
   ],
@@ -97,24 +97,25 @@ import { TestComponent } from './test/test.component';
       },
       // Azzedine Ghattas
       {
-        path: 'session-h',
-        component: SessionHComponent,
-      },
-      {
         path: 'sessions',
-        component: SessionsComponent,
-      },
-      {
-        path: 'sessions-prec',
-        component: SessionsPrecComponent,
+        loadChildren: () => import('./Sessions/sessions.module').then(m => m.SessionsModule),
       },
       {
         path: 'congratulation',
         component: CongratulationComponent,
       },
+      {
+        path: 'check-in',
+        component: CheckInComponent,
+      },
+      {
+        path: 'favorite-gym',
+        component: FavoriteGymComponent,
+      },
     ]),
     SharedModule,
     GymsModule,
+    SessionsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

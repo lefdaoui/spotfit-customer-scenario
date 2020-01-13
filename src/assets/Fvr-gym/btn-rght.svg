@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 40" width="11" height="40">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #c9cad8 } 
+	</style>
+	<path id="Ellipse 5" class="shp0" d="M5 1C7.21 1 9 2.79 9 5C9 7.21 7.21 9 5 9C2.79 9 1 7.21 1 5C1 2.79 2.79 1 5 1Z" />
+	<path id="Ellipse 5 copie" class="shp0" d="M5 17C7.21 17 9 18.79 9 21C9 23.21 7.21 25 5 25C2.79 25 1 23.21 1 21C1 18.79 2.79 17 5 17Z" />
+	<path id="Ellipse 5 copie 2" class="shp0" d="M5 31C7.21 31 9 32.79 9 35C9 37.21 7.21 39 5 39C2.79 39 1 37.21 1 35C1 32.79 2.79 31 5 31Z" />
+</svg>

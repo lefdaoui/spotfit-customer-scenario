@@ -1,11 +1,10 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {Location} from '@angular/common';
+
 @Component({
   selector: 'app-gym-detials',
   templateUrl: './gym-detials.component.html',
   styleUrls: ['./gym-detials.component.scss'],
-  // todo: generalize tabs style and remove this line below
-  encapsulation: ViewEncapsulation.None,
 })
 export class GymDetialsComponent implements OnInit {
 

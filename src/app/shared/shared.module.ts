@@ -11,9 +11,9 @@ import { RatingComponent } from './components/rating/rating.component';
   imports: [
     CommonModule,
   ],
-  exports: [
-    SlickSliderComponent,
-    RatingComponent
-  ]
+    exports: [
+        SlickSliderComponent,
+        RatingComponent,
+    ]
 })
 export class SharedModule { }

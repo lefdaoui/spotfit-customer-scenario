@@ -1,0 +1,88 @@
+<div class="edit-profile">
+  <app-top-bar [design]="'toback'"></app-top-bar>
+
+  <div class="affix-middle d-flex flex-column justify-content-between">
+    <div>
+      <h4 class="font-weight-bold mb-2">Settings</h4>
+
+      <!--swipeable-tabs-->
+      <div class="swipeable-tabs">
+        <!--todo (design): active nav-link must be underlined -->
+        <tabset>
+          <tab heading="Personal Details">
+            <div class="personal-details">
+              <div class="avatar d-flex flex-column align-items-center mb-4 mt-3">
+                <img class="rounded-pill shadow mb-3" src="assets/img/avatar.png" alt="avatar">
+                <span class="text-primary font-weight-bold text-deco" (click)="openExplorer()">Edit Profile Photo</span>
+              </div>
+
+              <div class="form-inputs">
+                <div class="form-group">
+                  <label class="sr-only" for="first_name">First Name</label>
+                  <input type="text" class="form-control underline" id="first_name" placeholder="First name *">
+                </div>
+
+                <div class="form-group">
+                  <label class="sr-only" for="last_name">First Name</label>
+                  <input type="text" class="form-control underline" id="last_name" placeholder="Last name *">
+                </div>
+
+                <div class="form-group">
+                  <label for="date_of_birth" class="sr-only">Date of birth</label>
+                  <input type="test" class="form-control underline" id="date_of_birth" placeholder="Date of birth">
+                </div>
+
+                <div class="form-group">
+                  <label for="mobile_phone" class="sr-only">Mobile phone</label>
+                  <input type="test" class="form-control underline" id="mobile_phone" placeholder="Mobile phone">
+                </div>
+
+                <div class="form-group">
+                  <label for="zip_code" class="sr-only">Code postale*</label>
+                  <input type="test" class="form-control underline" id="zip_code" placeholder="Code postale*">
+                </div>
+
+                <div class="form-group">
+                  <label for="profession" class="sr-only">Profession</label>
+                  <input type="test" class="form-control underline" id="profession" placeholder="Profession">
+                </div>
+
+                <div class="form-group">
+                  <label for="address_line" class="sr-only">Address line*</label>
+                  <input type="test" class="form-control underline" id="address_line" placeholder="Address line*">
+                </div>
+
+                <div class="form-group">
+                  <label for="city" class="sr-only">City*</label>
+                  <input type="test" class="form-control underline" id="city" placeholder="City*">
+                </div>
+              </div>
+            </div>
+          </tab>
+          <tab heading="Account Details">
+            <div class="account-details mb-4 mt-3">
+              <div class="form-group">
+                <label class="sr-only" for="username">Username *</label>
+                <input type="text" class="form-control underline" id="username" placeholder="Username *">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="email">Email *</label>
+                <input type="text" class="form-control underline" id="email" placeholder="Email *" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="password">Password *</label>
+                <input type="password" class="form-control underline" id="password" placeholder="Password *">
+              </div>
+            </div>
+          </tab>
+        </tabset>
+      </div>
+    </div>
+    <!--action button-->
+    <div class="text-center my-4">
+      <button class="btn btn-primary rounded-pill btn-lg d-inline-block px-5" (click)="saveChanges()">Save Changes
+      </button>
+    </div>
+  </div>
+</div>

@@ -13,7 +13,7 @@
 </div>
 <div class="wrapper">
   <div class="options">
-    <div (click)="onSearch(content)">
+    <div (click)="onSearch(mapFilter)">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.78 20.41">
         <defs>
           <style>.aa05f501-4079-4306-8666-3e37e2ccb973 {
@@ -68,7 +68,9 @@
   </div>
 </div>
 
-<ng-template #content let-modal>
+
+<!--map filters modal-->
+<ng-template #mapFilter let-modal>
   <div class="modal-body">
     <form>
       <div class="form-group">
@@ -104,21 +106,21 @@
           <defs>
             <style>
 
-            .a24f55a5-fb9b-4c1e-99dd-095d8b8aa0a9 {
-              clip-path: url(#ndlevienibronaket);
-            }
+              .a24f55a5-fb9b-4c1e-99dd-095d8b8aa0a9 {
+                clip-path: url(#ndlevienibronaket);
+              }
 
-            .a710c34b-92a2-401f-b699-711771adca5d {
-              clip-path: url(#shumpatencacourpe);
-            }</style>
+              .a710c34b-92a2-401f-b699-711771adca5d {
+                clip-path: url(#shumpatencacourpe);
+              }</style>
             <clipPath id="ndlevienibronaket">
               <rect  data-name="SVGID"
-                    class="ea2a18e0-e06a-444f-9cae-d4111e9fb7c1" width="24" height="24"/>
+                     class="ea2a18e0-e06a-444f-9cae-d4111e9fb7c1" width="24" height="24"/>
             </clipPath>
             <clipPath id="shumpatencacourpe" transform="translate(-1 1.5)">
               <path  data-name="SVGID"
-                    class="a24f55a5-fb9b-4c1e-99dd-095d8b8aa0a9"
-                    d="M12,1c4.58,0,8.69,3.77,8.49,8.05-.21,4.63-6.15,14-8.49,14S3.72,13.68,3.51,9.05C3.31,4.77,7.42,1,12,1ZM10.88,14.38c.73-.83,3.33-.64,4.12-1.88,1.86-2.92,1.41-1.58,1.5-3.55.14-3.07-.5-3.32-4-3.32s-4.89-.08-4.75,3c.09,2-1.11-.55.75,2.37a10.41,10.41,0,0,0,1.75,2c.34.39,1.23.56,1.47.75L9.25,13.5l1.56-.34M12,15a5.5,5.5,0,1,1,5.5-5.5A5.5,5.5,0,0,1,12,15Zm0-2A3.5,3.5,0,1,0,8.5,9.5,3.5,3.5,0,0,0,12,13Z"/>
+                     class="a24f55a5-fb9b-4c1e-99dd-095d8b8aa0a9"
+                     d="M12,1c4.58,0,8.69,3.77,8.49,8.05-.21,4.63-6.15,14-8.49,14S3.72,13.68,3.51,9.05C3.31,4.77,7.42,1,12,1ZM10.88,14.38c.73-.83,3.33-.64,4.12-1.88,1.86-2.92,1.41-1.58,1.5-3.55.14-3.07-.5-3.32-4-3.32s-4.89-.08-4.75,3c.09,2-1.11-.55.75,2.37a10.41,10.41,0,0,0,1.75,2c.34.39,1.23.56,1.47.75L9.25,13.5l1.56-.34M12,15a5.5,5.5,0,1,1,5.5-5.5A5.5,5.5,0,0,1,12,15Zm0-2A3.5,3.5,0,1,0,8.5,9.5,3.5,3.5,0,0,0,12,13Z"/>
             </clipPath>
           </defs>
           <title>marker</title>

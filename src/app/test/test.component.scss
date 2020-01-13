@@ -1,0 +1,10 @@
+#test {
+  width: 150px;
+  height: 150px;
+  clip-path: url(#girl);
+
+  svg {
+    width: 150px;
+    height: 150px;
+  }
+}

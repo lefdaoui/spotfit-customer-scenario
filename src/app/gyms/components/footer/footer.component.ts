@@ -6,7 +6,7 @@ import {ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss'],
   // todo: remove this line later and fix bugs
-  encapsulation: ViewEncapsulation.None
+  // encapsulation: ViewEncapsulation.None
 })
 export class FooterComponent implements OnInit {
   closeResult: string;
@@ -16,25 +16,13 @@ export class FooterComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSearch(content: TemplateRef<any>) {
-    this.open(content);
+  onSearch(mapOptionsForm: TemplateRef<any>) {
+    this.open(mapOptionsForm);
   }
 
-  open(content) {
-    this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
-      this.closeResult = `Closed with: ${result}`;
-    }, (reason) => {
-      this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
-    });
-  }
-
-  private getDismissReason(reason: any): string {
-    if (reason === ModalDismissReasons.ESC) {
-      return 'by pressing ESC';
-    } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
-      return 'by clicking on a backdrop';
-    } else {
-      return  `with: ${reason}`;
-    }
+  open(mapOptionsForm) {
+    this.modalService.open(mapOptionsForm, {windowClass: 'modal-phone'}).result.then((result) => {
+      // todo: extract the options and emit them throught the service(observable)
+    }, (reason) => { });
   }
 }

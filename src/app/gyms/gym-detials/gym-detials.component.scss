@@ -7,16 +7,27 @@ $icon-text-space: 5px;
 $button-width: 280px;
 
 
+::ng-deep tabset#gd-tabset  {
+  .nav-link.active {
+    color: $selected-tab !important;
+  }
 
+  .nav-tabs {
+    justify-content: space-between;
+  }
+}
 
 .slick-dots {
 
-  bottom: 36px!important;
+  bottom: 36px !important;
+
   li {
     margin: 0;
+
     button:before {
       color: white;
     }
+
     &.slick-active button:before {
       opacity: .75;
       color: white;
@@ -66,7 +77,6 @@ $button-width: 280px;
 
       }
     }
-
 
 
     // banner
@@ -155,6 +165,7 @@ $button-width: 280px;
     .geolocation {
       font-size: 13px;
       color: $primary-light-1;
+
       svg {
         height: 16px;
         margin-right: $icon-text-space;
@@ -167,7 +178,6 @@ $button-width: 280px;
     }
 
     // pricing
-
 
 
     .pricing {
@@ -190,6 +200,7 @@ $button-width: 280px;
     .subscription-options {
       margin-top: 11px;
       display: flex;
+
       div {
         background-color: darken($primary-light-2, 5%);
         border-radius: 50px;
@@ -209,53 +220,28 @@ $button-width: 280px;
     .more {
       font-size: $font-size-base;
       max-width: 18rem;
-      .nav-tabs {
-        justify-content: space-between;
-        .nav-item {
-          margin-bottom: 0;
-        }
-        .nav-link.active {
-          color: $selected-tab;
-          border-color: transparent;
-          background-color: transparent;
-        }
-      }
-
-      .tab-content {
-        padding-top: 1rem;
-
-        color: $font-color;
-        max-width: 18rem;
-        line-height: 1.8;
-      }
-
-      .nav-link {
-        padding: 1rem 0 1rem 0;
-      }
-
-      a {
-        color: $primary-dark;
-        font-size: $font-size-base;
-        font-weight: 600;
-      }
 
       .facilities {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+
         .block {
           flex: 0 0 33.3333332%;
           padding-bottom: 1rem;
           align-items: center;
           display: flex;
+
           svg {
             margin-right: 10px;
             height: 21px;
             flex: 0 0 20%;
+
             * {
               fill: $primary-dark;
             }
           }
+
           span {
             line-height: 1;
             font-size: 10px;
@@ -266,7 +252,7 @@ $button-width: 280px;
 
     // action button
     .action-button {
-      border-radius: 50px!important;
+      border-radius: 50px !important;
       width: $button-width;
       font-weight: 600;
 

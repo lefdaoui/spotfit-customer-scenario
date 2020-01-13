@@ -19,24 +19,25 @@
 }
 
 
-.behaviour {
+.affix {
+  &-top
+  ,&-middle {
+    width: 100%;
+    position: fixed;
+    padding: 0 20px;
+    z-index: 10;
+  }
 
-  width: 100%;
-  position: fixed;
-  padding: 0 20px;
-  z-index: 10;
-
-  &.top {
+  &-top {
     top: 20px;
   }
 
-  &.middle {
+  &-middle {
     height: 90vh;
     overflow-y: scroll;
     top: 80px;
   }
 }
-
 
 .spotfit-logo {
   width: 39.7px;

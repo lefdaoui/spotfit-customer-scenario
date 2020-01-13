@@ -1,0 +1,116 @@
+<div class="account-overview">
+  <div class="edit-profile">
+    <app-top-bar [design]="'toback'"></app-top-bar>
+
+    <div class="affix-middle">
+
+
+      <h4 class="font-weight-bold mb-4 ">Account</h4>
+
+
+      <!--notifications-->
+      <div class="notifications mb-4">
+        <div class="mb-2 d-flex justify-content-between">
+          <div class="d-flex align-items-center">
+            <h5 class="font-weight-bold mr-1">Notifications</h5>
+            <span class="notif">4</span>
+          </div>
+          <div class="show-more d-flex justify-content-center">
+            <span class="font-weight-bold">Show more</span>
+            <svg class="left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 7"><title>arrow</title>
+              <path
+                d="M.15.85a.48.48,0,0,1,0-.7A.47.47,0,0,1,.5,0,.47.47,0,0,1,.85.15l3,3a.48.48,0,0,1,0,.7l-3,3a.48.48,0,0,1-.7,0,.48.48,0,0,1,0-.7L2.8,3.5Z"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="card shadow-lg">
+          <div class="p-3 {{ i !== notifications.length ? 'border-bottom' : '' }}" *ngFor="let notification of notifications; let i = index">
+            <app-notification [notification]="notification"></app-notification>
+          </div>
+        </div>
+      </div>
+
+      <!--profile-info-->
+      <div class="profile-info">
+        <div class="mb-3 d-flex justify-content-between">
+          <h5 class="font-weight-bold mr-1">Profile Information</h5>
+          <div class="show-more d-flex justify-content-center">
+            <span class="font-weight-bold">Show more</span>
+            <svg class="left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 7"><title>arrow</title>
+              <path
+                d="M.15.85a.48.48,0,0,1,0-.7A.47.47,0,0,1,.5,0,.47.47,0,0,1,.85.15l3,3a.48.48,0,0,1,0,.7l-3,3a.48.48,0,0,1-.7,0,.48.48,0,0,1,0-.7L2.8,3.5Z"/>
+            </svg>
+          </div>
+        </div>
+
+
+        <div class="card shadow-lg mb-4">
+          <div class="p-3 border-bottom d-flex align-items-center">
+            <div class="picture-frame mr-3">
+              <img alt="avatar  rounded-pill" class="avatar" src="assets/img/img1.jpeg">
+            </div>
+            <div class="subscription-status active">
+              <div>
+                <svg class="svg hsm" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 18"><title>subscription</title>
+                  <path d="M21,9.5A2.5,2.5,0,0,0,23.36,12h.14a.5.5,0,0,1,.5.5v4A1.5,1.5,0,0,1,22.5,18H1.5A1.5,1.5,0,0,1,0,16.5v-4A.5.5,0,0,1,.5,12H.78a2.51,2.51,0,0,0,0-5H.5A.5.5,0,0,1,0,6.5v-5A1.5,1.5,0,0,1,1.5,0h21A1.5,1.5,0,0,1,24,1.5v5a.5.5,0,0,1-.5.5h-.14A2.5,2.5,0,0,0,21,9.5Z"/>
+                </svg>
+                <span class="sub-status">Inactive Pass: </span>
+                <span class="sub-type">Month pass</span>
+              </div>
+              <div>
+                <svg class="svg hsm" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24"><title>time-o</title>
+                      <path
+                        d="M12,12.42c-.38,1.34.44,1.85,1.92,2.64a7.69,7.69,0,0,1,1.82,1.21c1.44,1.47,1.74,3.15,1.74,5.23a.5.5,0,0,1-.5.5.25.25,0,0,1-.12,0c-2,.44-11.79.45-13.68,0A.45.45,0,0,1,3,22a.5.5,0,0,1-.5-.5c0-2.09.3-3.78,1.75-5.23a12,12,0,0,1,3.08-1.91A1.48,1.48,0,0,0,8,12.88c0-.9-.51-1.17-1.46-1.65l-.21-.1a8.05,8.05,0,0,1-3.2-3A10.28,10.28,0,0,1,2,2.46.48.48,0,0,1,2.35,2c1-.86,14.12-.62,15.27,0a.49.49,0,0,1,.38.43,10.2,10.2,0,0,1-1.14,5.66,8,8,0,0,1-3.21,3l-.39.18C12.56,11.63,12.19,11.83,12,12.42Z"/>
+                      <path
+                        d="M20,21.5v2a.5.5,0,0,1-.5.5H.5a.5.5,0,0,1-.5-.5v-2A.5.5,0,0,1,.5,21a.5.5,0,0,1,.5.5V23H19V21.5a.5.5,0,0,1,1,0Z"/>
+                      <path
+                        d="M20,.5v2a.5.5,0,0,1-1,0V1H1V2.5A.5.5,0,0,1,.5,3,.5.5,0,0,1,0,2.5V.5A.5.5,0,0,1,.5,0h19A.5.5,0,0,1,20,.5Z"/>
+                </svg>
+                <span class="sub-status">Remaining Time: </span>
+                <span class="sub-type">0 days</span>
+              </div>
+              <div>
+                <svg class="svg hsm" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22"><title>time</title>
+                  <path d="M11,0A11,11,0,1,0,22,11,11,11,0,0,0,11,0Zm4.71,16.71a1,1,0,0,1-1.42,0l-4-4a1,1,0,0,1-.21-.32.37.37,0,0,1,0-.14A.73.73,0,0,1,10,12V6a1,1,0,0,1,2,0v5.58l3.71,3.71A1,1,0,0,1,15.71,16.71Z"/>
+                </svg>
+                <span class="sub-status">Duration: </span>
+                <span class="sub-type">19/04/19 to 19/05/19</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pb-3">
+            <tabset id="showInfo">
+              <tab heading="Personal Details">
+                <table>
+                  <tbody>
+                  <tr>
+                    <td>Full name</td>
+                    <td>John Smit</td>
+                  </tr>
+                  <tr>
+                    <td>Date of birth</td>
+                    <td>22/11/1991</td>
+                  </tr>
+                  <tr>
+                    <td>Profession</td>
+                    <td>Product Designer</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </tab>
+              <tab heading="Account Details">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, doloremque, sint.</p>
+              </tab>
+            </tabset>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+</div>

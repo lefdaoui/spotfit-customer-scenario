@@ -9,6 +9,7 @@ import {CreditCardsComponent} from './credit-cards/credit-cards.component';
 import {CreditCardItemComponent} from './credit-cards/credit-card-item/credit-card-item.component';
 import {SharedModule} from '../shared/shared.module';
 import { CardFormComponent } from './credit-cards/card-form/card-form.component';
+import {KycModule} from '../kyc/kyc.module';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { CardFormComponent } from './credit-cards/card-form/card-form.component'
     NgbDatepickerModule,
     SharedModule,
     NgbDropdownModule,
-  ]
+    KycModule,
+  ],
 })
 export class PaymentModule {
 }

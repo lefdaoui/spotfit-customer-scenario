@@ -17,6 +17,7 @@ import { CongratulationComponent } from './congratulation/congratulation.compone
 import { SessionsComponent } from './sessions/sessions.component';
 import { SessionHComponent } from './session-h/session-h.component';
 import { SessionsPrecComponent } from './sessions-prec/sessions-prec.component';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { SessionsPrecComponent } from './sessions-prec/sessions-prec.component';
     SessionHComponent,
     SessionsPrecComponent,
     ReferFriendComponent,
+    TestComponent,
   ],
   imports: [
     BrowserModule,
@@ -60,8 +62,21 @@ import { SessionsPrecComponent } from './sessions-prec/sessions-prec.component';
         loadChildren: () => import('./kyc/kyc.module').then(m => m.KycModule),
       },
       {
+        path: 'account',
+        loadChildren: () => import('./account/account.module').then(m => m.AccountModule),
+      },
+      {
+        path: 'settings',
+        loadChildren: () => import('./account/settings/settings.module').then(m => m.SettingsModule),
+      },
+      {
         path: 'index',
         component: IndexComponent
+      },
+      {
+        path: 'test',
+        component: TestComponent,
+        data: { animation: 'toLeft' }
       },
       // Mehdi Zouihar
       {

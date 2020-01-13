@@ -16,8 +16,23 @@
   border: $input-border-width solid $input-border-color;
   font-weight: 600;
 
-  &.transparent-bg {
+  &.transparent-bg,
+  &.underline{
     background-color: transparent;
+  }
+
+  &.underline {
+    border: none;
+    border-bottom: $input-border-width solid $input-border-color;
+    border-radius: 0;
+    font-weight: 400;
+    &:focus {
+      color: inherit;
+      background-color: transparent;
+      border-color: $primary;
+      outline: 0;
+      box-shadow: none;
+    }
   }
 
   // Note: This has no effect on <select>s in some browsers, due to the limited stylability of `<select>`s in CSS.

@@ -1,0 +1,22 @@
+.edit-profile {
+  .swipeable-tabs {
+    .personal-details {
+      .avatar {
+        span {
+          text-decoration: underline;
+        }
+
+        img {
+          width: 150px;
+          height: 150px;
+        }
+      }
+
+      .form-inputs {
+        display: grid;
+        grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+        grid-gap: 16px;
+      }
+    }
+  }
+}

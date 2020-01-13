@@ -8,10 +8,11 @@ import {NgbDatepickerModule, NgbDropdownModule} from '@ng-bootstrap/ng-bootstrap
 import {SharedModule} from '../shared/shared.module';
 import { CardBacksideComponent } from './card-backside/card-backside.component';
 import { SelfieComponent } from './selfie/selfie.component';
+import { ConfirmIdentityComponent } from './confirm-identity/confirm-identity.component';
 
 
 @NgModule({
-  declarations: [CardFrontsideComponent, CardBacksideComponent, SelfieComponent],
+  declarations: [CardFrontsideComponent, CardBacksideComponent, SelfieComponent, ConfirmIdentityComponent],
   imports: [
     CommonModule,
     KycRoutingModule,
@@ -19,6 +20,9 @@ import { SelfieComponent } from './selfie/selfie.component';
     NgbDatepickerModule,
     SharedModule,
     NgbDropdownModule,
+  ],
+  exports: [
+    ConfirmIdentityComponent,
   ]
 })
 export class KycModule { }

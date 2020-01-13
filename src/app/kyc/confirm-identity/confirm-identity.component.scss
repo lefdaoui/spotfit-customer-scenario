@@ -1,0 +1,39 @@
+@import "./src/assets/sass/bootstrap/scss/functions";
+@import "./src/assets/sass/bootstrap/scss/variables";
+
+.confirm-identity {
+  .form-inputs {
+    .form-group {
+      flex: calc(50% - 1rem);
+      margin-right: 1rem;
+    }
+  }
+
+}
+
+section {
+  &.turnCameraOn {
+    background-color: $body-bg;
+    &::before {
+      display: none;
+    }
+
+    & > div {
+      border: 1px solid darken($body-bg, 10%);
+    }
+
+    .icon {
+      background-color: $body-bg;
+      width: 40px;
+      height: 40px;
+      border-radius: 14px;
+      border: 1px dashed $gray-500;
+
+
+      .svg-icon {
+        fill: darken($body-bg, 20%);
+        height: 18px;
+      }
+    }
+  }
+}

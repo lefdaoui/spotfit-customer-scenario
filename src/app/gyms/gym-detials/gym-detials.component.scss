@@ -252,9 +252,7 @@ $button-width: 280px;
 
     // action button
     .action-button {
-      border-radius: 50px !important;
       width: $button-width;
-      font-weight: 600;
 
       &.fixed-bc {
         position: fixed;

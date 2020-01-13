@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Notification} from '../../../shared/models/notification';
 
 @Component({
@@ -8,9 +8,20 @@ import {Notification} from '../../../shared/models/notification';
 })
 export class NotificationComponent implements OnInit {
 
-  @Input() notification: Notification;
+  @Input()
+  notification: Notification;
 
-  constructor() { }
+  @Output()
+  onPanLeft: EventEmitter<Event> = new EventEmitter<Event>();
+
+  @Output()
+  onPanRight: EventEmitter<Event> = new EventEmitter<Event>();
+
+  @Output()
+  onTap: EventEmitter<Event> = new EventEmitter<Event>();
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
@@ -24,5 +35,17 @@ export class NotificationComponent implements OnInit {
       case 'refer-friend':
         return 'blue';
     }
+  }
+
+  panLeft($event: Event) {
+    this.onPanLeft.emit($event);
+  }
+
+  panRight($event: any) {
+    this.onPanRight.emit($event);
+  }
+
+  tap($event: any) {
+    this.onTap.emit($event);
   }
 }

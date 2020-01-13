@@ -1,0 +1,61 @@
+@import "./src/assets/sass/bootstrap/scss/functions";
+@import "./src/assets/sass/bootstrap/scss/variables";
+
+#profile {
+
+  .active-subscriptions {
+    .card {
+      & > div {
+        padding: 1rem;
+
+        &:last-child {
+          border-left: 1px solid $gray-400;
+        }
+      }
+
+      .icon {
+        padding: 15px;
+        background-color: $body-bg;
+        svg {
+          height: 12px;
+          width: 12px;
+        }
+        &.green {
+          background-color: lighten($success, 40%);
+
+          svg {
+            fill: $success;
+          }
+        }
+
+        width: 20px;
+        border-radius: 10px;
+      }
+
+    }
+
+    .avatar {
+      width: 90px;
+      height: 90px;
+      object-fit: cover;
+    }
+  }
+
+  table {
+    width: 100%;
+
+    tr {
+      &:not(:last-child) {
+        border-bottom: 2px solid white;
+      }
+
+      td {
+        &:first-child {
+          font-weight: 600;
+        }
+
+        padding: 10px 0;
+      }
+    }
+  }
+}

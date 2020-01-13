@@ -373,9 +373,9 @@ $input-btn-border-width:      $border-width !default;
 //
 // For each of Bootstrap's buttons, define text, background, and border color.
 
-$btn-padding-y:               $input-btn-padding-y !default;
-$btn-padding-x:               $input-btn-padding-x !default;
-$btn-line-height:             $input-btn-line-height !default;
+$btn-padding-y:               $input-btn-padding-y-lg !default;
+$btn-padding-x:               $input-btn-padding-x-lg !default;
+$btn-line-height:             $input-btn-line-height-lg !default;
 
 $btn-padding-y-sm:            $input-btn-padding-y-sm !default;
 $btn-padding-x-sm:            $input-btn-padding-x-sm !default;

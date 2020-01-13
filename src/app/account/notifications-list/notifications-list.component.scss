@@ -1,0 +1,25 @@
+@import "./src/assets/sass/bootstrap/scss/functions";
+@import "./src/assets/sass/bootstrap/scss/variables";
+
+#notifications-list {
+  .affix-middle {
+    overflow-x: hidden;
+  }
+  .btn-remove {
+    height: 100%;
+    background-color: $primary-500;
+    svg {
+      height: 11px;
+    }
+
+    span {
+      font-size: 10px;
+    }
+  }
+
+  .eshionyberariswig {
+    margin: 100% auto;
+    display: flex;
+    flex-flow: column;
+  }
+}

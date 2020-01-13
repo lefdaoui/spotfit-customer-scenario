@@ -57,3 +57,62 @@
 .text-hide {
   @include text-hide($ignore-warning: true);
 }
+
+
+
+.text-xs	{
+  font-size: 0.45rem !important;
+}
+.text-sm	{
+  font-size: 0.575rem !important;
+}
+.text-base	{
+  font-size: $font-size-base !important;
+}
+.text-lg	{
+  font-size: 1.125rem !important;
+}
+.text-xl	{
+  font-size: 1.25rem !important;
+}
+.text-2xl	{
+  font-size: 1.5rem !important;
+}
+.text-3xl	{
+  font-size: 1.875rem !important;
+}
+.text-4xl	{
+  font-size: 2.25rem !important;
+}
+.text-5xl	{
+  font-size: 3rem !important;
+}
+.text-6xl	{
+  font-size: 4rem !important;
+}
+
+// line height
+
+.leading-none {
+  line-height: 1 !important;
+}
+
+.leading-tight {
+  line-height: 1.25 !important;
+}
+
+.leading-snug {
+  line-height: 1.375 !important;
+}
+
+.leading-normal {
+  line-height: 1.5 !important;
+}
+
+.leading-relaxed {
+  line-height: 1.625 !important;
+}
+
+.leading-loose {
+  line-height: 2 !important;;
+}

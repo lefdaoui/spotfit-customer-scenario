@@ -45,3 +45,41 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+
+
+# Cordova 
+
+# Cordova Global
+plugins/
+
+# iOS Platform
+platforms/ios/build/
+platforms/ios/www/
+platforms/ios/cordova/console.log
+
+*.xcuserdatad
+
+# Android Platform
+platforms/android/.gradle
+platforms/android/build
+platforms/android/assets/www
+platforms/android/local.properties
+platforms/android/CordovaLib/build
+platforms/android/CordovaLib/gen
+platforms/android/CordovaLib/local.properties
+
+# Windows Universal App (Windows Platform)
+platforms/windows/build
+platforms/windows/www
+platforms/windows/AppPackages
+
+# Browser
+platforms/browser/www
+
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk

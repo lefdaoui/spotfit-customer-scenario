@@ -13,6 +13,7 @@ export class TopBarComponent implements OnInit {
   @Input() activeTab = 'list';
   @Input() design = null;
   @Input() navigateBackUrl;
+  @Input() extraClasses = [];
 
   constructor(
     private location: Location,
@@ -31,11 +32,16 @@ export class TopBarComponent implements OnInit {
   }
 
   goBack() {
-   if(!this.navigateBackUrl) {
-     this.location.back();
-   }
+    if (this.design === 'style2') {
+      this.navigateTo('/subscriptions/status');
+      return;
+    }
 
-   this.router.navigateByUrl(this.navigateBackUrl);
+    if (!this.navigateBackUrl) {
+      this.location.back();
+    }
+
+    this.router.navigateByUrl(this.navigateBackUrl);
   }
 
   navigateTo(path: string) {

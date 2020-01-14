@@ -1,5 +1,5 @@
 <div id="profile">
-  <app-top-bar [design]="'toback'"></app-top-bar>
+  <app-top-bar [design]="'style1'"></app-top-bar>
 
   <div class="affix-middle pb-5">
     <h4 class="font-weight-bold mb-5"></h4>
@@ -100,7 +100,7 @@
     </div>
 
     <div class="text-center my-3 fixed-bottom">
-      <button class="btn btn-primary d-inline-block px-5">Edit Profile</button>
+      <button class="btn btn-primary d-inline-block px-5" (click)="navigateTo('/account/settings/edit-profile')">Edit Profile</button>
     </div>
   </div>
 </div>

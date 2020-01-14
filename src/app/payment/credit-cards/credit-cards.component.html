@@ -1,7 +1,7 @@
 <div class="credit-cards">
 
   <!--top bar the second style-->
-  <app-top-bar [design]="'toback'"></app-top-bar>
+  <app-top-bar [design]="'style1'"></app-top-bar>
   <div class="affix-middle d-flex flex-column justify-content-between">
     <div>
       <!--page title-->
@@ -72,7 +72,7 @@
     </div>
     <!--Pay now-->
     <div class="text-center my-4">
-      <button class="btn btn-primary rounded-pill btn-lg d-inline-block px-5">Pay Now</button>
+      <button class="btn btn-primary rounded-pill btn-lg d-inline-block px-5" (click)="onPay()">Pay Now</button>
     </div>
   </div>
 </div>

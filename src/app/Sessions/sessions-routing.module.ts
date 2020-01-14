@@ -17,7 +17,7 @@ const routes: Routes = [
   },
   {
     path: 'precedentes',
-    component: SessionsPrecComponent ,
+    component: SessionsPrecComponent,
   },
 ];
 

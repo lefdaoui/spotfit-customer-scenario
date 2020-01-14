@@ -1,10 +1,30 @@
-#test {
-  width: 150px;
-  height: 150px;
-  clip-path: url(#girl);
+@import "./src/assets/sass/bootstrap/scss/functions";
+@import "./src/assets/sass/bootstrap/scss/variables";
 
-  svg {
-    width: 150px;
-    height: 150px;
+#test {
+  background: $blue-dark;
+  height: 100vh;
+
+  .background {
+    width: 100vw;
+    height: 35vh;
+    background-image: url(/assets/svg/signin.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+  }
+
+
+  .heading {
+    top: 2.5rem;
+    left: 10%;
+  }
+
+  .page-core {
+    height: 60vh;
+    overflow: hidden;
+    top: 38%;
+    width: 80%;
+    margin: 0 auto;
   }
 }

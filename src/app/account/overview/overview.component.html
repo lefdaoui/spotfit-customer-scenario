@@ -1,6 +1,6 @@
 <div class="account-overview">
   <div class="edit-profile">
-    <app-top-bar [design]="'toback'"></app-top-bar>
+    <app-top-bar [design]="'style1'"></app-top-bar>
 
     <div class="affix-middle">
 
@@ -15,7 +15,7 @@
             <h5 class="font-weight-bold mr-1">Notifications</h5>
             <span class="notif">4</span>
           </div>
-          <div class="show-more d-flex justify-content-center">
+          <div class="show-more d-flex justify-content-center" (click)="navigateTo('/account/notifications')">
             <span class="font-weight-bold">Show more</span>
             <svg class="left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 7"><title>arrow</title>
               <path
@@ -35,7 +35,7 @@
       <div class="profile-info">
         <div class="mb-3 d-flex justify-content-between">
           <h5 class="font-weight-bold mr-1">Profile Information</h5>
-          <div class="show-more d-flex justify-content-center">
+          <div class="show-more d-flex justify-content-center" (click)="navigateTo('/account/profile')">
             <span class="font-weight-bold">Show more</span>
             <svg class="left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 7"><title>arrow</title>
               <path

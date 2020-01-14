@@ -29,6 +29,8 @@ export class CheckoutComponent implements OnInit {
     this.modalRef.componentInstance.onConfirmed.subscribe(() => {
       console.log('onConfirmed');
 
+      this.router.navigateByUrl('/payment/credit-cards');
+
       this.modalRef.dismiss();
     });
 

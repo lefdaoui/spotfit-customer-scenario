@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-credit-cards',
@@ -9,7 +10,8 @@ import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 export class CreditCardsComponent implements OnInit {
   newCard = false;
   constructor(
-    private modalService: NgbModal
+    private modalService: NgbModal,
+    private router: Router
   ) { }
 
   ngOnInit(
@@ -35,5 +37,9 @@ export class CreditCardsComponent implements OnInit {
       // todo: receive the last modified data and update the entity (post request to api)
 
     }, (dismiss) => console.log({cardId}));
+  }
+
+  onPay() {
+    this.router.navigateByUrl('/account/profile');
   }
 }

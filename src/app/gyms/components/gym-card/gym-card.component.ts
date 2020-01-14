@@ -2,6 +2,7 @@ import {Component, EventEmitter, Input, OnInit, Output, ViewEncapsulation} from 
 import {Gym} from '../../../shared/models/gym';
 import {Subscription} from '../../../shared/models/subscription';
 import {ConfigService} from '../../../shared/services/config.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-gym-card',
@@ -15,7 +16,8 @@ export class GymCardComponent implements OnInit {
   @Input() flat: boolean =  false;
 
   constructor(
-    private configService: ConfigService
+    private configService: ConfigService,
+    private router: Router,
   ) {
 
   }
@@ -33,8 +35,10 @@ export class GymCardComponent implements OnInit {
     return this.configService.getFullAccessPrice(category);
   }
 
-  onApply(id: number) {
+  onApply($event: MouseEvent, id: number) {
     // todo: implement this action
+    $event.stopPropagation();
+    this.router.navigateByUrl('/payment/checkout');
   }
 
   // onClick(id: number) {
@@ -43,5 +47,9 @@ export class GymCardComponent implements OnInit {
 
   exit() {
     this.onExit.emit();
+  }
+
+  onClick(id: number) {
+    this.router.navigateByUrl('/gyms/gym-details');
   }
 }

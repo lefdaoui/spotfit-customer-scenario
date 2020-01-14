@@ -18,7 +18,7 @@ import { TestComponent } from './test/test.component';
 
 import { CheckInComponent } from './check-in/check-in.component';
 import { FavoriteGymComponent } from './favorite-gym/favorite-gym.component';
-import { SessionsModule } from './Sessions/sessions.module';
+import { HeadingBarsComponent } from './heading-bars/heading-bars.component';
 
 @NgModule({
   declarations: [
@@ -30,9 +30,10 @@ import { SessionsModule } from './Sessions/sessions.module';
     RequestGymsComponent,
     CheckInComponent,
     FavoriteGymComponent,
-    CongratulationComponent,    
+    CongratulationComponent,
     ReferFriendComponent,
     TestComponent,
+    HeadingBarsComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,6 +49,7 @@ import { SessionsModule } from './Sessions/sessions.module';
       {
         path: 'subscriptions',
         loadChildren: () => import('./subscriptions/subscriptions.module').then(m => m.SubscriptionsModule),
+        data: { animation: 'toLeft' }
       },
       {
         path: 'gyms',
@@ -77,6 +79,10 @@ import { SessionsModule } from './Sessions/sessions.module';
         path: 'test',
         component: TestComponent,
         data: { animation: 'toLeft' }
+      },
+      {
+        path: 'top-bars',
+        component: HeadingBarsComponent,
       },
       // Mehdi Zouihar
       {
@@ -115,7 +121,6 @@ import { SessionsModule } from './Sessions/sessions.module';
     ]),
     SharedModule,
     GymsModule,
-    SessionsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

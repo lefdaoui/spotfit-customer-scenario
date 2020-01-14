@@ -1,5 +1,6 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {Location} from '@angular/common';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-gym-detials',
@@ -15,7 +16,8 @@ export class GymDetialsComponent implements OnInit {
   ];
 
   constructor(
-    private location: Location
+    private location: Location,
+    private router: Router,
   ) { }
 
   ngOnInit() {
@@ -23,5 +25,9 @@ export class GymDetialsComponent implements OnInit {
 
   back() {
     this.location.back();
+  }
+
+  onApply() {
+    this.router.navigateByUrl('/payment/checkout');
   }
 }

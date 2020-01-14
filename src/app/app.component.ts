@@ -7,16 +7,14 @@ import {fader, slider, stepper} from './shared/animations/route-animations';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   animations: [
-    // fader,
-    slider,
+    fader,
+    // slider,
     // transformer,
     // stepper
   ]
 })
 export class AppComponent {
-  title = 'spotfit-frontend';
-
   prepareRoute(outlet: RouterOutlet) {
-    return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
+    return outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation;
   }
 }

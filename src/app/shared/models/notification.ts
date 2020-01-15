@@ -1,6 +1,8 @@
+import {NotificationType} from '../enums/enums';
+
 export interface Notification {
   id?: string;
-  type?: 'message'|'subscription-status'|'refer-friend';
+  type?: NotificationType;
   datetime?: string;
   subject?: string;
   body?: string;

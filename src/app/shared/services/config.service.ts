@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
+import {OPTIONS} from '../data/options';
 
-interface Option {
+export interface Option {
   key?: string;
   value?: any;
 }
@@ -9,15 +10,7 @@ interface Option {
   providedIn: 'root'
 })
 export class ConfigService {
-  predefined: Option[] = [
-    {
-      key: 'full_access_price', value: {
-        silver: 249.99,
-        gold: 389.99,
-        platinum: 1199.99,
-      },
-    },
-  ];
+  predefined: Option[] = OPTIONS;
 
   constructor() {
   }

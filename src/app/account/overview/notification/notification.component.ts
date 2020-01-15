@@ -1,5 +1,6 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Notification} from '../../../shared/models/notification';
+import {NotificationType} from '../../../shared/enums/enums';
 
 @Component({
   selector: 'app-notification',
@@ -20,19 +21,20 @@ export class NotificationComponent implements OnInit {
   @Output()
   onTap: EventEmitter<Event> = new EventEmitter<Event>();
 
+  NotificationType = NotificationType;
   constructor() {
   }
 
   ngOnInit() {
   }
 
-  getNotificationIconColor(type: 'message' | 'subscription-status' | 'refer-friend') {
+  getNotificationIconColor(type: NotificationType) {
     switch (type) {
-      case 'message':
+      case NotificationType.MESSAGE:
         return 'purple';
-      case 'subscription-status':
+      case NotificationType.SUBSCRIPTION:
         return 'orange';
-      case 'refer-friend':
+      case NotificationType.RELATIONSHIPS:
         return 'blue';
     }
   }

@@ -4,15 +4,15 @@
     <div class="d-flex align-items-start">
       <div class="mr-3">
         <div class="notification__icon {{ getNotificationIconColor(notification.type) }} position-relative">
-          <svg *ngIf="notification.type === 'subscription-status'" class="svg wsm fixed-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 18">
+          <svg *ngIf="notification.type === NotificationType.SUBSCRIPTION" class="svg wsm fixed-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 18">
             <title>subscription</title>
             <path d="M21,9.5A2.5,2.5,0,0,0,23.36,12h.14a.5.5,0,0,1,.5.5v4A1.5,1.5,0,0,1,22.5,18H1.5A1.5,1.5,0,0,1,0,16.5v-4A.5.5,0,0,1,.5,12H.78a2.51,2.51,0,0,0,0-5H.5A.5.5,0,0,1,0,6.5v-5A1.5,1.5,0,0,1,1.5,0h21A1.5,1.5,0,0,1,24,1.5v5a.5.5,0,0,1-.5.5h-.14A2.5,2.5,0,0,0,21,9.5Z"/>
           </svg>
-          <svg *ngIf="notification.type === 'refer-friend'" class="svg wsm fixed-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.67 8"><title>avatar</title>
+          <svg *ngIf="notification.type === NotificationType.RELATIONSHIPS" class="svg wsm fixed-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.67 8"><title>avatar</title>
             <path d="M4.17,0A1.93,1.93,0,0,0,2.33,2,1.93,1.93,0,0,0,4.17,4,1.91,1.91,0,0,0,6,2,1.91,1.91,0,0,0,4.17,0Z"/>
             <path d="M4.33,5C2.49,5,0,6,0,8H8.67C8.67,6,6.17,5,4.33,5Z"/>
           </svg>
-          <svg *ngIf="notification.type === 'message'" class="svg wsm fixed-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <svg *ngIf="notification.type === NotificationType.MESSAGE" class="svg wsm fixed-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <path d="M10.688,95.156C80.958,154.667,204.26,259.365,240.5,292.01c4.865,4.406,10.083,6.646,15.5,6.646
 				c5.406,0,10.615-2.219,15.469-6.604c36.271-32.677,159.573-137.385,229.844-196.896c4.375-3.698,5.042-10.198,1.5-14.719
 				C494.625,69.99,482.417,64,469.333,64H42.667c-13.083,0-25.292,5.99-33.479,16.438C5.646,84.958,6.313,91.458,10.688,95.156z"/>

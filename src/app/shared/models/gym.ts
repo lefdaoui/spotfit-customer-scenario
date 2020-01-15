@@ -3,7 +3,7 @@ import {Class} from './class';
 import {Facility} from './facility';
 import {Planning} from './planning';
 import {Activity} from './activity';
-import {Subscription} from './subscription';
+import {Plan} from './plan';
 import {Address} from './address';
 
 export interface Gym {
@@ -16,7 +16,7 @@ export interface Gym {
   class?: Class;
   facilities?: Facility[];
   planning?: Planning[];
-  subscriptions?: Subscription[];
+  subscriptions?: Plan[];
   activities?: Activity[];
   address: Address;
 }

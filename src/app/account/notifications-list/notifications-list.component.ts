@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Notification} from '../../shared/models/notification';
 import {NOTIFICATIONS} from '../../shared/data/notifications';
+import {NotificationService} from '../../shared/services/gym.service';
 
 @Component({
   selector: 'app-notifications-list',
@@ -8,7 +9,7 @@ import {NOTIFICATIONS} from '../../shared/data/notifications';
   styleUrls: ['./notifications-list.component.scss']
 })
 export class NotificationsListComponent implements OnInit {
-  notifications: Notification[] = [...NOTIFICATIONS];
+  notifications: Notification[] = [];
 
   positionMaxLeft = -85;
   positionMinLeft = 0;
@@ -19,10 +20,10 @@ export class NotificationsListComponent implements OnInit {
     left: '0px',
     overflow: 'hidden',
   };
-  constructor() { }
+  constructor(private notificationService: NotificationService) { }
 
   ngOnInit() {
-
+    this.notificationService.onNotificationsChanged$.subscribe(notifications => this.notifications = notifications);
   }
 
   onPanLeft($event: Event, id: string) {

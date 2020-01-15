@@ -27,7 +27,7 @@ export class GymCardComponent implements OnInit {
   }
 
   getSubscriptionByDuration(days: number) {
-    const subs = this.gym.subscriptions.filter((sub: Subscription) => sub.duration === days);
+    const subs = this.gym.subscriptions.filter((sub) => sub.duration === days);
     return subs.length > 0 ? subs[0] : null;
   }
 

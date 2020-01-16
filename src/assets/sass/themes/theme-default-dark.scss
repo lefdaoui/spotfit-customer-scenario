@@ -1,0 +1,13 @@
+@import "./src/assets/sass/bootstrap/scss/variables";
+@import "./components/components.scss";
+
+body {
+  color: $body-light-color;
+  background-color: $body-dark-bg;
+}
+
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: $headings-light-color;
+}

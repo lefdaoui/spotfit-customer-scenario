@@ -1,3 +1,5 @@
+@import "functions";
+
 // Variables
 //
 // Variables should follow the `$component-state-property-size` formula for
@@ -156,7 +158,9 @@ $sizes: map-merge((
 // Settings for the `<body>` element.
 
 $body-bg:                   #f7f7fa !default;
+$body-dark-bg:              #28223C !default;
 $body-color:                #747795 !default;
+$body-light-color:          $primary-100 !default;
 
 // Links
 //
@@ -279,6 +283,7 @@ $headings-font-family:        inherit !default;
 $headings-font-weight:        500 !default;
 $headings-line-height:        1 !default;
 $headings-color:              #51516f !default;
+$headings-light-color:        $body-light-color !default;
 
 $display1-size:               6rem !default;
 $display2-size:               5.5rem !default;

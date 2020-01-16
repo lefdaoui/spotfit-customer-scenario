@@ -43,6 +43,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": false,
+            "extractCss": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -51,9 +52,20 @@
               "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
               "src/styles.scss",
               "src/assets/sass/app.scss",
+              "src/assets/sass/ng-select.scss",
               "./node_modules/slick-carousel/slick/slick.css",
               "./node_modules/slick-carousel/slick/slick-theme.css",
-              "src/assets/vendor/pace/themes/purple/pace-theme-flash.css"
+              "src/assets/vendor/pace/themes/purple/pace-theme-flash.css",
+              {
+                "input": "src/assets/sass/themes/theme-default.scss",
+                "lazy": true,
+                "bundleName": "theme-default"
+              },
+              {
+                "input": "src/assets/sass/themes/theme-default-dark.scss",
+                "lazy": true,
+                "bundleName": "theme-default-dark"
+              }
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.js",

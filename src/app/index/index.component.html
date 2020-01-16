@@ -31,4 +31,7 @@
   <h5 class="mt-5 text-info">Playground <span class="h6 text-secondary">(testing area)</span></h5>
   <a routerLink="/test">/test</a>
   <a routerLink="/top-bars">/top-bars</a>
+
+  <h5 class="mt-3 text-black-50">App Theme  <span class="h6 text-secondary">(Dark/Default)</span></h5>
+  <div class="btn btn-primary" (click)="onChangeTheme()">Turn Dark mode {{ (darkMode$ | async) ? 'on' : 'off'}}</div>
 </div>

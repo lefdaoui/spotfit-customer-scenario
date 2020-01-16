@@ -1,0 +1,39 @@
+@import "./src/assets/sass/bootstrap/scss/functions";
+@import "./src/assets/sass/bootstrap/scss/variables";
+
+#topbar-s3 {
+
+  svg#left-arrow {
+    width: 1.3rem;
+    fill: $primary;
+  }
+
+  #profile {
+    position: relative;
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      border: 2px solid $primary;
+    }
+
+    .status {
+      padding: 5px;
+      border-radius: 100%;
+      background-color: $primary-light;
+      border: 1px solid white;
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      &.active {
+        background-color: $green;
+      }
+
+      &.inactive {
+        background-color: $red;
+      }
+    }
+  }
+}

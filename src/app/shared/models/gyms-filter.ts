@@ -1,6 +1,9 @@
+import {Gym} from './gym';
+import {Activity} from './activity';
+
 export interface GymsFilter {
-    gyms_id?: string[];
-    activities_id?: string[];
-    review?: number;
-    ville?: string;
+  gyms?: Gym[];
+  activities?: Activity[];
+  review?: number;
+  ville?: string;
 }

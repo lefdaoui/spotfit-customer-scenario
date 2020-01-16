@@ -16,7 +16,6 @@ import { ConfirmIdentityComponent } from './confirm-identity/confirm-identity.co
   imports: [
     CommonModule,
     KycRoutingModule,
-    GymsModule,
     NgbDatepickerModule,
     SharedModule,
     NgbDropdownModule,

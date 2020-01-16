@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { SettingsRoutingModule } from './settings-routing.module';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
-import {GymsModule} from '../../gyms/gyms.module';
 import {TabsModule} from 'ngx-bootstrap';
+import {SharedModule} from '../../shared/shared.module';
 
 
 @NgModule({
@@ -12,8 +12,8 @@ import {TabsModule} from 'ngx-bootstrap';
   imports: [
     CommonModule,
     SettingsRoutingModule,
-    GymsModule,
-    TabsModule
+    TabsModule,
+    SharedModule,
   ]
 })
 export class SettingsModule { }

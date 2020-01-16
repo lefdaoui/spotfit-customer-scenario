@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Notification} from '../../shared/models/notification';
 import {NOTIFICATIONS} from '../../shared/data/notifications';
-import {NotificationService} from '../../shared/services/gym.service';
+import {NotificationService} from '../../shared/services/notification.service';
 
 @Component({
   selector: 'app-notifications-list',

@@ -1,22 +1,17 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {Location} from '@angular/common';
 import {Router} from '@angular/router';
 
 @Component({
-  selector: 'app-top-bar',
-  templateUrl: './top-bar.component.html',
-  styleUrls: ['./top-bar.component.scss']
+  selector: 'topbar-s1',
+  templateUrl: './topbar-s1.component.html',
+  styleUrls: ['./topbar-s1.component.scss']
 })
-export class TopBarComponent implements OnInit {
-
+export class TopbarS1Component implements OnInit {
   @Output() onTabChanged = new EventEmitter<string>();
   @Input() activeTab = 'list';
-  @Input() design = null;
-  @Input() navigateBackUrl;
   @Input() extraClasses = [];
 
   constructor(
-    private location: Location,
     private router: Router
   ) {
   }
@@ -29,19 +24,6 @@ export class TopBarComponent implements OnInit {
     this.activeTab = tab;
     // emit the event to parent components
     this.onTabChanged.emit(tab);
-  }
-
-  goBack() {
-    if (this.design === 'style2') {
-      this.navigateTo('/subscriptions/status');
-      return;
-    }
-
-    if (!this.navigateBackUrl) {
-      this.location.back();
-    }
-
-    this.router.navigateByUrl(this.navigateBackUrl);
   }
 
   navigateTo(path: string) {

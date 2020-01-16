@@ -1,0 +1,15 @@
+<div id="topbar-s3"class="{{ extraClasses.join(' ') }}">
+  <div class="affix-top">
+    <div class="d-flex justify-content-between position-relative">
+      <svg id="left-arrow" (click)="goBack()" class="pt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.84 9.79">
+        <path d="M4.89,9.79A1,1,0,0,1,4.2,9.5L.29,5.59a1,1,0,0,1,0-1.39,1,1,0,0,1,1.38,0L5.59,8.12a1,1,0,0,1,0,1.38A1,1,0,0,1,4.89,9.79Z"/>
+        <path d="M1,5.87A1,1,0,0,1,.29,4.2L4.2.29a1,1,0,0,1,1.39,0,1,1,0,0,1,0,1.38L1.67,5.59A1,1,0,0,1,1,5.87Z"/>
+        <path d="M15.86,5.87H1A1,1,0,1,1,1,3.92H15.86a1,1,0,1,1,0,2Z"/>
+      </svg>
+      <div id="profile" (click)="navigateTo('/account/overview')">
+        <img class="avatar" src="assets/img/img1.jpeg" alt="avatar">
+        <div class="status active"></div>
+      </div>
+    </div>
+  </div>
+</div>

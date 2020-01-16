@@ -31,6 +31,10 @@
     fill: $info;
   }
 
+  &.primary {
+    fill: $primary;
+  }
+
   &.wlg { width: $lg!important; }
 
   &.wmd { width: $md!important; }

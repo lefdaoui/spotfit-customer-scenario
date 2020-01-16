@@ -1,1 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.5 22"><defs><style>.ad6b5d38-39c0-4a54-8d67-3d8ca147629c,.eb031498-f411-46e9-b5bc-6a066485ea9a{fill:none;stroke:#231f20;stroke-linecap:round;stroke-linejoin:round;}.eb031498-f411-46e9-b5bc-6a066485ea9a{stroke-width:3px;}.ad6b5d38-39c0-4a54-8d67-3d8ca147629c{stroke-width:2px;}</style></defs><title>list</title><g id="f6cf1513-9eb1-4ff8-8767-7365ce47225f" data-name="Layer 2"><g id="a6a5f905-5fcb-439b-9e66-ff4d9cda0def" data-name="set"><line class="eb031498-f411-46e9-b5bc-6a066485ea9a" x1="9" y1="3" x2="25" y2="3"/><circle class="ad6b5d38-39c0-4a54-8d67-3d8ca147629c" cx="3" cy="3" r="2"/><line class="eb031498-f411-46e9-b5bc-6a066485ea9a" x1="9" y1="11" x2="25" y2="11"/><circle class="ad6b5d38-39c0-4a54-8d67-3d8ca147629c" cx="3" cy="11" r="2"/><line class="eb031498-f411-46e9-b5bc-6a066485ea9a" x1="9" y1="19" x2="25" y2="19"/><circle class="ad6b5d38-39c0-4a54-8d67-3d8ca147629c" cx="3" cy="19" r="2"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.5 22">
+  <defs>
+    <style>.ad6b5d38-39c0-4a54-8d67-3d8ca147629c, .eb031498-f411-46e9-b5bc-6a066485ea9a {
+      fill: none;
+      stroke: #231f20;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .eb031498-f411-46e9-b5bc-6a066485ea9a, .ad6b5d38-39c0-4a54-8d67-3d8ca147629c {
+      stroke-width: 2px;
+    }
+
+    .ad6b5d38-39c0-4a54-8d67-3d8ca147629c {
+      stroke-width: 1px;
+    }</style>
+  </defs>
+  <title>list</title>
+      <line class="eb031498-f411-46e9-b5bc-6a066485ea9a" x1="9" y1="3" x2="25" y2="3"/>
+      <circle class="ad6b5d38-39c0-4a54-8d67-3d8ca147629c" cx="3" cy="3" r="2"/>
+      <line class="eb031498-f411-46e9-b5bc-6a066485ea9a" x1="9" y1="11" x2="25" y2="11"/>
+      <circle class="ad6b5d38-39c0-4a54-8d67-3d8ca147629c" cx="3" cy="11" r="2"/>
+      <line class="eb031498-f411-46e9-b5bc-6a066485ea9a" x1="9" y1="19" x2="25" y2="19"/>
+      <circle class="ad6b5d38-39c0-4a54-8d67-3d8ca147629c" cx="3" cy="19" r="2"/>
+</svg>

@@ -1,0 +1,65 @@
+@import "./src/assets/sass/bootstrap/scss/functions";
+@import "./src/assets/sass/bootstrap/scss/variables";
+
+#topbar-s1 {
+  #display-system {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow:  $box-shadow;
+
+    .tab {
+      display: flex;
+      align-items: center;
+      padding: 13px 15px;
+
+
+      &:first-child {
+        border-right: 1px solid $primary-light;
+      }
+
+      &.active * {
+        fill: $primary !important;
+        color: $primary !important;
+        stroke: $primary;
+      }
+
+      svg {
+        padding-right: 5px;
+        fill: $body-color;
+        stroke: $body-color;
+      }
+    }
+  }
+
+  #profile {
+    position: relative;
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      border: 2px solid $primary;
+    }
+
+    .status {
+      padding: 5px;
+      border-radius: 100%;
+      background-color: $primary-light;
+      border: 1px solid white;
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      &.active {
+        background-color: $green;
+      }
+
+      &.inactive {
+        background-color: $red;
+      }
+    }
+  }
+}

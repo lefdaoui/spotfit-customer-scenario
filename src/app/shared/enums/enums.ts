@@ -9,7 +9,8 @@ export enum SubscriptionStatus {
   CANCELED,
   ACTIVE,
   CONFIRMED,
-  EXPIRED
+  EXPIRED,
+  RESERVED,
 }
 
 export enum SubscriptionType {

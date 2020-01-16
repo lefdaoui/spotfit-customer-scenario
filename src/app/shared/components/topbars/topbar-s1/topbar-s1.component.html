@@ -1,0 +1,61 @@
+<div id="topbar-s1" class="{{ extraClasses.join(' ') }}">
+  <div class="affix-top">
+    <div class="d-flex justify-content-between align-items-center">
+      <div id="menu" (click)="navigateTo('/subscriptions/status')">
+        <svg class="svg hmd primary mt-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 23">
+          <path class="aa7302fb-66e1-42c9-a36d-85f63d359cb2"
+                d="M17.5,3H1.5a1.5,1.5,0,0,1,0-3h16a1.5,1.5,0,0,1,0,3Z"/>
+          <path class="aa7302fb-66e1-42c9-a36d-85f63d359cb2"
+                d="M37.5,23h-16a1.5,1.5,0,0,1,0-3h16a1.5,1.5,0,0,1,0,3Z"/>
+          <path class="aa7302fb-66e1-42c9-a36d-85f63d359cb2"
+                d="M1.5,13a1.5,1.5,0,0,1,0-3l35.69,0h0a1.5,1.5,0,0,1,0,3L1.5,13Z"/>
+        </svg>
+      </div>
+      <div id="display-system">
+        <div class="tab lcureved {{ activeTab === 'map' ? 'active': '' }}" (click)="onSelectTab('map')">
+          <svg class="svg hsm" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+            <g>
+              <path d="M24.2,3.3l-7-2.6c0,0-0.1,0-0.1,0l0,0c-0.3-0.1-0.7-0.1-1-0.1c-0.1,0-0.3,0.1-0.4,0.1L9.5,3.4L3.2,1.1
+		c-0.5-0.2-1-0.2-1.5,0.1c-0.5,0.2-0.9,0.6-1,1.1C0.5,2.5,0.5,2.7,0.5,2.9v16.9c0,0.8,0.4,1.5,1.1,1.8l7,3.5c0.1,0,0.2,0.1,0.3,0.1
+		c0.2,0.1,0.4,0.1,0.7,0.1c0.2,0,0.4,0,0.6-0.1c0.1,0,0.2-0.1,0.3-0.2l6-3.5l6.1,3c1,0.5,2.2,0.1,2.7-0.9c0.1-0.3,0.2-0.6,0.2-0.9
+		V5.2C25.5,4.4,24.9,3.6,24.2,3.3z M8.5,22.9l-6-3V2.9l6,2.2V22.9z M15.5,19.9l-5,2.9V5.2l5-2.2V19.9z M23.5,22.9l-6-2.9V3l6,2.2
+		L23.5,22.9z"/>
+            </g>
+          </svg>
+          <span>Map</span>
+        </div>
+        <div class="tab rcureved {{ activeTab === 'list' ? 'active': '' }}" (click)="onSelectTab('list')">
+          <svg class="svg hsm" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.5 22">
+            <defs>
+              <style>.ad6b5d38-39c0-4a54-8d67-3d8ca147629c, .eb031498-f411-46e9-b5bc-6a066485ea9a {
+                fill: none;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+              }
+
+              .eb031498-f411-46e9-b5bc-6a066485ea9a, .ad6b5d38-39c0-4a54-8d67-3d8ca147629c {
+                stroke-width: 2px;
+              }
+
+              .ad6b5d38-39c0-4a54-8d67-3d8ca147629c {
+                stroke-width: 1px;
+              }</style>
+            </defs>
+            <title>list</title>
+            <line class="eb031498-f411-46e9-b5bc-6a066485ea9a" x1="9" y1="3" x2="25" y2="3"/>
+            <circle class="ad6b5d38-39c0-4a54-8d67-3d8ca147629c" cx="3" cy="3" r="2"/>
+            <line class="eb031498-f411-46e9-b5bc-6a066485ea9a" x1="9" y1="11" x2="25" y2="11"/>
+            <circle class="ad6b5d38-39c0-4a54-8d67-3d8ca147629c" cx="3" cy="11" r="2"/>
+            <line class="eb031498-f411-46e9-b5bc-6a066485ea9a" x1="9" y1="19" x2="25" y2="19"/>
+            <circle class="ad6b5d38-39c0-4a54-8d67-3d8ca147629c" cx="3" cy="19" r="2"/>
+          </svg>
+          <span>List</span>
+        </div>
+      </div>
+      <div id="profile" (click)="navigateTo('/account/overview')">
+        <img class="avatar" src="assets/img/img1.jpeg" alt="avatar">
+        <div class="status active"></div>
+      </div>
+    </div>
+  </div>
+</div>

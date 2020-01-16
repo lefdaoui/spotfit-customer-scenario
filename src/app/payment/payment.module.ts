@@ -22,7 +22,6 @@ import {KycModule} from '../kyc/kyc.module';
   imports: [
     CommonModule,
     PaymentRoutingModule,
-    GymsModule,
     NgbDatepickerModule,
     SharedModule,
     NgbDropdownModule,

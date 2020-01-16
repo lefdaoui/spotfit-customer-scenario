@@ -1,14 +1,13 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { AccountRoutingModule } from './account-routing.module';
-import { OverviewComponent } from './overview/overview.component';
-import {GymsModule} from '../gyms/gyms.module';
-import { NotificationComponent } from './overview/notification/notification.component';
+import {AccountRoutingModule} from './account-routing.module';
+import {OverviewComponent} from './overview/overview.component';
+import {NotificationComponent} from './overview/notification/notification.component';
 import {TabsModule} from 'ngx-bootstrap';
 import {SharedModule} from '../shared/shared.module';
-import { NotificationsListComponent } from './notifications-list/notifications-list.component';
-import { ProfileComponent } from './profile/profile.component';
+import {NotificationsListComponent} from './notifications-list/notifications-list.component';
+import {ProfileComponent} from './profile/profile.component';
 
 
 @NgModule({
@@ -16,9 +15,8 @@ import { ProfileComponent } from './profile/profile.component';
   imports: [
     CommonModule,
     AccountRoutingModule,
-    GymsModule,
-    TabsModule,
-    SharedModule
+    SharedModule,
+    TabsModule.forRoot(),
   ]
 })
 export class AccountModule { }

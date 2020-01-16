@@ -6,19 +6,18 @@ import {NgModule} from '@angular/core';
 import {SharedModule} from './shared/shared.module';
 
 import {AppComponent} from './app.component';
-import {GymsModule} from './gyms/gyms.module';
 import {IndexComponent} from './index/index.component';
 
-import { SignInComponent } from './sign-in/sign-in.component';
-import { SignUpComponent } from './sign-up/sign-up.component';
-import { RequestGymsComponent } from './request-gyms/request-gyms.component';
-import { ReferFriendComponent } from './refer-friend/refer-friend.component';
-import { CongratulationComponent } from './congratulation/congratulation.component';
-import { TestComponent } from './test/test.component';
+import {SignInComponent} from './sign-in/sign-in.component';
+import {SignUpComponent} from './sign-up/sign-up.component';
+import {RequestGymsComponent} from './request-gyms/request-gyms.component';
+import {ReferFriendComponent} from './refer-friend/refer-friend.component';
+import {CongratulationComponent} from './congratulation/congratulation.component';
+import {TestComponent} from './test/test.component';
 
-import { CheckInComponent } from './check-in/check-in.component';
-import { FavoriteGymComponent } from './favorite-gym/favorite-gym.component';
-import { HeadingBarsComponent } from './heading-bars/heading-bars.component';
+import {CheckInComponent} from './check-in/check-in.component';
+import {FavoriteGymComponent} from './favorite-gym/favorite-gym.component';
+import {HeadingBarsComponent} from './heading-bars/heading-bars.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +48,7 @@ import { HeadingBarsComponent } from './heading-bars/heading-bars.component';
       {
         path: 'subscriptions',
         loadChildren: () => import('./subscriptions/subscriptions.module').then(m => m.SubscriptionsModule),
-        data: { animation: 'toLeft' }
+        data: {animation: 'toLeft'}
       },
       {
         path: 'gyms',
@@ -78,7 +77,7 @@ import { HeadingBarsComponent } from './heading-bars/heading-bars.component';
       {
         path: 'test',
         component: TestComponent,
-        data: { animation: 'toLeft' }
+        data: {animation: 'toLeft'}
       },
       {
         path: 'top-bars',
@@ -120,7 +119,6 @@ import { HeadingBarsComponent } from './heading-bars/heading-bars.component';
       },
     ]),
     SharedModule,
-    GymsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,6 +1,6 @@
 <div class="map-overview {{activeTab === 'map' ? 'full' : ''}}">
   <!--header-->
-  <app-top-bar (onTabChanged)="onTabChanged($event)" [activeTab]="activeTab"></app-top-bar>
+  <topbar-s1 (onTabChanged)="onTabChanged($event)" [activeTab]="activeTab"></topbar-s1>
 
   <!--content-->
   <div [hidden]="activeTab !== 'map'">

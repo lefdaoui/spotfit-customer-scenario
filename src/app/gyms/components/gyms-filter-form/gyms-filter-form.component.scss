@@ -1,0 +1,35 @@
+@import "./src/assets/sass/bootstrap/scss/functions";
+@import "./src/assets/sass/bootstrap/scss/variables";
+
+#gyms-filter-form {
+  input#distance {
+    border-bottom: none;
+    text-align: center;
+  }
+
+  .facilities-list {
+    .facility-single {
+      &.selected {
+        background-color: $primary-500;
+        svg {
+          fill: $white;
+        }
+        color: $white;
+      }
+      color: $primary-light;
+      width: 90px;
+      font-size: 10.5px;
+
+      svg {
+        height: 35px;
+      }
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+
+      background-color: $primary-100;
+    }
+  }
+}
+

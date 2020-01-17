@@ -9,20 +9,15 @@ import {Observable} from 'rxjs';
 })
 export class IndexComponent implements OnInit {
   darkMode$: Observable<boolean>;
-  activeMode: 'dark' | 'default';
 
   constructor(
-    private themeService: ThemeServiceService
+    private themeService: ThemeServiceService,
   ) {
+
   }
 
   ngOnInit() {
     this.darkMode$ = this.themeService.darkMode$;
-
-    this.themeService.darkMode$.subscribe(isDarkMode => console.log({isDarkMode}));
-    this.themeService.theme$.subscribe(theme => console.log({theme}));
-
-    this.activeMode = this.themeService.activeMode();
   }
 
   onChangeTheme() {

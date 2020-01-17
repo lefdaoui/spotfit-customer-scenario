@@ -1,8 +1,9 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { SubscriptionsRoutingModule } from './subscriptions-routing.module';
+import {SubscriptionsRoutingModule} from './subscriptions-routing.module';
 import {SubsciptionStatusComponent} from './subsciption-status/subsciption-status.component';
+import {GymsModule} from '../gyms/gyms.module';
 
 
 @NgModule({
@@ -11,7 +12,9 @@ import {SubsciptionStatusComponent} from './subsciption-status/subsciption-statu
   ],
   imports: [
     CommonModule,
-    SubscriptionsRoutingModule
+    SubscriptionsRoutingModule,
+    GymsModule
   ]
 })
-export class SubscriptionsModule { }
+export class SubscriptionsModule {
+}

@@ -1,6 +1,5 @@
 @import "../../../../assets/sass/spotfit/variables";
 .gym-card {
-  background-color: white;
   border-radius: 11px;
   position: relative;
   width: 100%;
@@ -83,7 +82,6 @@
     .name {
       font-size: 15px;
       color: $primary-dark;
-      font-weight: 600;
     }
 
     .statistics {

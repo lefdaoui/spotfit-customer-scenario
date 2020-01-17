@@ -4,32 +4,20 @@
 
 ::ng-deep tabset#showInfo {
   .nav-tabs {
-    // just for this case
     background-color: $body-bg;
     padding: 0px 1rem;
 
-    border: none;
-
     .nav-link {
       &.active {
-        border-color: transparent;
-        font-weight: 600;
         color: darken($body-color, 20%);
-
-        border-bottom: 3px solid $gray-300;
         padding-bottom: 10px;
+        border-bottom-width: 3px
       }
-
-      color: inherit;
-      font-weight: normal;
     }
   }
 
   .tab-content {
-    // just for this case
     padding: 5px 1rem 0 1rem;
-
-    padding-top: 5px;
   }
 }
 

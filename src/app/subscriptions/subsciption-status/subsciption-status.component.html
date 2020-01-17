@@ -1,7 +1,22 @@
-<div class="subscription-status identifier">
+<div id="subscription-status" class="subscription-status identifier">
   <div>
     <div class="exit" (click)="back()">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.74 18.74"><defs><style>.bc98a76a-bb9c-4f65-98d4-5d66f9b7743e{fill:#231f20;}</style></defs><title>exit</title><g id="bd46cb1d-e542-4308-932e-bd45e2696b1f" data-name="Layer 2"><g id="a076c2a8-af97-461a-b213-9ac50db2d888" data-name="set"><rect class="bc98a76a-bb9c-4f65-98d4-5d66f9b7743e" x="-2.88" y="8.37" width="24.5" height="2" transform="translate(-3.88 9.37) rotate(-45)"/><rect class="bc98a76a-bb9c-4f65-98d4-5d66f9b7743e" x="8.37" y="-2.88" width="2" height="24.5" transform="translate(-3.88 9.37) rotate(-45)"/></g></g></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.74 18.74">
+        <defs>
+          <style>.bc98a76a-bb9c-4f65-98d4-5d66f9b7743e {
+            fill: #231f20;
+          }</style>
+        </defs>
+        <title>exit</title>
+        <g id="bd46cb1d-e542-4308-932e-bd45e2696b1f" data-name="Layer 2">
+          <g id="a076c2a8-af97-461a-b213-9ac50db2d888" data-name="set">
+            <rect class="bc98a76a-bb9c-4f65-98d4-5d66f9b7743e" x="-2.88" y="8.37" width="24.5" height="2"
+                  transform="translate(-3.88 9.37) rotate(-45)"/>
+            <rect class="bc98a76a-bb9c-4f65-98d4-5d66f9b7743e" x="8.37" y="-2.88" width="2" height="24.5"
+                  transform="translate(-3.88 9.37) rotate(-45)"/>
+          </g>
+        </g>
+      </svg>
     </div>
     <div class="infos inactive">
       <div class="current">
@@ -11,24 +26,166 @@
         <div class="details">
           <div class="full-name">John Smith</div>
           <div class="location">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 22 27"><defs><style>.a24f55a5-fb9b-4c1e-99dd-095d8b8aa0a9,.ea2a18e0-e06a-444f-9cae-d4111e9fb7c1{fill:none;}.a24f55a5-fb9b-4c1e-99dd-095d8b8aa0a9{clip-path:url(#add229d0-8256-49fa-94f7-e8e6365bd29f);}.a710c34b-92a2-401f-b699-711771adca5d{clip-path:url(#bc275531-cc0c-4a8d-bed9-2b3a92557050);}</style><clipPath id="add229d0-8256-49fa-94f7-e8e6365bd29f"><rect id="b33103e1-1fc8-42ef-a049-f4b8e7a41d0a" data-name="SVGID" class="ea2a18e0-e06a-444f-9cae-d4111e9fb7c1" width="24" height="24"/></clipPath><clipPath id="bc275531-cc0c-4a8d-bed9-2b3a92557050" transform="translate(-1 1.5)"><path id="a3ffd8d0-754b-49b9-9c3e-787b1992fc82" data-name="SVGID" class="a24f55a5-fb9b-4c1e-99dd-095d8b8aa0a9" d="M12,1c4.58,0,8.69,3.77,8.49,8.05-.21,4.63-6.15,14-8.49,14S3.72,13.68,3.51,9.05C3.31,4.77,7.42,1,12,1ZM10.88,14.38c.73-.83,3.33-.64,4.12-1.88,1.86-2.92,1.41-1.58,1.5-3.55.14-3.07-.5-3.32-4-3.32s-4.89-.08-4.75,3c.09,2-1.11-.55.75,2.37a10.41,10.41,0,0,0,1.75,2c.34.39,1.23.56,1.47.75L9.25,13.5l1.56-.34M12,15a5.5,5.5,0,1,1,5.5-5.5A5.5,5.5,0,0,1,12,15Zm0-2A3.5,3.5,0,1,0,8.5,9.5,3.5,3.5,0,0,0,12,13Z"/></clipPath></defs><title>marker</title><g id="ba881631-f898-4591-a461-fe5b1f81d106" data-name="Layer 2"><g id="b7767b8a-e873-4a4a-8653-cd2b5586d170" data-name="set"><g class="a710c34b-92a2-401f-b699-711771adca5d"><rect width="22" height="27"/></g></g></g></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 27">
+              <defs>
+                <style>.a24f55a5-fb9b-4c1e-99dd-095d8b8aa0a9, .ea2a18e0-e06a-444f-9cae-d4111e9fb7c1 {
+                  fill: none;
+                }
+
+                .a24f55a5-fb9b-4c1e-99dd-095d8b8aa0a9 {
+                  clip-path: url(#add229d0-8256-49fa-94f7-e8e6365bd29f);
+                }
+
+                .a710c34b-92a2-401f-b699-711771adca5d {
+                  clip-path: url(#bc275531-cc0c-4a8d-bed9-2b3a92557050);
+                }</style>
+                <clipPath id="add229d0-8256-49fa-94f7-e8e6365bd29f">
+                  <rect id="b33103e1-1fc8-42ef-a049-f4b8e7a41d0a" data-name="SVGID"
+                        class="ea2a18e0-e06a-444f-9cae-d4111e9fb7c1" width="24" height="24"/>
+                </clipPath>
+                <clipPath id="bc275531-cc0c-4a8d-bed9-2b3a92557050" transform="translate(-1 1.5)">
+                  <path id="a3ffd8d0-754b-49b9-9c3e-787b1992fc82" data-name="SVGID"
+                        class="a24f55a5-fb9b-4c1e-99dd-095d8b8aa0a9"
+                        d="M12,1c4.58,0,8.69,3.77,8.49,8.05-.21,4.63-6.15,14-8.49,14S3.72,13.68,3.51,9.05C3.31,4.77,7.42,1,12,1ZM10.88,14.38c.73-.83,3.33-.64,4.12-1.88,1.86-2.92,1.41-1.58,1.5-3.55.14-3.07-.5-3.32-4-3.32s-4.89-.08-4.75,3c.09,2-1.11-.55.75,2.37a10.41,10.41,0,0,0,1.75,2c.34.39,1.23.56,1.47.75L9.25,13.5l1.56-.34M12,15a5.5,5.5,0,1,1,5.5-5.5A5.5,5.5,0,0,1,12,15Zm0-2A3.5,3.5,0,1,0,8.5,9.5,3.5,3.5,0,0,0,12,13Z"/>
+                </clipPath>
+              </defs>
+              <title>marker</title>
+              <g id="ba881631-f898-4591-a461-fe5b1f81d106" data-name="Layer 2">
+                <g id="b7767b8a-e873-4a4a-8653-cd2b5586d170" data-name="set">
+                  <g class="a710c34b-92a2-401f-b699-711771adca5d">
+                    <rect width="22" height="27"/>
+                  </g>
+                </g>
+              </g>
+            </svg>
             New York, USA
           </div>
         </div>
       </div>
       <div class="status">
         <div>
-          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 18.5"><defs><style>.bd86be27-5826-431e-a8d5-b49b72a9e978{fill:#231f20;}</style></defs><title>ticket-filled</title><g id="bede9942-9472-4000-af45-d0d4e594de11" data-name="Layer 2"><g id="acdede67-b389-4b78-99f5-446ed47e1de0" data-name="set"><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M.5,13a.5.5,0,0,1,0-1,2.5,2.5,0,0,0,0-5,.5.5,0,0,1,0-1,3.5,3.5,0,0,1,0,7Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M23.5,13a3.5,3.5,0,0,1,0-7,.5.5,0,0,1,0,1,2.5,2.5,0,0,0,0,5,.5.5,0,0,1,0,1Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M23.5,7a.5.5,0,0,1-.5-.5v-5a.5.5,0,0,0-.5-.5H1.5a.5.5,0,0,0-.5.5v5A.5.5,0,0,1,.5,7,.5.5,0,0,1,0,6.5v-5A1.5,1.5,0,0,1,1.5,0h21A1.5,1.5,0,0,1,24,1.5v5A.5.5,0,0,1,23.5,7Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M22.5,18H1.5A1.5,1.5,0,0,1,0,16.5v-4A.5.5,0,0,1,.5,12a.5.5,0,0,1,.5.5v4a.5.5,0,0,0,.5.5h21a.5.5,0,0,0,.5-.5v-4a.5.5,0,0,1,1,0v4A1.5,1.5,0,0,1,22.5,18Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M16.5,18.5A.5.5,0,0,1,16,18V1a.5.5,0,0,1,1,0V18A.5.5,0,0,1,16.5,18.5Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M15.5,18.5A.5.5,0,0,1,15,18V1a.5.5,0,0,1,1,0V18A.5.5,0,0,1,15.5,18.5Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M14.5,18.5A.5.5,0,0,1,14,18V1a.5.5,0,0,1,1,0V18A.5.5,0,0,1,14.5,18.5Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M13.5,18.5A.5.5,0,0,1,13,18V1a.5.5,0,0,1,1,0V18A.5.5,0,0,1,13.5,18.5Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M12.5,18.5A.5.5,0,0,1,12,18V1a.5.5,0,0,1,1,0V18A.5.5,0,0,1,12.5,18.5Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M11.5,18.5A.5.5,0,0,1,11,18V1a.5.5,0,0,1,1,0V18A.5.5,0,0,1,11.5,18.5Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M17.5,18.5A.5.5,0,0,1,17,18V1a.5.5,0,0,1,1,0V18A.5.5,0,0,1,17.5,18.5Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M18.5,18.5A.5.5,0,0,1,18,18V1a.5.5,0,0,1,1,0V18A.5.5,0,0,1,18.5,18.5Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M19.5,18.5A.5.5,0,0,1,19,18V1a.5.5,0,0,1,1,0V18A.5.5,0,0,1,19.5,18.5Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M20.5,18.5A.5.5,0,0,1,20,18V1a.5.5,0,0,1,1,0V18A.5.5,0,0,1,20.5,18.5Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M21.5,7.5A.5.5,0,0,1,21,7V1a.5.5,0,0,1,1,0V7A.5.5,0,0,1,21.5,7.5Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M22.5,7.5A.5.5,0,0,1,22,7V1a.5.5,0,0,1,1,0V7A.5.5,0,0,1,22.5,7.5Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M22.5,18.5A.5.5,0,0,1,22,18V13a.5.5,0,0,1,1,0v5A.5.5,0,0,1,22.5,18.5Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M21.5,18.5A.5.5,0,0,1,21,18V13a.5.5,0,0,1,1,0v5A.5.5,0,0,1,21.5,18.5Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M3.5,18.5A.5.5,0,0,1,3,18V1A.5.5,0,0,1,4,1V18A.5.5,0,0,1,3.5,18.5Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M4.5,18.5A.5.5,0,0,1,4,18V1A.5.5,0,0,1,5,1V18A.5.5,0,0,1,4.5,18.5Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M5.5,18.5A.5.5,0,0,1,5,18V1A.5.5,0,0,1,6,1V18A.5.5,0,0,1,5.5,18.5Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M6.5,18.5A.5.5,0,0,1,6,18V1A.5.5,0,0,1,7,1V18A.5.5,0,0,1,6.5,18.5Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M7.5,18.5A.5.5,0,0,1,7,18V1A.5.5,0,0,1,8,1V18A.5.5,0,0,1,7.5,18.5Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M8.5,18.5A.5.5,0,0,1,8,18V1A.5.5,0,0,1,9,1V18A.5.5,0,0,1,8.5,18.5Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M9.5,18.5A.5.5,0,0,1,9,18V1a.5.5,0,0,1,1,0V18A.5.5,0,0,1,9.5,18.5Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M10.5,18.5A.5.5,0,0,1,10,18V1a.5.5,0,0,1,1,0V18A.5.5,0,0,1,10.5,18.5Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M1.5,7.5A.5.5,0,0,1,1,7V1A.5.5,0,0,1,2,1V7A.5.5,0,0,1,1.5,7.5Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M2.5,7.5A.5.5,0,0,1,2,7V1A.5.5,0,0,1,3,1V7A.5.5,0,0,1,2.5,7.5Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M3.5,7.5h-2a.5.5,0,0,1,0-1h2a.5.5,0,0,1,0,1Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M3.5,13.5h-1a.5.5,0,0,1,0-1h1a.5.5,0,0,1,0,1Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M21.5,13.5h-1a.5.5,0,0,1,0-1h1a.5.5,0,0,1,0,1Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M21.5,7.5h-1a.5.5,0,0,1,0-1h1a.5.5,0,0,1,0,1Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M2.5,18.5A.5.5,0,0,1,2,18V13a.5.5,0,0,1,1,0v5A.5.5,0,0,1,2.5,18.5Z"/><path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M1.5,18.5A.5.5,0,0,1,1,18V13a.5.5,0,0,1,1,0v5A.5.5,0,0,1,1.5,18.5Z"/></g></g></svg>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 18.5">
+            <defs>
+              <style>.bd86be27-5826-431e-a8d5-b49b72a9e978 {
+                fill: #231f20;
+              }</style>
+            </defs>
+            <title>ticket-filled</title>
+            <g id="bede9942-9472-4000-af45-d0d4e594de11" data-name="Layer 2">
+              <g id="acdede67-b389-4b78-99f5-446ed47e1de0" data-name="set">
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978"
+                      d="M.5,13a.5.5,0,0,1,0-1,2.5,2.5,0,0,0,0-5,.5.5,0,0,1,0-1,3.5,3.5,0,0,1,0,7Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978"
+                      d="M23.5,13a3.5,3.5,0,0,1,0-7,.5.5,0,0,1,0,1,2.5,2.5,0,0,0,0,5,.5.5,0,0,1,0,1Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978"
+                      d="M23.5,7a.5.5,0,0,1-.5-.5v-5a.5.5,0,0,0-.5-.5H1.5a.5.5,0,0,0-.5.5v5A.5.5,0,0,1,.5,7,.5.5,0,0,1,0,6.5v-5A1.5,1.5,0,0,1,1.5,0h21A1.5,1.5,0,0,1,24,1.5v5A.5.5,0,0,1,23.5,7Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978"
+                      d="M22.5,18H1.5A1.5,1.5,0,0,1,0,16.5v-4A.5.5,0,0,1,.5,12a.5.5,0,0,1,.5.5v4a.5.5,0,0,0,.5.5h21a.5.5,0,0,0,.5-.5v-4a.5.5,0,0,1,1,0v4A1.5,1.5,0,0,1,22.5,18Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978"
+                      d="M16.5,18.5A.5.5,0,0,1,16,18V1a.5.5,0,0,1,1,0V18A.5.5,0,0,1,16.5,18.5Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978"
+                      d="M15.5,18.5A.5.5,0,0,1,15,18V1a.5.5,0,0,1,1,0V18A.5.5,0,0,1,15.5,18.5Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978"
+                      d="M14.5,18.5A.5.5,0,0,1,14,18V1a.5.5,0,0,1,1,0V18A.5.5,0,0,1,14.5,18.5Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978"
+                      d="M13.5,18.5A.5.5,0,0,1,13,18V1a.5.5,0,0,1,1,0V18A.5.5,0,0,1,13.5,18.5Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978"
+                      d="M12.5,18.5A.5.5,0,0,1,12,18V1a.5.5,0,0,1,1,0V18A.5.5,0,0,1,12.5,18.5Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978"
+                      d="M11.5,18.5A.5.5,0,0,1,11,18V1a.5.5,0,0,1,1,0V18A.5.5,0,0,1,11.5,18.5Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978"
+                      d="M17.5,18.5A.5.5,0,0,1,17,18V1a.5.5,0,0,1,1,0V18A.5.5,0,0,1,17.5,18.5Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978"
+                      d="M18.5,18.5A.5.5,0,0,1,18,18V1a.5.5,0,0,1,1,0V18A.5.5,0,0,1,18.5,18.5Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978"
+                      d="M19.5,18.5A.5.5,0,0,1,19,18V1a.5.5,0,0,1,1,0V18A.5.5,0,0,1,19.5,18.5Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978"
+                      d="M20.5,18.5A.5.5,0,0,1,20,18V1a.5.5,0,0,1,1,0V18A.5.5,0,0,1,20.5,18.5Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978"
+                      d="M21.5,7.5A.5.5,0,0,1,21,7V1a.5.5,0,0,1,1,0V7A.5.5,0,0,1,21.5,7.5Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978"
+                      d="M22.5,7.5A.5.5,0,0,1,22,7V1a.5.5,0,0,1,1,0V7A.5.5,0,0,1,22.5,7.5Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978"
+                      d="M22.5,18.5A.5.5,0,0,1,22,18V13a.5.5,0,0,1,1,0v5A.5.5,0,0,1,22.5,18.5Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978"
+                      d="M21.5,18.5A.5.5,0,0,1,21,18V13a.5.5,0,0,1,1,0v5A.5.5,0,0,1,21.5,18.5Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978"
+                      d="M3.5,18.5A.5.5,0,0,1,3,18V1A.5.5,0,0,1,4,1V18A.5.5,0,0,1,3.5,18.5Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978"
+                      d="M4.5,18.5A.5.5,0,0,1,4,18V1A.5.5,0,0,1,5,1V18A.5.5,0,0,1,4.5,18.5Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978"
+                      d="M5.5,18.5A.5.5,0,0,1,5,18V1A.5.5,0,0,1,6,1V18A.5.5,0,0,1,5.5,18.5Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978"
+                      d="M6.5,18.5A.5.5,0,0,1,6,18V1A.5.5,0,0,1,7,1V18A.5.5,0,0,1,6.5,18.5Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978"
+                      d="M7.5,18.5A.5.5,0,0,1,7,18V1A.5.5,0,0,1,8,1V18A.5.5,0,0,1,7.5,18.5Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978"
+                      d="M8.5,18.5A.5.5,0,0,1,8,18V1A.5.5,0,0,1,9,1V18A.5.5,0,0,1,8.5,18.5Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978"
+                      d="M9.5,18.5A.5.5,0,0,1,9,18V1a.5.5,0,0,1,1,0V18A.5.5,0,0,1,9.5,18.5Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978"
+                      d="M10.5,18.5A.5.5,0,0,1,10,18V1a.5.5,0,0,1,1,0V18A.5.5,0,0,1,10.5,18.5Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978"
+                      d="M1.5,7.5A.5.5,0,0,1,1,7V1A.5.5,0,0,1,2,1V7A.5.5,0,0,1,1.5,7.5Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978"
+                      d="M2.5,7.5A.5.5,0,0,1,2,7V1A.5.5,0,0,1,3,1V7A.5.5,0,0,1,2.5,7.5Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M3.5,7.5h-2a.5.5,0,0,1,0-1h2a.5.5,0,0,1,0,1Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M3.5,13.5h-1a.5.5,0,0,1,0-1h1a.5.5,0,0,1,0,1Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M21.5,13.5h-1a.5.5,0,0,1,0-1h1a.5.5,0,0,1,0,1Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978" d="M21.5,7.5h-1a.5.5,0,0,1,0-1h1a.5.5,0,0,1,0,1Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978"
+                      d="M2.5,18.5A.5.5,0,0,1,2,18V13a.5.5,0,0,1,1,0v5A.5.5,0,0,1,2.5,18.5Z"/>
+                <path class="bd86be27-5826-431e-a8d5-b49b72a9e978"
+                      d="M1.5,18.5A.5.5,0,0,1,1,18V13a.5.5,0,0,1,1,0v5A.5.5,0,0,1,1.5,18.5Z"/>
+              </g>
+            </g>
+          </svg>
           <span class="sub-status">Inactive Pass: </span>
           <span class="sub-type">Month pass</span>
         </div>
         <div>
-          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 25"><defs><style>.e77115c5-df1a-459b-9c8c-4de365b61f94{fill:#231f20;}</style></defs><title>time</title><g id="f2b8ba81-cabd-41ae-bc5d-0b9c21513013" data-name="Layer 2"><g id="f3ebb41d-82f5-4c7a-838d-fcff4b19ccc3" data-name="set"><path class="e77115c5-df1a-459b-9c8c-4de365b61f94" d="M20,4a1,1,0,0,1-1-1V2H2V3A1,1,0,0,1,0,3V1A1,1,0,0,1,1,0H20a1,1,0,0,1,1,1V3A1,1,0,0,1,20,4Zm0-1V3ZM1,1V1H1Z"/><path class="e77115c5-df1a-459b-9c8c-4de365b61f94" d="M20,25H1a1,1,0,0,1-1-1V22a1,1,0,0,1,2,0v1H19V22a1,1,0,0,1,2,0v2A1,1,0,0,1,20,25Zm0-1v0ZM1,24H1Z"/><path class="e77115c5-df1a-459b-9c8c-4de365b61f94" d="M17.5,23a1,1,0,0,1-1-1c0-1.8-.21-3.07-1.31-4.17a6.38,6.38,0,0,0-1.45-.94c-1.35-.72-3.38-1.81-2.66-4.37a3.33,3.33,0,0,1,2.07-2.09l.32-.15a6.52,6.52,0,0,0,2.59-2.41A8.91,8.91,0,0,0,17,3a1,1,0,0,1,2,0,10.65,10.65,0,0,1-1.23,5.91,8.63,8.63,0,0,1-3.41,3.16l-.34.17c-.71.34-.92.48-1,.82-.25.9.11,1.23,1.68,2.07a7.49,7.49,0,0,1,1.93,1.29C18.18,18,18.5,19.8,18.5,22A1,1,0,0,1,17.5,23Zm0-1v0Zm-3.34-6,.05,0,0,0,0,0Zm-.51-4.68-.06,0-.13.07.13-.07Zm3.31-3a.35.35,0,0,1-.05.08,7.58,7.58,0,0,1-3,2.77,7.58,7.58,0,0,0,3-2.77Z"/><path class="e77115c5-df1a-459b-9c8c-4de365b61f94" d="M3.5,23a1,1,0,0,1-1-1c0-2.2.32-4,1.89-5.58A7.93,7.93,0,0,1,6.72,14.9c.28-.14.56-.27.84-.43s.52-.38.47-1.09-.24-.73-1.19-1.21l-.21-.1a8.55,8.55,0,0,1-3.4-3.16A10.65,10.65,0,0,1,2,3,1,1,0,0,1,4,3a8.91,8.91,0,0,0,.94,4.87,6.58,6.58,0,0,0,2.6,2.42l.2.1A3.32,3.32,0,0,1,10,13.25a3,3,0,0,1-1.5,3c-.31.17-.62.32-.92.47a6,6,0,0,0-1.8,1.14C4.71,18.93,4.5,20.19,4.5,22A1,1,0,0,1,3.5,23Zm0-1v0Zm.75-3.75a5,5,0,0,0-.46,1.1A5,5,0,0,1,4.25,18.25Zm2.36-2.19a6,6,0,0,0-1.42,1A6.18,6.18,0,0,1,6.61,16.06ZM8,15.35l-.23.13Zm.79-.81a1.79,1.79,0,0,1-.73.78A1.8,1.8,0,0,0,8.82,14.54ZM4,8.28l.07.11a7.53,7.53,0,0,0,3,2.79l.2.1c.89.45,1.66.84,1.74,2,0,0,0,.09,0,.14s0-.1,0-.14c-.08-1.2-.81-1.57-1.74-2l-.2-.1a7.53,7.53,0,0,1-3-2.79Z"/></g></g></svg>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 25">
+            <defs>
+              <style>.e77115c5-df1a-459b-9c8c-4de365b61f94 {
+                fill: #231f20;
+              }</style>
+            </defs>
+            <title>time</title>
+            <g id="f2b8ba81-cabd-41ae-bc5d-0b9c21513013" data-name="Layer 2">
+              <g id="f3ebb41d-82f5-4c7a-838d-fcff4b19ccc3" data-name="set">
+                <path class="e77115c5-df1a-459b-9c8c-4de365b61f94"
+                      d="M20,4a1,1,0,0,1-1-1V2H2V3A1,1,0,0,1,0,3V1A1,1,0,0,1,1,0H20a1,1,0,0,1,1,1V3A1,1,0,0,1,20,4Zm0-1V3ZM1,1V1H1Z"/>
+                <path class="e77115c5-df1a-459b-9c8c-4de365b61f94"
+                      d="M20,25H1a1,1,0,0,1-1-1V22a1,1,0,0,1,2,0v1H19V22a1,1,0,0,1,2,0v2A1,1,0,0,1,20,25Zm0-1v0ZM1,24H1Z"/>
+                <path class="e77115c5-df1a-459b-9c8c-4de365b61f94"
+                      d="M17.5,23a1,1,0,0,1-1-1c0-1.8-.21-3.07-1.31-4.17a6.38,6.38,0,0,0-1.45-.94c-1.35-.72-3.38-1.81-2.66-4.37a3.33,3.33,0,0,1,2.07-2.09l.32-.15a6.52,6.52,0,0,0,2.59-2.41A8.91,8.91,0,0,0,17,3a1,1,0,0,1,2,0,10.65,10.65,0,0,1-1.23,5.91,8.63,8.63,0,0,1-3.41,3.16l-.34.17c-.71.34-.92.48-1,.82-.25.9.11,1.23,1.68,2.07a7.49,7.49,0,0,1,1.93,1.29C18.18,18,18.5,19.8,18.5,22A1,1,0,0,1,17.5,23Zm0-1v0Zm-3.34-6,.05,0,0,0,0,0Zm-.51-4.68-.06,0-.13.07.13-.07Zm3.31-3a.35.35,0,0,1-.05.08,7.58,7.58,0,0,1-3,2.77,7.58,7.58,0,0,0,3-2.77Z"/>
+                <path class="e77115c5-df1a-459b-9c8c-4de365b61f94"
+                      d="M3.5,23a1,1,0,0,1-1-1c0-2.2.32-4,1.89-5.58A7.93,7.93,0,0,1,6.72,14.9c.28-.14.56-.27.84-.43s.52-.38.47-1.09-.24-.73-1.19-1.21l-.21-.1a8.55,8.55,0,0,1-3.4-3.16A10.65,10.65,0,0,1,2,3,1,1,0,0,1,4,3a8.91,8.91,0,0,0,.94,4.87,6.58,6.58,0,0,0,2.6,2.42l.2.1A3.32,3.32,0,0,1,10,13.25a3,3,0,0,1-1.5,3c-.31.17-.62.32-.92.47a6,6,0,0,0-1.8,1.14C4.71,18.93,4.5,20.19,4.5,22A1,1,0,0,1,3.5,23Zm0-1v0Zm.75-3.75a5,5,0,0,0-.46,1.1A5,5,0,0,1,4.25,18.25Zm2.36-2.19a6,6,0,0,0-1.42,1A6.18,6.18,0,0,1,6.61,16.06ZM8,15.35l-.23.13Zm.79-.81a1.79,1.79,0,0,1-.73.78A1.8,1.8,0,0,0,8.82,14.54ZM4,8.28l.07.11a7.53,7.53,0,0,0,3,2.79l.2.1c.89.45,1.66.84,1.74,2,0,0,0,.09,0,.14s0-.1,0-.14c-.08-1.2-.81-1.57-1.74-2l-.2-.1a7.53,7.53,0,0,1-3-2.79Z"/>
+              </g>
+            </g>
+          </svg>
           <span class="sub-status">Remaining Time: </span>
           <span class="sub-type">0 days</span>
         </div>
         <div>
-          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><defs><style>.a0d5a14f-8d11-4899-a554-e873189337e6{fill:#030104;}</style></defs><title>alarm</title><g id="b6fc17dc-4024-47c4-8f65-4d97986ca909" data-name="Layer 2"><g id="b3c068a8-a693-4516-a8b4-9cd8a0c5d585" data-name="set"><path class="a0d5a14f-8d11-4899-a554-e873189337e6" d="M11,13a2,2,0,1,0,2-2A2,2,0,0,0,11,13Z"/><path class="a0d5a14f-8d11-4899-a554-e873189337e6" d="M13.57,13.54h0c.39-.39,1.11-1.71.72-2,0,0-10.61-8.46-10.92-8.15s8.11,11,8.11,11C11.82,14.67,13.18,13.93,13.57,13.54Z"/><circle class="a0d5a14f-8d11-4899-a554-e873189337e6" cx="13" cy="2" r="2"/><path class="a0d5a14f-8d11-4899-a554-e873189337e6" d="M17.29,1.8a1.42,1.42,0,0,0,.72,2A10.45,10.45,0,1,1,3.24,9.24a1.33,1.33,0,0,0-.48-1.86,1.19,1.19,0,0,0-1.66.41A12.77,12.77,0,0,0,0,13,13,13,0,1,0,18.75,1.35,1.17,1.17,0,0,0,17.29,1.8Z"/></g></g></svg>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+            <defs>
+              <style>.a0d5a14f-8d11-4899-a554-e873189337e6 {
+                fill: #030104;
+              }</style>
+            </defs>
+            <title>alarm</title>
+            <g id="b6fc17dc-4024-47c4-8f65-4d97986ca909" data-name="Layer 2">
+              <g id="b3c068a8-a693-4516-a8b4-9cd8a0c5d585" data-name="set">
+                <path class="a0d5a14f-8d11-4899-a554-e873189337e6" d="M11,13a2,2,0,1,0,2-2A2,2,0,0,0,11,13Z"/>
+                <path class="a0d5a14f-8d11-4899-a554-e873189337e6"
+                      d="M13.57,13.54h0c.39-.39,1.11-1.71.72-2,0,0-10.61-8.46-10.92-8.15s8.11,11,8.11,11C11.82,14.67,13.18,13.93,13.57,13.54Z"/>
+                <circle class="a0d5a14f-8d11-4899-a554-e873189337e6" cx="13" cy="2" r="2"/>
+                <path class="a0d5a14f-8d11-4899-a554-e873189337e6"
+                      d="M17.29,1.8a1.42,1.42,0,0,0,.72,2A10.45,10.45,0,1,1,3.24,9.24a1.33,1.33,0,0,0-.48-1.86,1.19,1.19,0,0,0-1.66.41A12.77,12.77,0,0,0,0,13,13,13,0,1,0,18.75,1.35,1.17,1.17,0,0,0,17.29,1.8Z"/>
+              </g>
+            </g>
+          </svg>
           <span class="sub-status">Duration: </span>
           <span class="sub-type">19/04/19 to 19/05/19</span>
         </div>
@@ -36,66 +193,293 @@
     </div>
     <div class="actions">
       <div class="item">
-        <div class="icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 26"><defs><style>.b2b8dd4e-b22a-44de-8291-62395fd92425{fill:#231f20;}</style></defs><title>home</title><g id="b91abd22-d563-4ca6-97dc-82b05e9002c8" data-name="Layer 2"><g id="ac280966-dca0-4ba2-953f-19320c31d605" data-name="set"><path class="b2b8dd4e-b22a-44de-8291-62395fd92425" d="M23.5,14a1.51,1.51,0,0,1-1.06-.44L12.5,3.62,2.56,13.56A1.5,1.5,0,0,1,.44,11.44l11-11a1.49,1.49,0,0,1,2.12,0l11,11a1.49,1.49,0,0,1,0,2.12A1.51,1.51,0,0,1,23.5,14Z"/><path class="b2b8dd4e-b22a-44de-8291-62395fd92425" d="M21.5,26h-6A1.5,1.5,0,0,1,14,24.5V17H9.5a1.5,1.5,0,0,1,0-3h6A1.5,1.5,0,0,1,17,15.5V23h3V10.5a1.5,1.5,0,0,1,3,0v14A1.5,1.5,0,0,1,21.5,26Z"/><path class="b2b8dd4e-b22a-44de-8291-62395fd92425" d="M9.5,26A1.5,1.5,0,0,1,8,24.5v-9a1.5,1.5,0,0,1,3,0v9A1.5,1.5,0,0,1,9.5,26Z"/><path class="b2b8dd4e-b22a-44de-8291-62395fd92425" d="M3.5,26A1.5,1.5,0,0,1,2,24.5v-14a1.5,1.5,0,0,1,3,0v14A1.5,1.5,0,0,1,3.5,26Z"/></g></g></svg>
-        </div>
-        <span class="label">Find Gym</span>
+        <div>
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 26">
+              <defs>
+                <style>.b2b8dd4e-b22a-44de-8291-62395fd92425 {
+                  fill: #231f20;
+                }</style>
+              </defs>
+              <title>home</title>
+              <g id="b91abd22-d563-4ca6-97dc-82b05e9002c8" data-name="Layer 2">
+                <g id="ac280966-dca0-4ba2-953f-19320c31d605" data-name="set">
+                  <path class="b2b8dd4e-b22a-44de-8291-62395fd92425"
+                        d="M23.5,14a1.51,1.51,0,0,1-1.06-.44L12.5,3.62,2.56,13.56A1.5,1.5,0,0,1,.44,11.44l11-11a1.49,1.49,0,0,1,2.12,0l11,11a1.49,1.49,0,0,1,0,2.12A1.51,1.51,0,0,1,23.5,14Z"/>
+                  <path class="b2b8dd4e-b22a-44de-8291-62395fd92425"
+                        d="M21.5,26h-6A1.5,1.5,0,0,1,14,24.5V17H9.5a1.5,1.5,0,0,1,0-3h6A1.5,1.5,0,0,1,17,15.5V23h3V10.5a1.5,1.5,0,0,1,3,0v14A1.5,1.5,0,0,1,21.5,26Z"/>
+                  <path class="b2b8dd4e-b22a-44de-8291-62395fd92425"
+                        d="M9.5,26A1.5,1.5,0,0,1,8,24.5v-9a1.5,1.5,0,0,1,3,0v9A1.5,1.5,0,0,1,9.5,26Z"/>
+                  <path class="b2b8dd4e-b22a-44de-8291-62395fd92425"
+                        d="M3.5,26A1.5,1.5,0,0,1,2,24.5v-14a1.5,1.5,0,0,1,3,0v14A1.5,1.5,0,0,1,3.5,26Z"/>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <span class="label">Find Gym</span></div>
       </div>
       <div class="item">
-        <div class="icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.8 18.8"><defs><style>.e9fdc0ee-d021-42f0-a58d-997c0204ebc3,.f6cfe972-3fb2-43bd-9ee6-88818d86bb11{fill:none;stroke:#231f20;stroke-linecap:round;stroke-width:1.8px;}.e9fdc0ee-d021-42f0-a58d-997c0204ebc3{stroke-miterlimit:10;}.f6cfe972-3fb2-43bd-9ee6-88818d86bb11{stroke-linejoin:round;}</style></defs><title>ticket</title><g id="a69d4b71-7ffd-4276-b454-2e0858194ac7" data-name="Layer 2"><g id="b9298c9c-c659-4e3b-8aa5-e9a71c796d2e" data-name="set"><path class="e9fdc0ee-d021-42f0-a58d-997c0204ebc3" d="M.9,12.9a3,3,0,0,0,0-6"/><path class="e9fdc0ee-d021-42f0-a58d-997c0204ebc3" d="M23.9,12.9a3,3,0,0,1,0-6"/><path class="e9fdc0ee-d021-42f0-a58d-997c0204ebc3" d="M.9,6.9v-5a1,1,0,0,1,1-1h21a1,1,0,0,1,1,1v5"/><path class="e9fdc0ee-d021-42f0-a58d-997c0204ebc3" d="M23.9,12.9v4a1,1,0,0,1-1,1H1.9a1,1,0,0,1-1-1v-4"/><line class="f6cfe972-3fb2-43bd-9ee6-88818d86bb11" x1="16.9" y1="0.9" x2="16.9" y2="17.9"/></g></g></svg>
-        </div>
-        <span class="label">Sessions</span>
+        <div>
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.8 18.8">
+              <defs>
+                <style>.e9fdc0ee-d021-42f0-a58d-997c0204ebc3, .f6cfe972-3fb2-43bd-9ee6-88818d86bb11 {
+                  fill: none;
+                  stroke: #231f20;
+                  stroke-linecap: round;
+                  stroke-width: 1.8px;
+                }
+
+                .e9fdc0ee-d021-42f0-a58d-997c0204ebc3 {
+                  stroke-miterlimit: 10;
+                }
+
+                .f6cfe972-3fb2-43bd-9ee6-88818d86bb11 {
+                  stroke-linejoin: round;
+                }</style>
+              </defs>
+              <title>ticket</title>
+              <g id="a69d4b71-7ffd-4276-b454-2e0858194ac7" data-name="Layer 2">
+                <g id="b9298c9c-c659-4e3b-8aa5-e9a71c796d2e" data-name="set">
+                  <path class="e9fdc0ee-d021-42f0-a58d-997c0204ebc3" d="M.9,12.9a3,3,0,0,0,0-6"/>
+                  <path class="e9fdc0ee-d021-42f0-a58d-997c0204ebc3" d="M23.9,12.9a3,3,0,0,1,0-6"/>
+                  <path class="e9fdc0ee-d021-42f0-a58d-997c0204ebc3" d="M.9,6.9v-5a1,1,0,0,1,1-1h21a1,1,0,0,1,1,1v5"/>
+                  <path class="e9fdc0ee-d021-42f0-a58d-997c0204ebc3"
+                        d="M23.9,12.9v4a1,1,0,0,1-1,1H1.9a1,1,0,0,1-1-1v-4"/>
+                  <line class="f6cfe972-3fb2-43bd-9ee6-88818d86bb11" x1="16.9" y1="0.9" x2="16.9" y2="17.9"/>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <span class="label">Sessions</span></div>
       </div>
       <div class="item">
-        <div class="icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.68 19.11"><defs><style>.af476a41-d3f9-4817-bc80-b3a35be345b9{fill:#231f20;}</style></defs><title>account</title><g id="e3d3389c-fbeb-4964-b05c-9a7368f0f2ef" data-name="Layer 2"><g id="b09b06b0-58b0-4079-a656-7bfb08d7c169" data-name="set"><path class="af476a41-d3f9-4817-bc80-b3a35be345b9" d="M8.83,10.4A4.56,4.56,0,0,1,8,10.32,4.76,4.76,0,0,1,4.34,5.73V4.67A4.78,4.78,0,0,1,8,.07a4.51,4.51,0,0,1,3.71,1A4.46,4.46,0,0,1,13.34,4.5V5.9a4.51,4.51,0,0,1-4.51,4.5Zm0-8.4a2.56,2.56,0,0,0-.47,0,2.82,2.82,0,0,0-2,2.63V5.73a2.83,2.83,0,0,0,2,2.63,2.51,2.51,0,0,0,3-2.46V4.5a2.51,2.51,0,0,0-.9-1.92A2.46,2.46,0,0,0,8.84,2Z"/><path class="af476a41-d3f9-4817-bc80-b3a35be345b9" d="M16.68,19.11a1,1,0,0,1-.91-.59A7.5,7.5,0,0,0,8.84,14.2a7.5,7.5,0,0,0-6.93,4.32A1,1,0,0,1,.09,17.7a9.49,9.49,0,0,1,8.75-5.5,9.49,9.49,0,0,1,8.75,5.5,1,1,0,0,1-.5,1.32A1,1,0,0,1,16.68,19.11Z"/></g></g></svg>
-        </div>
-        <span class="label">Account</span>
-        <span class="notif">4</span>
+        <div>
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.68 19.11">
+              <defs>
+                <style>.af476a41-d3f9-4817-bc80-b3a35be345b9 {
+                  fill: #231f20;
+                }</style>
+              </defs>
+              <title>account</title>
+              <g id="e3d3389c-fbeb-4964-b05c-9a7368f0f2ef" data-name="Layer 2">
+                <g id="b09b06b0-58b0-4079-a656-7bfb08d7c169" data-name="set">
+                  <path class="af476a41-d3f9-4817-bc80-b3a35be345b9"
+                        d="M8.83,10.4A4.56,4.56,0,0,1,8,10.32,4.76,4.76,0,0,1,4.34,5.73V4.67A4.78,4.78,0,0,1,8,.07a4.51,4.51,0,0,1,3.71,1A4.46,4.46,0,0,1,13.34,4.5V5.9a4.51,4.51,0,0,1-4.51,4.5Zm0-8.4a2.56,2.56,0,0,0-.47,0,2.82,2.82,0,0,0-2,2.63V5.73a2.83,2.83,0,0,0,2,2.63,2.51,2.51,0,0,0,3-2.46V4.5a2.51,2.51,0,0,0-.9-1.92A2.46,2.46,0,0,0,8.84,2Z"/>
+                  <path class="af476a41-d3f9-4817-bc80-b3a35be345b9"
+                        d="M16.68,19.11a1,1,0,0,1-.91-.59A7.5,7.5,0,0,0,8.84,14.2a7.5,7.5,0,0,0-6.93,4.32A1,1,0,0,1,.09,17.7a9.49,9.49,0,0,1,8.75-5.5,9.49,9.49,0,0,1,8.75,5.5,1,1,0,0,1-.5,1.32A1,1,0,0,1,16.68,19.11Z"/>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <span class="label">Account</span>
+          <span class="notif">4</span></div>
       </div>
       <div class="item">
-        <div class="icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.85 26"><defs><style>.eae137ce-e11d-4729-be7b-387698488533{fill:#231f20;}</style></defs><title>history</title><g id="fd3dba1b-d2a4-4e52-b167-b1e6d56b23fa" data-name="Layer 2"><g id="b13be4a4-c9cb-490a-a4ea-f96bdc1a1249" data-name="set"><path class="eae137ce-e11d-4729-be7b-387698488533" d="M2.35,8A1.5,1.5,0,0,1,.85,6.5v-5a1.5,1.5,0,0,1,3,0v5A1.5,1.5,0,0,1,2.35,8Z"/><path class="eae137ce-e11d-4729-be7b-387698488533" d="M7.35,8h-5a1.5,1.5,0,0,1,0-3h5a1.5,1.5,0,0,1,0,3Z"/><path class="eae137ce-e11d-4729-be7b-387698488533" d="M11.85,26A13.07,13.07,0,0,1,.15,18.66a1.5,1.5,0,0,1,2.7-1.31A10,10,0,1,0,11.85,3a1.5,1.5,0,0,1,0-3,13,13,0,1,1,0,26Z"/><path class="eae137ce-e11d-4729-be7b-387698488533" d="M2.37,8a1.46,1.46,0,0,1-.84-.26,1.5,1.5,0,0,1-.39-2.09A13,13,0,0,1,11.85,0a1.5,1.5,0,0,1,0,3A10,10,0,0,0,3.61,7.35,1.51,1.51,0,0,1,2.37,8Z"/><path class="eae137ce-e11d-4729-be7b-387698488533" d="M11.35,17a1.5,1.5,0,0,1-1.5-1.5v-7a1.5,1.5,0,0,1,3,0v7A1.5,1.5,0,0,1,11.35,17Z"/><path class="eae137ce-e11d-4729-be7b-387698488533" d="M17.35,17h-6a1.5,1.5,0,0,1,0-3h6a1.5,1.5,0,0,1,0,3Z"/></g></g></svg>
-        </div>
-        <span class="label">History</span>
+        <div>
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.85 26">
+              <defs>
+                <style>.eae137ce-e11d-4729-be7b-387698488533 {
+                  fill: #231f20;
+                }</style>
+              </defs>
+              <title>history</title>
+              <g id="fd3dba1b-d2a4-4e52-b167-b1e6d56b23fa" data-name="Layer 2">
+                <g id="b13be4a4-c9cb-490a-a4ea-f96bdc1a1249" data-name="set">
+                  <path class="eae137ce-e11d-4729-be7b-387698488533"
+                        d="M2.35,8A1.5,1.5,0,0,1,.85,6.5v-5a1.5,1.5,0,0,1,3,0v5A1.5,1.5,0,0,1,2.35,8Z"/>
+                  <path class="eae137ce-e11d-4729-be7b-387698488533"
+                        d="M7.35,8h-5a1.5,1.5,0,0,1,0-3h5a1.5,1.5,0,0,1,0,3Z"/>
+                  <path class="eae137ce-e11d-4729-be7b-387698488533"
+                        d="M11.85,26A13.07,13.07,0,0,1,.15,18.66a1.5,1.5,0,0,1,2.7-1.31A10,10,0,1,0,11.85,3a1.5,1.5,0,0,1,0-3,13,13,0,1,1,0,26Z"/>
+                  <path class="eae137ce-e11d-4729-be7b-387698488533"
+                        d="M2.37,8a1.46,1.46,0,0,1-.84-.26,1.5,1.5,0,0,1-.39-2.09A13,13,0,0,1,11.85,0a1.5,1.5,0,0,1,0,3A10,10,0,0,0,3.61,7.35,1.51,1.51,0,0,1,2.37,8Z"/>
+                  <path class="eae137ce-e11d-4729-be7b-387698488533"
+                        d="M11.35,17a1.5,1.5,0,0,1-1.5-1.5v-7a1.5,1.5,0,0,1,3,0v7A1.5,1.5,0,0,1,11.35,17Z"/>
+                  <path class="eae137ce-e11d-4729-be7b-387698488533"
+                        d="M17.35,17h-6a1.5,1.5,0,0,1,0-3h6a1.5,1.5,0,0,1,0,3Z"/>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <span class="label">History</span></div>
       </div>
       <div class="item">
-        <div class="icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 15"><defs><style>.aa0a6f2d-ae11-435e-b069-18b16bd116aa {fill: #231f20;stroke: #000;stroke-linecap: round;stroke-linejoin: round;}</style></defs><title>gym</title><g id="e39ed439-79ee-4882-96c2-07f3d8205f23" data-name="Layer 2"><g id="ada9dff8-7e80-4110-b389-48258bf5a353" data-name="set"><rect class="aa0a6f2d-ae11-435e-b069-18b16bd116aa" x="17.5" y="0.5" width="3" height="14" rx="1" transform="translate(38 15) rotate(180)"/><rect class="aa0a6f2d-ae11-435e-b069-18b16bd116aa" x="20.5" y="3.5" width="3" height="8" rx="0.98" transform="translate(44 15) rotate(180)"/><rect class="aa0a6f2d-ae11-435e-b069-18b16bd116aa" x="3.5" y="0.5" width="3" height="14" rx="1"/><rect class="aa0a6f2d-ae11-435e-b069-18b16bd116aa" x="0.5" y="3.5" width="3" height="8" rx="0.98"/><rect class="aa0a6f2d-ae11-435e-b069-18b16bd116aa" x="6.5" y="5.5" width="11" height="3"/></g></g></svg>
-        </div>
-        <span class="label">Favorite Gyms</span>
+        <div>
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 15">
+              <defs>
+                <style>.aa0a6f2d-ae11-435e-b069-18b16bd116aa {
+                  fill: #231f20;
+                  stroke: #000;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                }</style>
+              </defs>
+              <title>gym</title>
+              <g id="e39ed439-79ee-4882-96c2-07f3d8205f23" data-name="Layer 2">
+                <g id="ada9dff8-7e80-4110-b389-48258bf5a353" data-name="set">
+                  <rect class="aa0a6f2d-ae11-435e-b069-18b16bd116aa" x="17.5" y="0.5" width="3" height="14" rx="1"
+                        transform="translate(38 15) rotate(180)"/>
+                  <rect class="aa0a6f2d-ae11-435e-b069-18b16bd116aa" x="20.5" y="3.5" width="3" height="8" rx="0.98"
+                        transform="translate(44 15) rotate(180)"/>
+                  <rect class="aa0a6f2d-ae11-435e-b069-18b16bd116aa" x="3.5" y="0.5" width="3" height="14" rx="1"/>
+                  <rect class="aa0a6f2d-ae11-435e-b069-18b16bd116aa" x="0.5" y="3.5" width="3" height="8" rx="0.98"/>
+                  <rect class="aa0a6f2d-ae11-435e-b069-18b16bd116aa" x="6.5" y="5.5" width="11" height="3"/>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <span class="label">Favorite Gyms</span></div>
       </div>
       <div class="item">
-        <div class="icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.4 17.57"><defs><style>.fe8df523-27ff-4ead-b872-571def33223a{fill:#231f20;}</style></defs><title>forrward</title><g id="fbaffac5-64a7-4fac-b2c7-8b58e49c3a73" data-name="Layer 2"><g id="bfb265f3-9322-47ba-92ce-e3e210b306d8" data-name="set"><path class="fe8df523-27ff-4ead-b872-571def33223a" d="M16.2,17.57a2.28,2.28,0,0,1-.84-.16,2.2,2.2,0,0,1-1.36-2V12.53c-1.64-.46-6.18-1-12,4.07a1.19,1.19,0,0,1-1.39.13A1.19,1.19,0,0,1,0,15.46,14.21,14.21,0,0,1,8.67,5.63a1.2,1.2,0,0,1,.86,2.24,11.58,11.58,0,0,0-5.38,4.2c6.62-3.84,11.35-1.56,11.59-1.45a1.21,1.21,0,0,1,.66,1.08v3.19l6.1-6.18-6.1-6v3a1.2,1.2,0,1,1-2.4,0V2.2A2.2,2.2,0,0,1,17.75.64L25,7.84a1.2,1.2,0,0,1,0,1.7l-7.28,7.38A2.2,2.2,0,0,1,16.2,17.57Z"/></g></g></svg>
-        </div>
-        <span class="label">Refer a Friend</span>
+        <div>
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.4 17.57">
+              <defs>
+                <style>.fe8df523-27ff-4ead-b872-571def33223a {
+                  fill: #231f20;
+                }</style>
+              </defs>
+              <title>forrward</title>
+              <g id="fbaffac5-64a7-4fac-b2c7-8b58e49c3a73" data-name="Layer 2">
+                <g id="bfb265f3-9322-47ba-92ce-e3e210b306d8" data-name="set">
+                  <path class="fe8df523-27ff-4ead-b872-571def33223a"
+                        d="M16.2,17.57a2.28,2.28,0,0,1-.84-.16,2.2,2.2,0,0,1-1.36-2V12.53c-1.64-.46-6.18-1-12,4.07a1.19,1.19,0,0,1-1.39.13A1.19,1.19,0,0,1,0,15.46,14.21,14.21,0,0,1,8.67,5.63a1.2,1.2,0,0,1,.86,2.24,11.58,11.58,0,0,0-5.38,4.2c6.62-3.84,11.35-1.56,11.59-1.45a1.21,1.21,0,0,1,.66,1.08v3.19l6.1-6.18-6.1-6v3a1.2,1.2,0,1,1-2.4,0V2.2A2.2,2.2,0,0,1,17.75.64L25,7.84a1.2,1.2,0,0,1,0,1.7l-7.28,7.38A2.2,2.2,0,0,1,16.2,17.57Z"/>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <span class="label">Refer a Friend</span></div>
       </div>
       <div class="item">
-        <div class="icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.83 26"><defs><style>.ec86c792-6703-477e-8210-bda1d3303ac0{fill:#231f20;}</style></defs><title>chat</title><g id="b0f2f2dc-5ea1-4db4-ab96-300a4ef7803a" data-name="Layer 2"><g id="b4cea88a-920a-41e3-9616-f69c9e1d6af8" data-name="set"><g id="bbe7f25a-d2b1-45ef-87eb-62a075f42811" data-name="chat"><path class="ec86c792-6703-477e-8210-bda1d3303ac0" d="M12.83,26a13.08,13.08,0,0,1-6.09-1.52l-4.85,1.3A1.5,1.5,0,0,1,.05,23.94l1.3-4.86A12.91,12.91,0,0,1,.14,15.84a1.5,1.5,0,1,1,2.93-.66,9.9,9.9,0,0,0,1.18,2.93,1.52,1.52,0,0,1,.16,1.16l-.79,2.94,2.94-.79a1.48,1.48,0,0,1,1.16.16,10,10,0,1,0-4-12.66A1.5,1.5,0,1,1,1,7.7,13,13,0,1,1,12.83,26Z"/><path class="ec86c792-6703-477e-8210-bda1d3303ac0" d="M18.33,12h-11a1.5,1.5,0,1,1,0-3h11a1.5,1.5,0,0,1,0,3Z"/><path class="ec86c792-6703-477e-8210-bda1d3303ac0" d="M13.33,16h-6a1.5,1.5,0,1,1,0-3h6a1.5,1.5,0,0,1,0,3Z"/></g></g></g></svg>
-        </div>
-        <span class="label">Request Gym</span>
+        <div>
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.83 26">
+              <defs>
+                <style>.ec86c792-6703-477e-8210-bda1d3303ac0 {
+                  fill: #231f20;
+                }</style>
+              </defs>
+              <title>chat</title>
+              <g id="b0f2f2dc-5ea1-4db4-ab96-300a4ef7803a" data-name="Layer 2">
+                <g id="b4cea88a-920a-41e3-9616-f69c9e1d6af8" data-name="set">
+                  <g id="bbe7f25a-d2b1-45ef-87eb-62a075f42811" data-name="chat">
+                    <path class="ec86c792-6703-477e-8210-bda1d3303ac0"
+                          d="M12.83,26a13.08,13.08,0,0,1-6.09-1.52l-4.85,1.3A1.5,1.5,0,0,1,.05,23.94l1.3-4.86A12.91,12.91,0,0,1,.14,15.84a1.5,1.5,0,1,1,2.93-.66,9.9,9.9,0,0,0,1.18,2.93,1.52,1.52,0,0,1,.16,1.16l-.79,2.94,2.94-.79a1.48,1.48,0,0,1,1.16.16,10,10,0,1,0-4-12.66A1.5,1.5,0,1,1,1,7.7,13,13,0,1,1,12.83,26Z"/>
+                    <path class="ec86c792-6703-477e-8210-bda1d3303ac0"
+                          d="M18.33,12h-11a1.5,1.5,0,1,1,0-3h11a1.5,1.5,0,0,1,0,3Z"/>
+                    <path class="ec86c792-6703-477e-8210-bda1d3303ac0"
+                          d="M13.33,16h-6a1.5,1.5,0,1,1,0-3h6a1.5,1.5,0,0,1,0,3Z"/>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <span class="label">Request Gym</span></div>
       </div>
       <div class="item">
-        <div class="icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.99 25.3"><defs><style>.afa4ab1b-3ab7-4a1d-8c5b-5a01a88d3595{fill:#231f20;}</style></defs><title>how</title><g id="ee6c81c2-86d2-4777-b5ea-83d3cc3bc8aa" data-name="Layer 2"><g id="f1d9236c-43d1-40f0-b67d-fefade414f17" data-name="set"><path class="afa4ab1b-3ab7-4a1d-8c5b-5a01a88d3595" d="M13.49,25.3h-3a2.15,2.15,0,0,1-2.15-2.15V21.58a9.59,9.59,0,0,1-2.25-1.31l-1.36.79a2.16,2.16,0,0,1-2.94-.78l-1.5-2.6a2.16,2.16,0,0,1,.78-2.94L2.44,14a8.5,8.5,0,0,1,0-2.6l-1.37-.79A2.16,2.16,0,0,1,.29,7.62L1.79,5a2.16,2.16,0,0,1,2.94-.79L6.09,5A9.59,9.59,0,0,1,8.34,3.72V2.15A2.15,2.15,0,0,1,10.49,0h3a2.15,2.15,0,0,1,2.15,2.15V3.72A9.65,9.65,0,0,1,17.9,5l1.36-.79A2.11,2.11,0,0,1,20.89,4,2.15,2.15,0,0,1,22.2,5l1.5,2.59a2.16,2.16,0,0,1-.79,2.94l-1.36.79a9.58,9.58,0,0,1,.09,1.3,1.15,1.15,0,0,1-2.3,0A7.25,7.25,0,0,0,19.15,11a1.15,1.15,0,0,1,.55-1.25l1.93-1.12L20.28,6.31,18.35,7.42A1.16,1.16,0,0,1,17,7.27a7.23,7.23,0,0,0-2.83-1.64,1.16,1.16,0,0,1-.82-1.1V2.3h-2.7V4.53a1.16,1.16,0,0,1-.81,1.1A7.16,7.16,0,0,0,7,7.27a1.15,1.15,0,0,1-1.36.15L3.71,6.31,2.35,8.64,4.29,9.76A1.14,1.14,0,0,1,4.83,11a7.87,7.87,0,0,0-.19,1.64,7.87,7.87,0,0,0,.19,1.64,1.14,1.14,0,0,1-.54,1.25L2.35,16.66,3.71,19l1.93-1.11A1.15,1.15,0,0,1,7,18a7.31,7.31,0,0,0,2.83,1.65,1.15,1.15,0,0,1,.81,1.1V23h2.7V20.78a1.15,1.15,0,0,1,.81-1.1A7.34,7.34,0,0,0,17,18a1.16,1.16,0,0,1,1.36-.15l2.06,1.19a1.15,1.15,0,0,1-1.15,2l-1.36-.79a9.65,9.65,0,0,1-2.26,1.31v1.57A2.15,2.15,0,0,1,13.49,25.3Z"/><path class="afa4ab1b-3ab7-4a1d-8c5b-5a01a88d3595" d="M12,17.3a4.65,4.65,0,1,1,4.65-4.65A4.66,4.66,0,0,1,12,17.3Zm0-7a2.35,2.35,0,1,0,2.35,2.35A2.35,2.35,0,0,0,12,10.3Z"/></g></g></svg>
+        <div>
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.99 25.3">
+              <defs>
+                <style>.afa4ab1b-3ab7-4a1d-8c5b-5a01a88d3595 {
+                  fill: #231f20;
+                }</style>
+              </defs>
+              <title>how</title>
+              <g id="ee6c81c2-86d2-4777-b5ea-83d3cc3bc8aa" data-name="Layer 2">
+                <g id="f1d9236c-43d1-40f0-b67d-fefade414f17" data-name="set">
+                  <path class="afa4ab1b-3ab7-4a1d-8c5b-5a01a88d3595"
+                        d="M13.49,25.3h-3a2.15,2.15,0,0,1-2.15-2.15V21.58a9.59,9.59,0,0,1-2.25-1.31l-1.36.79a2.16,2.16,0,0,1-2.94-.78l-1.5-2.6a2.16,2.16,0,0,1,.78-2.94L2.44,14a8.5,8.5,0,0,1,0-2.6l-1.37-.79A2.16,2.16,0,0,1,.29,7.62L1.79,5a2.16,2.16,0,0,1,2.94-.79L6.09,5A9.59,9.59,0,0,1,8.34,3.72V2.15A2.15,2.15,0,0,1,10.49,0h3a2.15,2.15,0,0,1,2.15,2.15V3.72A9.65,9.65,0,0,1,17.9,5l1.36-.79A2.11,2.11,0,0,1,20.89,4,2.15,2.15,0,0,1,22.2,5l1.5,2.59a2.16,2.16,0,0,1-.79,2.94l-1.36.79a9.58,9.58,0,0,1,.09,1.3,1.15,1.15,0,0,1-2.3,0A7.25,7.25,0,0,0,19.15,11a1.15,1.15,0,0,1,.55-1.25l1.93-1.12L20.28,6.31,18.35,7.42A1.16,1.16,0,0,1,17,7.27a7.23,7.23,0,0,0-2.83-1.64,1.16,1.16,0,0,1-.82-1.1V2.3h-2.7V4.53a1.16,1.16,0,0,1-.81,1.1A7.16,7.16,0,0,0,7,7.27a1.15,1.15,0,0,1-1.36.15L3.71,6.31,2.35,8.64,4.29,9.76A1.14,1.14,0,0,1,4.83,11a7.87,7.87,0,0,0-.19,1.64,7.87,7.87,0,0,0,.19,1.64,1.14,1.14,0,0,1-.54,1.25L2.35,16.66,3.71,19l1.93-1.11A1.15,1.15,0,0,1,7,18a7.31,7.31,0,0,0,2.83,1.65,1.15,1.15,0,0,1,.81,1.1V23h2.7V20.78a1.15,1.15,0,0,1,.81-1.1A7.34,7.34,0,0,0,17,18a1.16,1.16,0,0,1,1.36-.15l2.06,1.19a1.15,1.15,0,0,1-1.15,2l-1.36-.79a9.65,9.65,0,0,1-2.26,1.31v1.57A2.15,2.15,0,0,1,13.49,25.3Z"/>
+                  <path class="afa4ab1b-3ab7-4a1d-8c5b-5a01a88d3595"
+                        d="M12,17.3a4.65,4.65,0,1,1,4.65-4.65A4.66,4.66,0,0,1,12,17.3Zm0-7a2.35,2.35,0,1,0,2.35,2.35A2.35,2.35,0,0,0,12,10.3Z"/>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <span class="label">How it work</span>
         </div>
-        <span class="label">How it work</span>
       </div>
       <div class="item">
-        <div class="icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.5 25.5"><defs><style>.ba9bad40-1298-41f6-a654-9bdc3db18372{fill:#231f20;}</style></defs><title>contact</title><g id="b4c80d94-f06a-4aa0-ae72-8a15c1daba1d" data-name="Layer 2"><g id="a98885b7-b9f9-451d-8b1d-53b5eb005730" data-name="set"><path class="ba9bad40-1298-41f6-a654-9bdc3db18372" d="M3.75,19.5C2.44,19.5,0,18.56,0,16.75v-6C0,8.94,2.44,8,3.75,8A2.75,2.75,0,0,1,6.5,10.75v6A2.75,2.75,0,0,1,3.75,19.5Zm-1.25-3A2.71,2.71,0,0,0,3.75,17,.25.25,0,0,0,4,16.75v-6a.25.25,0,0,0-.25-.25A2.71,2.71,0,0,0,2.5,11Z"/><path class="ba9bad40-1298-41f6-a654-9bdc3db18372" d="M19.75,19.5A2.75,2.75,0,0,1,17,16.75v-6A2.75,2.75,0,0,1,19.75,8c1.31,0,3.75.94,3.75,2.75v6C23.5,18.56,21.06,19.5,19.75,19.5Zm0-9a.25.25,0,0,0-.25.25v6a.25.25,0,0,0,.25.25A2.71,2.71,0,0,0,21,16.54V11A2.71,2.71,0,0,0,19.75,10.5Zm1.33.53h0Z"/><path class="ba9bad40-1298-41f6-a654-9bdc3db18372" d="M12.25,25.5h-3a2.25,2.25,0,0,1,0-4.5h3a2.25,2.25,0,0,1,0,4.5Zm0-2h0Z"/><path class="ba9bad40-1298-41f6-a654-9bdc3db18372" d="M13.25,24.5a1.25,1.25,0,0,1,0-2.5C18.46,22,19,20.86,19,18.25a1.25,1.25,0,0,1,2.5,0C21.5,23.45,18.34,24.5,13.25,24.5Z"/><path class="ba9bad40-1298-41f6-a654-9bdc3db18372" d="M19.25,10.5A1.25,1.25,0,0,1,18,9.25v-.5a6.25,6.25,0,0,0-12.5,0v.5a1.25,1.25,0,0,1-2.5,0v-.5a8.75,8.75,0,0,1,17.5,0v.5A1.25,1.25,0,0,1,19.25,10.5Z"/></g></g></svg>
+        <div>
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.5 25.5">
+              <defs>
+                <style>.ba9bad40-1298-41f6-a654-9bdc3db18372 {
+                  fill: #231f20;
+                }</style>
+              </defs>
+              <title>contact</title>
+              <g id="b4c80d94-f06a-4aa0-ae72-8a15c1daba1d" data-name="Layer 2">
+                <g id="a98885b7-b9f9-451d-8b1d-53b5eb005730" data-name="set">
+                  <path class="ba9bad40-1298-41f6-a654-9bdc3db18372"
+                        d="M3.75,19.5C2.44,19.5,0,18.56,0,16.75v-6C0,8.94,2.44,8,3.75,8A2.75,2.75,0,0,1,6.5,10.75v6A2.75,2.75,0,0,1,3.75,19.5Zm-1.25-3A2.71,2.71,0,0,0,3.75,17,.25.25,0,0,0,4,16.75v-6a.25.25,0,0,0-.25-.25A2.71,2.71,0,0,0,2.5,11Z"/>
+                  <path class="ba9bad40-1298-41f6-a654-9bdc3db18372"
+                        d="M19.75,19.5A2.75,2.75,0,0,1,17,16.75v-6A2.75,2.75,0,0,1,19.75,8c1.31,0,3.75.94,3.75,2.75v6C23.5,18.56,21.06,19.5,19.75,19.5Zm0-9a.25.25,0,0,0-.25.25v6a.25.25,0,0,0,.25.25A2.71,2.71,0,0,0,21,16.54V11A2.71,2.71,0,0,0,19.75,10.5Zm1.33.53h0Z"/>
+                  <path class="ba9bad40-1298-41f6-a654-9bdc3db18372"
+                        d="M12.25,25.5h-3a2.25,2.25,0,0,1,0-4.5h3a2.25,2.25,0,0,1,0,4.5Zm0-2h0Z"/>
+                  <path class="ba9bad40-1298-41f6-a654-9bdc3db18372"
+                        d="M13.25,24.5a1.25,1.25,0,0,1,0-2.5C18.46,22,19,20.86,19,18.25a1.25,1.25,0,0,1,2.5,0C21.5,23.45,18.34,24.5,13.25,24.5Z"/>
+                  <path class="ba9bad40-1298-41f6-a654-9bdc3db18372"
+                        d="M19.25,10.5A1.25,1.25,0,0,1,18,9.25v-.5a6.25,6.25,0,0,0-12.5,0v.5a1.25,1.25,0,0,1-2.5,0v-.5a8.75,8.75,0,0,1,17.5,0v.5A1.25,1.25,0,0,1,19.25,10.5Z"/>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <span class="label">Contact</span>
         </div>
-        <span class="label">Contact</span>
       </div>
       <div class="item">
-        <div class="icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 25"><defs><style>.af0fc91f-7692-4ee2-80a9-181006a8ecf3{fill:#231f20;}</style></defs><title>logout</title><g id="b889ee0c-4022-4945-beea-8f9f15f75674" data-name="Layer 2"><g id="a1ebe037-4296-4f72-8ab1-cd95cdcd625b" data-name="set"><path class="af0fc91f-7692-4ee2-80a9-181006a8ecf3" d="M11.5,10A1.5,1.5,0,0,1,10,8.5v-7a1.5,1.5,0,0,1,3,0v7A1.5,1.5,0,0,1,11.5,10Z"/><path class="af0fc91f-7692-4ee2-80a9-181006a8ecf3" d="M11.5,25A11.5,11.5,0,0,1,4,4.77,1.5,1.5,0,1,1,6,7,8.5,8.5,0,1,0,17,7,1.5,1.5,0,1,1,19,4.77,11.5,11.5,0,0,1,11.5,25Z"/></g></g></svg>
+        <div>
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 25">
+              <defs>
+                <style>.af0fc91f-7692-4ee2-80a9-181006a8ecf3 {
+                  fill: #231f20;
+                }</style>
+              </defs>
+              <title>logout</title>
+              <g id="b889ee0c-4022-4945-beea-8f9f15f75674" data-name="Layer 2">
+                <g id="a1ebe037-4296-4f72-8ab1-cd95cdcd625b" data-name="set">
+                  <path class="af0fc91f-7692-4ee2-80a9-181006a8ecf3"
+                        d="M11.5,10A1.5,1.5,0,0,1,10,8.5v-7a1.5,1.5,0,0,1,3,0v7A1.5,1.5,0,0,1,11.5,10Z"/>
+                  <path class="af0fc91f-7692-4ee2-80a9-181006a8ecf3"
+                        d="M11.5,25A11.5,11.5,0,0,1,4,4.77,1.5,1.5,0,1,1,6,7,8.5,8.5,0,1,0,17,7,1.5,1.5,0,1,1,19,4.77,11.5,11.5,0,0,1,11.5,25Z"/>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <span class="label">Sing out</span>
         </div>
-        <span class="label">Sing out</span>
       </div>
     </div>
   </div>
+
+  <section id="theme-switcher" class="affix-bottom" (click)="onChangeTheme()">
+    <div class="planets d-inline-block center-horizontally" [ngClass]="{'sun': darkMode$ | async}">
+      <div class="position-relative w-100 h-100">
+
+        <svg *ngIf="darkMode$ | async; else darkMode" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" class="svg hlg wlg fixed-center">
+          <title>sun</title>
+          <g>
+            <path
+              d="M10.5,5A5.5,5.5,0,1,0,16,10.5,5.5,5.5,0,0,0,10.5,5Zm0-2A1.5,1.5,0,1,0,9,1.5,1.5,1.5,0,0,0,10.5,3Zm7,13A1.5,1.5,0,1,0,19,17.5,1.5,1.5,0,0,0,17.5,16Zm-7,2A1.5,1.5,0,1,0,12,19.5,1.5,1.5,0,0,0,10.5,18Zm-7-3A1.5,1.5,0,1,0,5,16.5,1.5,1.5,0,0,0,3.5,15ZM3,10.5A1.5,1.5,0,1,0,1.5,12,1.5,1.5,0,0,0,3,10.5ZM3.5,5A1.5,1.5,0,1,0,2,3.5,1.5,1.5,0,0,0,3.5,5Zm14,0A1.5,1.5,0,1,0,16,3.5,1.5,1.5,0,0,0,17.5,5Zm2,4A1.5,1.5,0,1,0,21,10.5,1.5,1.5,0,0,0,19.5,9Z"/>
+          </g>
+        </svg>
+
+        <!--moon-->
+        <ng-template #darkMode>
+          <svg  class="svg hlg wlg fixed-center"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.63 23.24"><title>moon</title>
+            <g>
+              <path d="M10.32,11.62c3,5,12.31,3.73,12.31,3.73A11.62,11.62,0,1,1,11.62,0S7.36,6.6,10.32,11.62Z"/>
+            </g>
+          </svg>
+        </ng-template>
+      </div>
+    </div>
+  </section>
 </div>

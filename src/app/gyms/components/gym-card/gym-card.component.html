@@ -1,4 +1,4 @@
-<div *ngIf="gym" class="gym-card position-relative {{flat ? 'flat' : ''}}" (click)="onClick(gym.id)">
+<div *ngIf="gym" id="gym-card" class="card gym-card position-relative {{flat ? 'flat' : ''}}" (click)="onClick(gym.id)">
   <!--exit button-->
   <svg (click)="exit()" class="svg hxs exit shadow" viewBox="0 0 18.74 18.74" xmlns="http://www.w3.org/2000/svg"><defs ><style >.bc98a76a-bb9c-4f65-98d4-5d66f9b7743e{fill:#231f20;}</style></defs><title >exit</title><g  data-name="Layer 2" id="bd46cb1d-e542-4308-932e-bd45e2696b1f"><g  data-name="set" id="a076c2a8-af97-461a-b213-9ac50db2d888"><rect  class="bc98a76a-bb9c-4f65-98d4-5d66f9b7743e" height="2" transform="translate(-3.88 9.37) rotate(-45)" width="24.5" x="-2.88" y="8.37"></rect><rect  class="bc98a76a-bb9c-4f65-98d4-5d66f9b7743e" height="24.5" transform="translate(-3.88 9.37) rotate(-45)" width="2" x="8.37" y="-2.88"></rect></g></g></svg>
 
@@ -13,7 +13,7 @@
     <span><svg class="caret" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69.38 69.38"><defs><style>.fc790c57-7270-4c0b-9bae-d82faa547a37{fill:#fff;}</style></defs><title>caret</title><g id="afaa8f17-32d5-48d1-842f-083f6821f80e" data-name="Layer 2"><g id="a45f9351-ca34-4ee1-9b20-a5e338920831" data-name="Layer 1"><polygon class="fc790c57-7270-4c0b-9bae-d82faa547a37" points="34.69 66.39 34.69 66.39 3 3 66.39 3 34.69 66.39"/><path class="fc790c57-7270-4c0b-9bae-d82faa547a37" d="M34.69,69.38A3,3,0,0,1,32,67.73L.32,4.34A3,3,0,0,1,3,0H66.38a3,3,0,0,1,2.69,4.34L37.38,67.73A3,3,0,0,1,34.69,69.38ZM7.85,6,34.69,59.68,61.53,6Z"/></g></g></svg></span>
   </button>
   <div class="content">
-    <div class="name">{{gym.name | titlecase}}</div>
+    <h5 class="name font-weight-bold">{{gym.name | titlecase}}</h5>
     <div class="statistics">
       <div class="stars">
         <div *ngIf="!flat; else flatdesign">

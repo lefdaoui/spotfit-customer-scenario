@@ -1,3 +1,5 @@
+@import "./src/assets/sass/bootstrap/scss/variables";
+
 @import "../../../assets/sass/spotfit/variables";
 
 
@@ -56,7 +58,7 @@ $light-color: white;
   }
 
   .exit {
-    padding: 15px 25px 10px 25px;
+    padding: 15px 25px 10px 30px;
     background-color: #b3b3b342;
     border-radius: 50px 0 0 50px;
     display: inline-block;
@@ -150,9 +152,14 @@ $light-color: white;
 
     .item {
       background: $dark-bg;
-      padding: 20px 0 25px 20px;
+      padding: 20px 0 25px 40px;
       @include align-center();
-      justify-content: flex-start;
+      justify-content: center;
+
+      & > div {
+        width: 100%;
+        max-width: 123px;
+      }
 
       .icon {
         background-color: darken($dark-bg, 5%);
@@ -186,3 +193,26 @@ $light-color: white;
 @include status-style("expired", rgb(134,71,194), rgb(200,96,227));
 @include status-style("active", #36C9B8, #4BD696);
 
+
+
+section#theme-switcher {
+  bottom: 90px;
+  .planets {
+    border-radius: 50%;
+    background: darken($dark-bg, 3%);
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 0px 9px lighten($dark-bg, 25%);
+
+    &.sun {
+      background: darken($card-dark-bg, 3%);
+    }
+
+    svg {
+      & * {
+        fill: $gray-300;
+        stroke: $gray-300;
+      }
+    }
+  }
+}

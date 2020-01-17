@@ -225,6 +225,7 @@ $line-height-sm:              1.5 !default;
 
 $border-width:                1px !default;
 $border-color:                $gray-300 !default;
+$border-dark-color:           $gray-900 !default;
 
 $border-radius:               .6rem !default;
 $border-radius-lg:            .3rem !default;
@@ -730,6 +731,7 @@ $card-border-color:                 rgba($black, .125) !default;
 $card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width}) !default;
 $card-cap-bg:                       rgba($black, .03) !default;
 $card-bg:                           $white !default;
+$card-dark-bg:                      #2E2947 !default;
 
 $card-img-overlay-padding:          1.25rem !default;
 

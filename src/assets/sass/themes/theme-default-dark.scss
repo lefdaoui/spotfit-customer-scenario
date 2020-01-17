@@ -1,6 +1,7 @@
 @import "./src/assets/sass/bootstrap/scss/variables";
 @import "./components/components.scss";
 
+
 body {
   color: $body-light-color;
   background-color: $body-dark-bg;
@@ -10,4 +11,215 @@ body {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   color: $headings-light-color;
+}
+
+
+.card {
+  background-color: $card-dark-bg;
+}
+
+
+.modal-content {
+  background-color: $card-dark-bg;
+}
+
+
+.input-group-text {
+  color: $body-light-color;
+  border-color: lighten($card-dark-bg, 30%);
+  background-color: lighten($card-dark-bg, 15%);
+}
+
+.modal-phone .modal-body::before {
+  background: $primary;
+}
+
+.ng-select {
+  .ng-select-container .ng-value-container .ng-placeholder {
+    color: $body-light-color;
+  }
+
+  .ng-dropdown-panel {
+    background-color: lighten($card-dark-bg, 25%);
+
+    .ng-dropdown-panel-items {
+      .ng-optgroup {
+        color: $body-dark-bg;
+      }
+
+      .ng-option {
+        color: $primary-200;
+      }
+
+    }
+  }
+}
+
+
+input {
+  color: $body-light-color;
+}
+
+.nav-link {
+  color: $gray-200;
+}
+
+
+.text-black-50 {
+  color: rgba($white, .5) !important;
+}
+
+.text-white-50 {
+  color: rgba($black, .5) !important;
+}
+
+
+.form-control {
+  &:focus {
+    background-color: transparent;
+  }
+
+  background-color: transparent;
+}
+
+
+.table-hover tbody tr:hover {
+  background-color: $body-color;
+}
+
+
+#gym-card {
+  &.flat .suggestions > div {
+    background-color: lighten($card-dark-bg, 15%);
+  }
+
+  box-shadow: 0px 2px 2px 0px lighten($card-dark-bg, 20%);
+
+  .name {
+    color: $headings-light-color !important;
+  }
+
+}
+
+#footer * {
+  fill: $card-dark-bg;
+}
+
+
+#topbar-s1 #display-system {
+  background-color: $card-dark-bg !important;
+  color: $primary-light !important;
+
+  .tab:first-child {
+    border-right: 1px solid lighten($card-dark-bg, 20%) !important;
+  }
+}
+
+
+#gyms-map main.map .tools > * {
+  background-color: $card-dark-bg !important;
+}
+
+
+#gyms-filter-form .facilities-list .facility-single {
+  &.selected {
+    background-color: lighten($card-dark-bg, 25%) !important;
+  }
+
+  background-color: lighten($card-dark-bg, 15%) !important;
+}
+
+
+#account-overview {
+  .border-bottom {
+    border-bottom-color: $border-dark-color /*#181818*/
+    !important;
+  }
+
+  #showInfo {
+    .nav-tabs {
+      background-color: $body-dark-bg;
+
+      .nav-link {
+        &.active {
+          color: $body-light-color;
+          border-color: #8b6fc6;
+        }
+      }
+    }
+  }
+}
+
+
+#profile {
+  table tr:not(:last-child) {
+    border-color: $border-dark-color !important;
+  }
+
+  .active-subscriptions {
+    .card {
+      & > div:last-child {
+        border-left-color: $border-dark-color !important;
+      }
+
+      .icon {
+        &.green {
+          background-color: #d7f5f1 !important;
+        }
+
+        background-color: $body-dark-bg !important;
+      }
+    }
+  }
+}
+
+
+#gym-details {
+  main .subscription-options div {
+    background-color: $card-dark-bg !important;
+    color: $body-light-color;
+  }
+
+  .wrapper {
+    .toolbar .action {
+      background-color: #1e164e78;
+
+      .icon {
+        fill: $body-light-color;
+      }
+    }
+
+    .activities {
+      background-color: $card-dark-bg !important;
+    }
+  }
+}
+
+#selfieMethodOptionsModal {
+  .choose svg {
+    opacity: 0.3 !important;
+    fill: white !important;
+  }
+}
+
+
+#subscription-status {
+  $dark-color: $card-dark-bg;
+  background-color: $dark-color;
+
+  .exit {
+    background-color: rgba($dark, .2);
+  }
+
+  .actions {
+    background-color: lighten($dark-color, 10%);
+
+    .item {
+      background-color: $dark-color;
+
+      .icon {
+        background-color: lighten($dark-color, 10%);
+      }
+    }
+  }
 }
